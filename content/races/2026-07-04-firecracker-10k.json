@@ -1,0 +1,12 @@
+{
+  "id": "2026-07-04-firecracker-10k",
+  "name": "Firecracker 10K",
+  "date": "2026-07-04",
+  "location": "Downtown Riverwalk",
+  "distance": "10K",
+  "results": [
+    { "runnerId": "jane-doe", "runnerName": "Jane Doe", "time": "47:30", "placement": 3 },
+    { "runnerId": "sam-lee", "runnerName": "Sam Lee", "time": "50:11", "placement": 5, "personalRecord": true }
+  ],
+  "photos": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "2026-06-14-summit-trail-5k",
+  "name": "Summit Trail 5K",
+  "date": "2026-06-14",
+  "location": "Summit Ridge Park",
+  "distance": "5K",
+  "results": [
+    { "runnerId": "jane-doe", "runnerName": "Jane Doe", "time": "22:14", "placement": 1, "personalRecord": true },
+    { "runnerId": "sam-lee", "runnerName": "Sam Lee", "time": "24:02", "placement": 2 }
+  ],
+  "photos": []
+}
