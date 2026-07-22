@@ -17,8 +17,8 @@ export default async function RaceDetailPage({
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-10">
-      <h1 className="text-3xl font-bold">{race.name}</h1>
-      <p className="text-gray-600 mb-6">
+      <h1 className="page-title text-3xl font-bold">{race.name}</h1>
+      <p className="text-brand-ink/50 mb-6">
         {race.date} · {race.location} · {race.distance}
       </p>
       <ResultsTable results={race.results} />
@@ -29,7 +29,7 @@ export default async function RaceDetailPage({
               key={photo.url}
               src={photo.url}
               alt={photo.caption ?? race.name}
-              className="rounded"
+              className="rounded-xl border-2 border-brand-ink/10"
             />
           ))}
         </div>

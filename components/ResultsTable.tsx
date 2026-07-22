@@ -7,22 +7,22 @@ export default function ResultsTable({ results }: { results: RaceResult[] }) {
   return (
     <table className="w-full text-left border-collapse">
       <thead>
-        <tr className="border-b border-brand-forest/20">
-          <th className="py-2">Place</th>
-          <th className="py-2">Runner</th>
-          <th className="py-2">Time</th>
+        <tr className="border-b-2 border-brand-green/30 bg-brand-green/5">
+          <th className="py-2 font-black text-brand-ink">Place</th>
+          <th className="py-2 font-black text-brand-ink">Runner</th>
+          <th className="py-2 font-black text-brand-ink">Time</th>
         </tr>
       </thead>
       <tbody>
         {sorted.map((result) => (
-          <tr key={result.runnerId} className="border-b border-brand-forest/10">
+          <tr key={result.runnerId} className="border-b border-brand-ink/10">
             <td className="py-2">{result.placement ?? "—"}</td>
             <td className="py-2">
-              <a href={`/roster/${result.runnerId}`} className="hover:underline">
+              <a href={`/roster/${result.runnerId}`} className="page-link font-bold">
                 {result.runnerName}
               </a>
               {result.personalRecord && (
-                <span className="ml-2 text-xs font-semibold text-brand-terracotta">
+                <span className="ml-2 text-xs font-black text-brand-orange">
                   PR
                 </span>
               )}

@@ -18,18 +18,18 @@ export default async function RunnerProfilePage({
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-10">
-      <h1 className="text-3xl font-bold">{profile.name}</h1>
+      <h1 className="page-title text-3xl">{profile.name}</h1>
       {profile.bio && <div className="mt-4 space-y-4"><MDXRemote source={profile.bio} /></div>}
-      <h2 className="text-xl font-semibold mt-8 mb-4">Race History</h2>
+      <h2 className="text-xl font-black text-brand-green mt-8 mb-4">Race History</h2>
       <ul className="space-y-2">
         {profile.races.map(({ race, result }) => (
           <li key={race.id}>
-            <Link href={`/results/${race.id}`} className="hover:underline">
+            <Link href={`/results/${race.id}`} className="page-link font-bold">
               {race.name}
             </Link>{" "}
             — {result.time} (#{result.placement ?? "—"})
             {result.personalRecord && (
-              <span className="ml-2 text-xs font-semibold text-brand-terracotta">
+              <span className="ml-2 text-xs font-black text-brand-orange">
                 PR
               </span>
             )}

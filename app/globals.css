@@ -1,32 +1,70 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/*
+ * NPR Styleguide — derived from assets/np-logo-white-bg.jpeg
+ * Red #C62828 (N) · Green #2E7D32 (P) · Orange #EF6C00 (R)
+ * Sky #7EB8DA · Tan #C9A66B · Ink #1A1A1A · Cream #F7F3EB
+ */
 
 @theme {
-  --color-brand-forest: #2F4F3E;
-  --color-brand-terracotta: #C1622D;
-  --color-brand-cream: #FBF4E9;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-brand-red: #c62828;
+  --color-brand-green: #2e7d32;
+  --color-brand-orange: #ef6c00;
+  --color-brand-sky: #7eb8da;
+  --color-brand-tan: #c9a66b;
+  --color-brand-ink: #1a1a1a;
+  --color-brand-cream: #f7f3eb;
+  /* legacy aliases */
+  --color-brand-forest: #2e7d32;
+  --color-brand-terracotta: #ef6c00;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-brand-cream);
+  color: var(--color-brand-ink);
+  font-family: "Arial Black", "Arial Bold", Arial, Helvetica, sans-serif;
+}
+
+/* vintage paper grain */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  z-index: 9999;
+}
+
+.npr-stripe {
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-red) 33.3%,
+    var(--color-brand-green) 33.3% 66.6%,
+    var(--color-brand-orange) 66.6%
+  );
+}
+
+.page-title {
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--color-brand-ink);
+}
+
+.page-link {
+  color: var(--color-brand-green);
+  transition: color 0.15s;
+}
+.page-link:hover {
+  color: var(--color-brand-orange);
+}
+
+.card-vintage {
+  border-radius: 0.75rem;
+  border: 2px solid color-mix(in srgb, var(--color-brand-ink) 12%, transparent);
+  background: white;
+  transition: border-color 0.15s;
+}
+.card-vintage:hover {
+  border-color: var(--color-brand-orange);
 }

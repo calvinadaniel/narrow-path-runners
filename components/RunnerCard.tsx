@@ -5,7 +5,7 @@ export default function RunnerCard({ profile }: { profile: RunnerProfile }) {
   return (
     <Link
       href={`/roster/${profile.id}`}
-      className="block p-4 rounded border border-brand-forest/20 hover:border-brand-terracotta transition"
+      className="block p-4 card-vintage"
     >
       <h2 className="font-semibold text-lg">{profile.name}</h2>
       <p className="text-sm text-gray-600">

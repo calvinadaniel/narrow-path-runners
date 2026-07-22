@@ -9,17 +9,17 @@ export default function GalleryPage() {
 
   return (
     <main className="max-w-4xl mx-auto px-6 py-10 space-y-10">
-      <h1 className="text-3xl font-bold">Gallery</h1>
+      <h1 className="page-title text-3xl mb-6">Gallery</h1>
 
       <section>
-        <h2 className="text-xl font-semibold mb-4">Group Runs</h2>
+        <h2 className="text-xl font-black text-brand-green mb-4">Group Runs</h2>
         <PhotoGrid photos={groupRunPhotos} />
       </section>
 
       {races.map((race) => (
         <section key={race.id}>
-          <h2 className="text-xl font-semibold mb-4">
-            <Link href={`/results/${race.id}`} className="hover:underline">
+          <h2 className="text-xl font-black text-brand-green mb-4">
+            <Link href={`/results/${race.id}`} className="page-link">
               {race.name}
             </Link>
           </h2>
