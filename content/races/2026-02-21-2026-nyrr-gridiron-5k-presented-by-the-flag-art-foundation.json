@@ -1,0 +1,22 @@
+{
+  "id": "2026-02-21-2026-nyrr-gridiron-5k-presented-by-the-flag-art-foundation",
+  "name": "2026 NYRR Gridiron 5K  presented by The FLAG Art Foundation",
+  "date": "2026-02-21",
+  "location": "Prospect Park,",
+  "distance": "5K",
+  "results": [
+    {
+      "runnerId": "whitley-avlon",
+      "runnerName": "Whitley Avlon",
+      "time": "26:40",
+      "placement": 582
+    },
+    {
+      "runnerId": "kenia-new",
+      "runnerName": "Kenia New",
+      "time": "31:46",
+      "placement": 1048
+    }
+  ],
+  "photos": []
+}

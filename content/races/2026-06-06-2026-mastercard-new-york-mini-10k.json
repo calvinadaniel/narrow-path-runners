@@ -1,0 +1,166 @@
+{
+  "id": "2026-06-06-2026-mastercard-new-york-mini-10k",
+  "name": "2026 Mastercard New York Mini 10K",
+  "date": "2026-06-06",
+  "location": "Central Park, NYC",
+  "distance": "10K",
+  "results": [
+    {
+      "runnerId": "karen-castellanos",
+      "runnerName": "Karen Castellanos",
+      "time": "47:09",
+      "placement": 340
+    },
+    {
+      "runnerId": "jakeline-morales",
+      "runnerName": "Jakeline Morales",
+      "time": "52:28",
+      "placement": 981
+    },
+    {
+      "runnerId": "jennifer-jarvis",
+      "runnerName": "Jennifer Jarvis",
+      "time": "57:33",
+      "placement": 2106
+    },
+    {
+      "runnerId": "sheyla-banegas",
+      "runnerName": "Sheyla Banegas",
+      "time": "59:16",
+      "placement": 2592
+    },
+    {
+      "runnerId": "gina-sorensen",
+      "runnerName": "Gina Sorensen",
+      "time": "59:19",
+      "placement": 2611
+    },
+    {
+      "runnerId": "giselle-navarrete",
+      "runnerName": "Giselle Navarrete",
+      "time": "1:00:11",
+      "placement": 2860
+    },
+    {
+      "runnerId": "karen-zelaya-benavides",
+      "runnerName": "Karen Zelaya Benavides",
+      "time": "1:01:49",
+      "placement": 3318
+    },
+    {
+      "runnerId": "johanna-loor",
+      "runnerName": "Johanna Loor",
+      "time": "1:03:23",
+      "placement": 3816
+    },
+    {
+      "runnerId": "vanessa-perry",
+      "runnerName": "Vanessa Perry",
+      "time": "1:06:16",
+      "placement": 4687
+    },
+    {
+      "runnerId": "edith-pappas",
+      "runnerName": "Edith Pappas",
+      "time": "1:06:17",
+      "placement": 4692
+    },
+    {
+      "runnerId": "kenia-new",
+      "runnerName": "Kenia New",
+      "time": "1:09:45",
+      "placement": 5746
+    },
+    {
+      "runnerId": "natalie-banegas",
+      "runnerName": "Natalie Banegas",
+      "time": "1:13:26",
+      "placement": 6687
+    },
+    {
+      "runnerId": "lauren-knowings",
+      "runnerName": "Lauren Knowings",
+      "time": "1:14:00",
+      "placement": 6814
+    },
+    {
+      "runnerId": "megan-bedell",
+      "runnerName": "Megan Bedell",
+      "time": "1:15:16",
+      "placement": 7095
+    },
+    {
+      "runnerId": "rebeca-ventura",
+      "runnerName": "Rebeca Ventura",
+      "time": "1:15:22",
+      "placement": 7115
+    },
+    {
+      "runnerId": "michelle-perez",
+      "runnerName": "Michelle Perez",
+      "time": "1:16:25",
+      "placement": 7341
+    },
+    {
+      "runnerId": "arlette-perez",
+      "runnerName": "Arlette Perez",
+      "time": "1:16:26",
+      "placement": 7342
+    },
+    {
+      "runnerId": "annabell-rodriguez",
+      "runnerName": "Annabell Rodriguez",
+      "time": "1:17:53",
+      "placement": 7604
+    },
+    {
+      "runnerId": "xenia-k-hernandez",
+      "runnerName": "Xenia K Hernandez",
+      "time": "1:18:16",
+      "placement": 7661
+    },
+    {
+      "runnerId": "cristhiam-guzman",
+      "runnerName": "Cristhiam Guzman",
+      "time": "1:19:03",
+      "placement": 7802
+    },
+    {
+      "runnerId": "elba-herrera",
+      "runnerName": "Elba Herrera",
+      "time": "1:22:02",
+      "placement": 8222
+    },
+    {
+      "runnerId": "genesse-castillo",
+      "runnerName": "Genesse Castillo",
+      "time": "1:22:19",
+      "placement": 8257
+    },
+    {
+      "runnerId": "jennifer-castanon",
+      "runnerName": "Jennifer Castanon",
+      "time": "1:23:55",
+      "placement": 8482
+    },
+    {
+      "runnerId": "natasha-thompson",
+      "runnerName": "Natasha Thompson",
+      "time": "1:24:22",
+      "placement": 8535
+    },
+    {
+      "runnerId": "damaris-hernandez",
+      "runnerName": "Damaris Hernandez",
+      "time": "1:32:40",
+      "placement": 9271
+    },
+    {
+      "runnerId": "susette-perez",
+      "runnerName": "Susette Perez",
+      "time": "1:32:53",
+      "placement": 9287
+    }
+  ],
+  "photos": []
+}

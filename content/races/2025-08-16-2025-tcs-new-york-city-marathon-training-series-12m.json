@@ -1,0 +1,34 @@
+{
+  "id": "2025-08-16-2025-tcs-new-york-city-marathon-training-series-12m",
+  "name": "2025 TCS New York City Marathon Training Series 12M",
+  "date": "2025-08-16",
+  "location": "Central Park",
+  "distance": "12M",
+  "results": [
+    {
+      "runnerId": "gerardo-arambula",
+      "runnerName": "Gerardo Arambula",
+      "time": "1:45:17",
+      "placement": 951
+    },
+    {
+      "runnerId": "nancy-zhang",
+      "runnerName": "Nancy Zhang",
+      "time": "2:02:26",
+      "placement": 2338
+    },
+    {
+      "runnerId": "gabrielle-martin",
+      "runnerName": "Gabrielle Martin",
+      "time": "2:16:50",
+      "placement": 3392
+    },
+    {
+      "runnerId": "melissa-arambula",
+      "runnerName": "Melissa Arambula",
+      "time": "2:51:09",
+      "placement": 4519
+    }
+  ],
+  "photos": []
+}

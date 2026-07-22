@@ -1,0 +1,70 @@
+{
+  "id": "2026-03-01-2026-nyrr-washington-heights-salsa-blues-and-shamrocks-5k",
+  "name": "2026 NYRR Washington Heights Salsa, Blues, and Shamrocks 5K",
+  "date": "2026-03-01",
+  "location": "Washington Heights, NYC",
+  "distance": "5K",
+  "results": [
+    {
+      "runnerId": "david-guzman",
+      "runnerName": "David Guzman",
+      "time": "20:23",
+      "placement": 317
+    },
+    {
+      "runnerId": "kimberly-concepcion",
+      "runnerName": "Kimberly Concepcion",
+      "time": "24:30",
+      "placement": 1184
+    },
+    {
+      "runnerId": "jennifer-jarvis",
+      "runnerName": "Jennifer Jarvis",
+      "time": "25:51",
+      "placement": 1554
+    },
+    {
+      "runnerId": "ronald-carter",
+      "runnerName": "Ronald Carter",
+      "time": "26:23",
+      "placement": 1711
+    },
+    {
+      "runnerId": "gerardo-arambula",
+      "runnerName": "Gerardo Arambula",
+      "time": "28:56",
+      "placement": 2486
+    },
+    {
+      "runnerId": "megan-bedell",
+      "runnerName": "Megan Bedell",
+      "time": "32:06",
+      "placement": 3258
+    },
+    {
+      "runnerId": "giselle-navarrete",
+      "runnerName": "Giselle Navarrete",
+      "time": "32:42",
+      "placement": 3399
+    },
+    {
+      "runnerId": "cristhiam-guzman",
+      "runnerName": "Cristhiam Guzman",
+      "time": "33:27",
+      "placement": 3567
+    },
+    {
+      "runnerId": "melissa-arambula",
+      "runnerName": "Melissa Arambula",
+      "time": "41:34",
+      "placement": 4291
+    },
+    {
+      "runnerId": "edith-pappas",
+      "runnerName": "Edith Pappas",
+      "time": "42:23",
+      "placement": 4328
+    }
+  ],
+  "photos": []
+}

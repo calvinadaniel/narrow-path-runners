@@ -1,0 +1,334 @@
+{
+  "id": "2026-05-30-2026-virtual-global-running-day-5k",
+  "name": "2026 Virtual Global Running Day 5K",
+  "date": "2026-05-30",
+  "location": "",
+  "distance": "5K",
+  "results": [
+    {
+      "runnerId": "martin-vasquez",
+      "runnerName": "Martin Vasquez",
+      "time": "24:01",
+      "placement": 1343
+    },
+    {
+      "runnerId": "vanessa-perry",
+      "runnerName": "Vanessa Perry",
+      "time": "24:09",
+      "placement": 1471
+    },
+    {
+      "runnerId": "daniel-guardado",
+      "runnerName": "Daniel Guardado",
+      "time": "25:57",
+      "placement": 3171
+    },
+    {
+      "runnerId": "karen-zelaya-benavides",
+      "runnerName": "Karen Zelaya Benavides",
+      "time": "27:30",
+      "placement": 5291
+    },
+    {
+      "runnerId": "caleb-carter",
+      "runnerName": "Caleb Carter",
+      "time": "27:58",
+      "placement": 5990
+    },
+    {
+      "runnerId": "michael-burke",
+      "runnerName": "Michael Burke",
+      "time": "28:14",
+      "placement": 6382
+    },
+    {
+      "runnerId": "ronald-carter",
+      "runnerName": "Ronald Carter",
+      "time": "28:15",
+      "placement": 6470
+    },
+    {
+      "runnerId": "sheyla-banegas",
+      "runnerName": "Sheyla Banegas",
+      "time": "29:02",
+      "placement": 7739
+    },
+    {
+      "runnerId": "aaron-gallegos",
+      "runnerName": "Aaron Gallegos",
+      "time": "29:15",
+      "placement": 8056
+    },
+    {
+      "runnerId": "qing-ling-xiao",
+      "runnerName": "Qing ling Xiao",
+      "time": "29:33",
+      "placement": 8571
+    },
+    {
+      "runnerId": "edgar-hernandez",
+      "runnerName": "Edgar Hernandez",
+      "time": "29:40",
+      "placement": 8727
+    },
+    {
+      "runnerId": "jeanett-gallegos",
+      "runnerName": "Jeanett Gallegos",
+      "time": "29:58",
+      "placement": 9117
+    },
+    {
+      "runnerId": "elory-dale",
+      "runnerName": "Elory Dale",
+      "time": "30:18",
+      "placement": 9726
+    },
+    {
+      "runnerId": "jennifer-jarvis",
+      "runnerName": "Jennifer Jarvis",
+      "time": "30:24",
+      "placement": 9765
+    },
+    {
+      "runnerId": "gerardo-arambula",
+      "runnerName": "Gerardo Arambula",
+      "time": "30:31",
+      "placement": 9956
+    },
+    {
+      "runnerId": "nancy-zhang",
+      "runnerName": "Nancy Zhang",
+      "time": "30:59",
+      "placement": 10669
+    },
+    {
+      "runnerId": "luke-lafountaine",
+      "runnerName": "Luke LaFountaine",
+      "time": "31:27",
+      "placement": 11343
+    },
+    {
+      "runnerId": "henry-rivas",
+      "runnerName": "Henry Rivas",
+      "time": "31:27",
+      "placement": 11349
+    },
+    {
+      "runnerId": "whitley-avlon",
+      "runnerName": "Whitley Avlon",
+      "time": "31:56",
+      "placement": 11962
+    },
+    {
+      "runnerId": "matt-gatewood",
+      "runnerName": "Matt Gatewood",
+      "time": "32:10",
+      "placement": 12207
+    },
+    {
+      "runnerId": "whitney-bynoe",
+      "runnerName": "Whitney Bynoe",
+      "time": "32:11",
+      "placement": 12311
+    },
+    {
+      "runnerId": "james-medina",
+      "runnerName": "James Medina",
+      "time": "32:47",
+      "placement": 12946
+    },
+    {
+      "runnerId": "chad-thompson",
+      "runnerName": "Chad Thompson",
+      "time": "32:49",
+      "placement": 13134
+    },
+    {
+      "runnerId": "ahreum-kim",
+      "runnerName": "Ahreum Kim",
+      "time": "33:52",
+      "placement": 14275
+    },
+    {
+      "runnerId": "andrea-vogel",
+      "runnerName": "Andrea Vogel",
+      "time": "34:00",
+      "placement": 14413
+    },
+    {
+      "runnerId": "diana-liriano",
+      "runnerName": "Diana Liriano",
+      "time": "34:17",
+      "placement": 14726
+    },
+    {
+      "runnerId": "megan-bedell",
+      "runnerName": "Megan Bedell",
+      "time": "34:17",
+      "placement": 14728
+    },
+    {
+      "runnerId": "edith-pappas",
+      "runnerName": "Edith Pappas",
+      "time": "34:25",
+      "placement": 14849
+    },
+    {
+      "runnerId": "cristhiam-guzman",
+      "runnerName": "Cristhiam Guzman",
+      "time": "34:25",
+      "placement": 14871
+    },
+    {
+      "runnerId": "jesus-diaz",
+      "runnerName": "Jesus Diaz",
+      "time": "35:01",
+      "placement": 15490
+    },
+    {
+      "runnerId": "brittany-silvey",
+      "runnerName": "Brittany Silvey",
+      "time": "36:05",
+      "placement": 16408
+    },
+    {
+      "runnerId": "lauren-knowings",
+      "runnerName": "Lauren Knowings",
+      "time": "36:32",
+      "placement": 16713
+    },
+    {
+      "runnerId": "patricia-suarez",
+      "runnerName": "Patricia Suarez",
+      "time": "36:42",
+      "placement": 16835
+    },
+    {
+      "runnerId": "natalie-banegas",
+      "runnerName": "Natalie Banegas",
+      "time": "36:52",
+      "placement": 16929
+    },
+    {
+      "runnerId": "james-new",
+      "runnerName": "James New",
+      "time": "37:32",
+      "placement": 17419
+    },
+    {
+      "runnerId": "brenda-ven",
+      "runnerName": "Brenda Ven",
+      "time": "37:52",
+      "placement": 17661
+    },
+    {
+      "runnerId": "giovanna-fisher",
+      "runnerName": "Giovanna Fisher",
+      "time": "38:24",
+      "placement": 18002
+    },
+    {
+      "runnerId": "sehelasa-helu",
+      "runnerName": "Sehelasa Helu",
+      "time": "38:24",
+      "placement": 18010
+    },
+    {
+      "runnerId": "annabell-rodriguez",
+      "runnerName": "Annabell Rodriguez",
+      "time": "38:24",
+      "placement": 18056
+    },
+    {
+      "runnerId": "brian-lee",
+      "runnerName": "Brian Lee",
+      "time": "38:45",
+      "placement": 18215
+    },
+    {
+      "runnerId": "xenia-k-hernandez",
+      "runnerName": "Xenia K Hernandez",
+      "time": "39:19",
+      "placement": 18549
+    },
+    {
+      "runnerId": "desiree-estevez",
+      "runnerName": "Desiree Estevez",
+      "time": "40:27",
+      "placement": 19043
+    },
+    {
+      "runnerId": "niover-liriano",
+      "runnerName": "Niover Liriano",
+      "time": "40:27",
+      "placement": 19049
+    },
+    {
+      "runnerId": "jamin-collins",
+      "runnerName": "Jamin Collins",
+      "time": "41:15",
+      "placement": 19464
+    },
+    {
+      "runnerId": "damaris-hernandez",
+      "runnerName": "Damaris Hernandez",
+      "time": "42:18",
+      "placement": 19875
+    },
+    {
+      "runnerId": "berkley-feyka",
+      "runnerName": "Berkley Feyka",
+      "time": "43:11",
+      "placement": 20078
+    },
+    {
+      "runnerId": "cesar-zuniga",
+      "runnerName": "Cesar Zuniga",
+      "time": "44:20",
+      "placement": 20455
+    },
+    {
+      "runnerId": "edwen-taveras",
+      "runnerName": "Edwen Taveras",
+      "time": "44:34",
+      "placement": 20483
+    },
+    {
+      "runnerId": "melissa-arambula",
+      "runnerName": "Melissa Arambula",
+      "time": "44:49",
+      "placement": 20569
+    },
+    {
+      "runnerId": "tony-guzman",
+      "runnerName": "Tony Guzman",
+      "time": "50:12",
+      "placement": 21433
+    },
+    {
+      "runnerId": "christina-johnson",
+      "runnerName": "Christina Johnson",
+      "time": "54:50",
+      "placement": 21860
+    },
+    {
+      "runnerId": "tais-milla",
+      "runnerName": "Tais Milla",
+      "time": "57:53",
+      "placement": 22012
+    },
+    {
+      "runnerId": "jackie-mccullough",
+      "runnerName": "Jackie Mccullough",
+      "time": "59:58",
+      "placement": 22125
+    },
+    {
+      "runnerId": "angelina-arce",
+      "runnerName": "Angelina Arce",
+      "time": "1:03:37",
+      "placement": 22258
+    }
+  ],
+  "photos": []
+}

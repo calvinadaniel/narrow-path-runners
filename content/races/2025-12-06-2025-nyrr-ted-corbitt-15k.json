@@ -1,0 +1,34 @@
+{
+  "id": "2025-12-06-2025-nyrr-ted-corbitt-15k",
+  "name": "2025 NYRR Ted Corbitt 15K",
+  "date": "2025-12-06",
+  "location": "Central Park, NYC",
+  "distance": "15K",
+  "results": [
+    {
+      "runnerId": "kimberly-concepcion",
+      "runnerName": "Kimberly Concepcion",
+      "time": "1:22:38",
+      "placement": 1632
+    },
+    {
+      "runnerId": "qing-ling-xiao",
+      "runnerName": "Qing ling Xiao",
+      "time": "1:32:23",
+      "placement": 2490
+    },
+    {
+      "runnerId": "ahreum-kim",
+      "runnerName": "Ahreum Kim",
+      "time": "1:44:35",
+      "placement": 3312
+    },
+    {
+      "runnerId": "joslin-lee",
+      "runnerName": "Joslin Lee",
+      "time": "1:45:52",
+      "placement": 3366
+    }
+  ],
+  "photos": []
+}

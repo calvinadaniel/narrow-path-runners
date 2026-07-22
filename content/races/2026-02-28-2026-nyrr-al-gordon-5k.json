@@ -1,0 +1,52 @@
+{
+  "id": "2026-02-28-2026-nyrr-al-gordon-5k",
+  "name": "2026 NYRR Al Gordon 5K",
+  "date": "2026-02-28",
+  "location": "Prospect Park, Brooklyn",
+  "distance": "5K",
+  "results": [
+    {
+      "runnerId": "jesus-diaz",
+      "runnerName": "Jesus Diaz",
+      "time": "26:06",
+      "placement": 1761
+    },
+    {
+      "runnerId": "ronald-carter",
+      "runnerName": "Ronald Carter",
+      "time": "27:31",
+      "placement": 2258
+    },
+    {
+      "runnerId": "giselle-navarrete",
+      "runnerName": "Giselle Navarrete",
+      "time": "28:30",
+      "placement": 2608
+    },
+    {
+      "runnerId": "gerardo-arambula",
+      "runnerName": "Gerardo Arambula",
+      "time": "30:09",
+      "placement": 3164
+    },
+    {
+      "runnerId": "natasha-thompson",
+      "runnerName": "Natasha Thompson",
+      "time": "37:04",
+      "placement": 4350
+    },
+    {
+      "runnerId": "monica-vazquez",
+      "runnerName": "Monica Vazquez",
+      "time": "40:51",
+      "placement": 4571
+    },
+    {
+      "runnerId": "melissa-arambula",
+      "runnerName": "Melissa Arambula",
+      "time": "40:51",
+      "placement": 4572
+    }
+  ],
+  "photos": []
+}

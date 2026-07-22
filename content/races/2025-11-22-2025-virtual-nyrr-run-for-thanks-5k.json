@@ -1,0 +1,124 @@
+{
+  "id": "2025-11-22-2025-virtual-nyrr-run-for-thanks-5k",
+  "name": "2025 Virtual NYRR Run for Thanks 5K",
+  "date": "2025-11-22",
+  "location": "",
+  "distance": "5K",
+  "results": [
+    {
+      "runnerId": "gilbert-cabrera",
+      "runnerName": "Gilbert Cabrera",
+      "time": "25:34",
+      "placement": 2783
+    },
+    {
+      "runnerId": "ang-lica-pintado",
+      "runnerName": "Angélica Pintado",
+      "time": "25:53",
+      "placement": 3062
+    },
+    {
+      "runnerId": "martin-vasquez",
+      "runnerName": "Martin Vasquez",
+      "time": "25:53",
+      "placement": 3114
+    },
+    {
+      "runnerId": "gerardo-arambula",
+      "runnerName": "Gerardo Arambula",
+      "time": "26:38",
+      "placement": 3826
+    },
+    {
+      "runnerId": "david-guzman",
+      "runnerName": "David Guzman",
+      "time": "26:38",
+      "placement": 3855
+    },
+    {
+      "runnerId": "aaron-gallegos",
+      "runnerName": "Aaron Gallegos",
+      "time": "26:59",
+      "placement": 4203
+    },
+    {
+      "runnerId": "nathan-leal",
+      "runnerName": "Nathan Leal",
+      "time": "27:52",
+      "placement": 5195
+    },
+    {
+      "runnerId": "qing-ling-xiao",
+      "runnerName": "Qing ling Xiao",
+      "time": "28:56",
+      "placement": 6477
+    },
+    {
+      "runnerId": "nancy-zhang",
+      "runnerName": "Nancy Zhang",
+      "time": "29:08",
+      "placement": 6741
+    },
+    {
+      "runnerId": "giselle-navarrete",
+      "runnerName": "Giselle Navarrete",
+      "time": "29:15",
+      "placement": 6920
+    },
+    {
+      "runnerId": "ahreum-kim",
+      "runnerName": "Ahreum Kim",
+      "time": "29:27",
+      "placement": 7133
+    },
+    {
+      "runnerId": "jeanett-gallegos",
+      "runnerName": "Jeanett Gallegos",
+      "time": "29:58",
+      "placement": 7702
+    },
+    {
+      "runnerId": "sarai-rivera",
+      "runnerName": "Sarai Rivera",
+      "time": "31:05",
+      "placement": 8935
+    },
+    {
+      "runnerId": "yolanda-hernandez",
+      "runnerName": "Yolanda Hernandez",
+      "time": "32:03",
+      "placement": 9867
+    },
+    {
+      "runnerId": "rosa-maria-cabrera",
+      "runnerName": "Rosa Maria Cabrera",
+      "time": "32:18",
+      "placement": 10165
+    },
+    {
+      "runnerId": "natasha-thompson",
+      "runnerName": "Natasha Thompson",
+      "time": "36:14",
+      "placement": 13197
+    },
+    {
+      "runnerId": "melissa-arambula",
+      "runnerName": "Melissa Arambula",
+      "time": "40:04",
+      "placement": 14884
+    },
+    {
+      "runnerId": "justin-wigley",
+      "runnerName": "Justin Wigley",
+      "time": "49:54",
+      "placement": 16612
+    },
+    {
+      "runnerId": "rachel-rubin",
+      "runnerName": "Rachel Rubin",
+      "time": "1:25:02",
+      "placement": 17434
+    }
+  ],
+  "photos": []
+}

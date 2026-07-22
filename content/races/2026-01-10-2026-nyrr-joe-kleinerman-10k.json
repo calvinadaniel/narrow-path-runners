@@ -1,0 +1,34 @@
+{
+  "id": "2026-01-10-2026-nyrr-joe-kleinerman-10k",
+  "name": "2026 NYRR Joe Kleinerman 10K",
+  "date": "2026-01-10",
+  "location": "Central Park, NYC",
+  "distance": "10K",
+  "results": [
+    {
+      "runnerId": "david-guzman",
+      "runnerName": "David Guzman",
+      "time": "46:52",
+      "placement": 822
+    },
+    {
+      "runnerId": "matteo-marsilii",
+      "runnerName": "Matteo Marsilii",
+      "time": "48:29",
+      "placement": 1076
+    },
+    {
+      "runnerId": "whitney-bynoe",
+      "runnerName": "Whitney Bynoe",
+      "time": "50:56",
+      "placement": 1529
+    },
+    {
+      "runnerId": "sorrel-trick",
+      "runnerName": "Sorrel Trick",
+      "time": "1:10:47",
+      "placement": 4443
+    }
+  ],
+  "photos": []
+}

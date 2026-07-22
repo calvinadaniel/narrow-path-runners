@@ -1,0 +1,118 @@
+{
+  "id": "2026-05-02-2026-nyrr-mindful-5k",
+  "name": "2026 NYRR Mindful 5K",
+  "date": "2026-05-02",
+  "location": "Flushing Meadows, NYC",
+  "distance": "5K",
+  "results": [
+    {
+      "runnerId": "byron-castillo",
+      "runnerName": "Byron Castillo",
+      "time": "20:23",
+      "placement": 305
+    },
+    {
+      "runnerId": "daniel-guardado",
+      "runnerName": "Daniel Guardado",
+      "time": "21:02",
+      "placement": 427
+    },
+    {
+      "runnerId": "matteo-marsilii",
+      "runnerName": "Matteo Marsilii",
+      "time": "24:16",
+      "placement": 1433
+    },
+    {
+      "runnerId": "kimberly-concepcion",
+      "runnerName": "Kimberly Concepcion",
+      "time": "24:27",
+      "placement": 1492
+    },
+    {
+      "runnerId": "edwen-taveras",
+      "runnerName": "Edwen Taveras",
+      "time": "25:07",
+      "placement": 1751
+    },
+    {
+      "runnerId": "gina-sorensen",
+      "runnerName": "Gina Sorensen",
+      "time": "26:02",
+      "placement": 2155
+    },
+    {
+      "runnerId": "ronald-carter",
+      "runnerName": "Ronald Carter",
+      "time": "27:20",
+      "placement": 2635
+    },
+    {
+      "runnerId": "caleb-carter",
+      "runnerName": "Caleb Carter",
+      "time": "27:20",
+      "placement": 2637
+    },
+    {
+      "runnerId": "jamin-collins",
+      "runnerName": "Jamin Collins",
+      "time": "28:25",
+      "placement": 3063
+    },
+    {
+      "runnerId": "karen-alvarez",
+      "runnerName": "Karen Alvarez",
+      "time": "29:10",
+      "placement": 3332
+    },
+    {
+      "runnerId": "desiree-estevez",
+      "runnerName": "Desiree Estevez",
+      "time": "31:15",
+      "placement": 3954
+    },
+    {
+      "runnerId": "monica-vazquez",
+      "runnerName": "Monica Vazquez",
+      "time": "31:18",
+      "placement": 3964
+    },
+    {
+      "runnerId": "diana-zuniga",
+      "runnerName": "Diana Zuniga",
+      "time": "32:29",
+      "placement": 4238
+    },
+    {
+      "runnerId": "brittany-silvey",
+      "runnerName": "Brittany Silvey",
+      "time": "32:35",
+      "placement": 4254
+    },
+    {
+      "runnerId": "genesse-castillo",
+      "runnerName": "Genesse Castillo",
+      "time": "33:20",
+      "placement": 4373
+    },
+    {
+      "runnerId": "xenia-k-hernandez",
+      "runnerName": "Xenia K Hernandez",
+      "time": "34:16",
+      "placement": 4525
+    },
+    {
+      "runnerId": "natasha-thompson",
+      "runnerName": "Natasha Thompson",
+      "time": "35:11",
+      "placement": 4631
+    },
+    {
+      "runnerId": "joanne-taveras",
+      "runnerName": "Joanne Taveras",
+      "time": "44:57",
+      "placement": 5127
+    }
+  ],
+  "photos": []
+}

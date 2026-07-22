@@ -1,0 +1,46 @@
+{
+  "id": "2025-09-07-2025-new-balance-5th-avenue-mile",
+  "name": "2025 New Balance 5th Avenue Mile",
+  "date": "2025-09-07",
+  "location": "80th Street to 60th Street, Fifth Avenue, NYC",
+  "distance": "1M",
+  "results": [
+    {
+      "runnerId": "lauren-knowings",
+      "runnerName": "Lauren Knowings",
+      "time": "08:36",
+      "placement": 6767
+    },
+    {
+      "runnerId": "james-medina",
+      "runnerName": "James Medina",
+      "time": "08:45",
+      "placement": 6934
+    },
+    {
+      "runnerId": "justin-wigley",
+      "runnerName": "Justin Wigley",
+      "time": "10:03",
+      "placement": 7785
+    },
+    {
+      "runnerId": "rosa-maria-cabrera",
+      "runnerName": "Rosa Maria Cabrera",
+      "time": "10:27",
+      "placement": 7917
+    },
+    {
+      "runnerId": "gilbert-cabrera",
+      "runnerName": "Gilbert Cabrera",
+      "time": "10:29",
+      "placement": 7925
+    },
+    {
+      "runnerId": "sehelasa-helu",
+      "runnerName": "Sehelasa Helu",
+      "time": "10:32",
+      "placement": 7939
+    }
+  ],
+  "photos": []
+}

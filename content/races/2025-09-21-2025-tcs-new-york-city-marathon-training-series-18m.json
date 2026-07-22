@@ -1,0 +1,58 @@
+{
+  "id": "2025-09-21-2025-tcs-new-york-city-marathon-training-series-18m",
+  "name": "2025 TCS New York City Marathon Training Series 18M",
+  "date": "2025-09-21",
+  "location": "Central Park, NYC",
+  "distance": "18M",
+  "results": [
+    {
+      "runnerId": "whitney-bynoe",
+      "runnerName": "Whitney Bynoe",
+      "time": "2:46:47",
+      "placement": 1416
+    },
+    {
+      "runnerId": "nathan-leal",
+      "runnerName": "Nathan Leal",
+      "time": "3:13:14",
+      "placement": 2793
+    },
+    {
+      "runnerId": "jennifer-li",
+      "runnerName": "Jennifer Li",
+      "time": "3:19:24",
+      "placement": 3061
+    },
+    {
+      "runnerId": "nancy-zhang",
+      "runnerName": "Nancy Zhang",
+      "time": "3:22:01",
+      "placement": 3165
+    },
+    {
+      "runnerId": "lauren-knowings",
+      "runnerName": "Lauren Knowings",
+      "time": "3:45:07",
+      "placement": 3796
+    },
+    {
+      "runnerId": "yolanda-hernandez",
+      "runnerName": "Yolanda Hernandez",
+      "time": "3:49:59",
+      "placement": 3894
+    },
+    {
+      "runnerId": "diana-zuniga",
+      "runnerName": "Diana Zuniga",
+      "time": "3:52:49",
+      "placement": 3940
+    },
+    {
+      "runnerId": "patty-flores",
+      "runnerName": "Patty Flores",
+      "time": "4:01:47",
+      "placement": 4049
+    }
+  ],
+  "photos": []
+}

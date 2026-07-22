@@ -1,0 +1,46 @@
+{
+  "id": "2025-12-13-2025-nyrr-frosty-5k",
+  "name": "2025 NYRR Frosty 5K",
+  "date": "2025-12-13",
+  "location": "Prospect Park, Brooklyn, NY",
+  "distance": "5K",
+  "results": [
+    {
+      "runnerId": "qing-ling-xiao",
+      "runnerName": "Qing ling Xiao",
+      "time": "28:46",
+      "placement": 1674
+    },
+    {
+      "runnerId": "ahreum-kim",
+      "runnerName": "Ahreum Kim",
+      "time": "30:28",
+      "placement": 2058
+    },
+    {
+      "runnerId": "giselle-navarrete",
+      "runnerName": "Giselle Navarrete",
+      "time": "30:37",
+      "placement": 2080
+    },
+    {
+      "runnerId": "joslin-lee",
+      "runnerName": "Joslin Lee",
+      "time": "33:56",
+      "placement": 2662
+    },
+    {
+      "runnerId": "patty-flores",
+      "runnerName": "Patty Flores",
+      "time": "37:41",
+      "placement": 3004
+    },
+    {
+      "runnerId": "rachel-rubin",
+      "runnerName": "Rachel Rubin",
+      "time": "1:04:57",
+      "placement": 3567
+    }
+  ],
+  "photos": []
+}

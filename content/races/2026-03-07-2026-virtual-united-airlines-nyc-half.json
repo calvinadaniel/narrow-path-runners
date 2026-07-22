@@ -1,0 +1,112 @@
+{
+  "id": "2026-03-07-2026-virtual-united-airlines-nyc-half",
+  "name": "2026 Virtual United Airlines NYC Half",
+  "date": "2026-03-07",
+  "location": "",
+  "distance": "Half Marathon",
+  "results": [
+    {
+      "runnerId": "david-guzman",
+      "runnerName": "David Guzman",
+      "time": "1:31:35",
+      "placement": 175
+    },
+    {
+      "runnerId": "sean-smith",
+      "runnerName": "Sean Smith",
+      "time": "1:41:20",
+      "placement": 518
+    },
+    {
+      "runnerId": "matteo-marsilii",
+      "runnerName": "Matteo Marsilii",
+      "time": "1:42:31",
+      "placement": 590
+    },
+    {
+      "runnerId": "whitney-bynoe",
+      "runnerName": "Whitney Bynoe",
+      "time": "2:00:25",
+      "placement": 1853
+    },
+    {
+      "runnerId": "andrea-vogel",
+      "runnerName": "Andrea Vogel",
+      "time": "2:00:26",
+      "placement": 1878
+    },
+    {
+      "runnerId": "aaron-gallegos",
+      "runnerName": "Aaron Gallegos",
+      "time": "2:25:55",
+      "placement": 3843
+    },
+    {
+      "runnerId": "cristhiam-guzman",
+      "runnerName": "Cristhiam Guzman",
+      "time": "2:29:38",
+      "placement": 4032
+    },
+    {
+      "runnerId": "jeanett-gallegos",
+      "runnerName": "Jeanett Gallegos",
+      "time": "2:31:34",
+      "placement": 4125
+    },
+    {
+      "runnerId": "patricia-suarez",
+      "runnerName": "Patricia Suarez",
+      "time": "2:34:13",
+      "placement": 4270
+    },
+    {
+      "runnerId": "cesar-zuniga",
+      "runnerName": "Cesar Zuniga",
+      "time": "2:37:41",
+      "placement": 4505
+    },
+    {
+      "runnerId": "brenda-ven",
+      "runnerName": "Brenda Ven",
+      "time": "2:39:07",
+      "placement": 4558
+    },
+    {
+      "runnerId": "ronald-carter",
+      "runnerName": "Ronald Carter",
+      "time": "2:42:03",
+      "placement": 4690
+    },
+    {
+      "runnerId": "sehelasa-helu",
+      "runnerName": "Sehelasa Helu",
+      "time": "2:55:49",
+      "placement": 5229
+    },
+    {
+      "runnerId": "james-medina",
+      "runnerName": "James Medina",
+      "time": "2:57:36",
+      "placement": 5284
+    },
+    {
+      "runnerId": "adriana-bezerra",
+      "runnerName": "Adriana Bezerra",
+      "time": "2:59:24",
+      "placement": 5340
+    },
+    {
+      "runnerId": "xenia-k-hernandez",
+      "runnerName": "Xenia K Hernandez",
+      "time": "3:31:50",
+      "placement": 5895
+    },
+    {
+      "runnerId": "damaris-hernandez",
+      "runnerName": "Damaris Hernandez",
+      "time": "4:34:43",
+      "placement": 6190
+    }
+  ],
+  "photos": []
+}

@@ -2,19 +2,18 @@ import { describe, it, expect } from "vitest";
 import { getAllRunnerProfiles, getRunnerProfile } from "./runners";
 
 describe("getAllRunnerProfiles", () => {
-  it("merges a runner's bio with their aggregated race results", () => {
+  it("aggregates runners from race results", () => {
     const profiles = getAllRunnerProfiles();
-    const jane = profiles.find((p) => p.id === "jane-doe");
-    expect(jane?.bio).toContain("Narrow Path Runners");
-    expect(jane?.races.length).toBe(2);
+    expect(profiles.length).toBeGreaterThan(10);
+    const calvin = profiles.find((p) => p.id === "calvin-daniel");
+    expect(calvin?.name).toBe("Calvin Daniel");
+    expect(calvin!.races.length).toBeGreaterThanOrEqual(1);
   });
 
-  it("includes runners who have results but no bio file", () => {
+  it("sorts profiles by name", () => {
     const profiles = getAllRunnerProfiles();
-    const sam = profiles.find((p) => p.id === "sam-lee");
-    expect(sam?.name).toBe("Sam Lee");
-    expect(sam?.bio).toBeUndefined();
-    expect(sam?.races.length).toBe(2);
+    const names = profiles.map((p) => p.name);
+    expect(names).toEqual([...names].sort((a, b) => a.localeCompare(b)));
   });
 });
 

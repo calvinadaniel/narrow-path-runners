@@ -1,0 +1,52 @@
+{
+  "id": "2026-07-11-2026-9-11-memorial-museum-4m-presented-by-rxr",
+  "name": "2026 9/11 Memorial & Museum 4M Presented by RXR",
+  "date": "2026-07-11",
+  "location": "Central Park, NYC",
+  "distance": "4M",
+  "results": [
+    {
+      "runnerId": "edwen-taveras",
+      "runnerName": "Edwen Taveras",
+      "time": "33:59",
+      "placement": 1321
+    },
+    {
+      "runnerId": "brittany-silvey",
+      "runnerName": "Brittany Silvey",
+      "time": "45:35",
+      "placement": 3862
+    },
+    {
+      "runnerId": "jamin-collins",
+      "runnerName": "Jamin Collins",
+      "time": "45:37",
+      "placement": 3867
+    },
+    {
+      "runnerId": "arlette-perez",
+      "runnerName": "Arlette Perez",
+      "time": "46:06",
+      "placement": 3932
+    },
+    {
+      "runnerId": "tony-guzman",
+      "runnerName": "Tony Guzman",
+      "time": "47:02",
+      "placement": 4018
+    },
+    {
+      "runnerId": "elory-dale",
+      "runnerName": "Elory Dale",
+      "time": "56:48",
+      "placement": 4639
+    },
+    {
+      "runnerId": "angelina-arce",
+      "runnerName": "Angelina Arce",
+      "time": "1:03:02",
+      "placement": 4798
+    }
+  ],
+  "photos": []
+}

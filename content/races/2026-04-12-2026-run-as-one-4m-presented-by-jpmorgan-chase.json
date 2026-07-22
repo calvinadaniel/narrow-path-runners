@@ -1,0 +1,118 @@
+{
+  "id": "2026-04-12-2026-run-as-one-4m-presented-by-jpmorgan-chase",
+  "name": "2026 Run as One 4M Presented by JPMorgan Chase",
+  "date": "2026-04-12",
+  "location": "Central Park, NYC",
+  "distance": "4M",
+  "results": [
+    {
+      "runnerId": "martin-vasquez",
+      "runnerName": "Martin Vasquez",
+      "time": "29:50",
+      "placement": 1463
+    },
+    {
+      "runnerId": "caleb-carter",
+      "runnerName": "Caleb Carter",
+      "time": "31:32",
+      "placement": 2169
+    },
+    {
+      "runnerId": "ronald-carter",
+      "runnerName": "Ronald Carter",
+      "time": "32:23",
+      "placement": 2644
+    },
+    {
+      "runnerId": "vanessa-perry",
+      "runnerName": "Vanessa Perry",
+      "time": "32:49",
+      "placement": 2865
+    },
+    {
+      "runnerId": "jennifer-jarvis",
+      "runnerName": "Jennifer Jarvis",
+      "time": "32:57",
+      "placement": 2922
+    },
+    {
+      "runnerId": "chad-thompson",
+      "runnerName": "Chad Thompson",
+      "time": "38:56",
+      "placement": 6078
+    },
+    {
+      "runnerId": "cesar-zuniga",
+      "runnerName": "Cesar Zuniga",
+      "time": "39:04",
+      "placement": 6138
+    },
+    {
+      "runnerId": "giovanna-fisher",
+      "runnerName": "Giovanna Fisher",
+      "time": "40:05",
+      "placement": 6628
+    },
+    {
+      "runnerId": "cristhiam-guzman",
+      "runnerName": "Cristhiam Guzman",
+      "time": "40:24",
+      "placement": 6742
+    },
+    {
+      "runnerId": "brian-lee",
+      "runnerName": "Brian Lee",
+      "time": "40:31",
+      "placement": 6777
+    },
+    {
+      "runnerId": "desiree-estevez",
+      "runnerName": "Desiree Estevez",
+      "time": "41:33",
+      "placement": 7170
+    },
+    {
+      "runnerId": "lauren-knowings",
+      "runnerName": "Lauren Knowings",
+      "time": "44:24",
+      "placement": 7908
+    },
+    {
+      "runnerId": "james-medina",
+      "runnerName": "James Medina",
+      "time": "44:32",
+      "placement": 7940
+    },
+    {
+      "runnerId": "xenia-k-hernandez",
+      "runnerName": "Xenia K Hernandez",
+      "time": "44:36",
+      "placement": 7962
+    },
+    {
+      "runnerId": "tony-guzman",
+      "runnerName": "Tony Guzman",
+      "time": "47:09",
+      "placement": 8431
+    },
+    {
+      "runnerId": "natasha-thompson",
+      "runnerName": "Natasha Thompson",
+      "time": "49:11",
+      "placement": 8681
+    },
+    {
+      "runnerId": "sehelasa-helu",
+      "runnerName": "Sehelasa Helu",
+      "time": "49:21",
+      "placement": 8696
+    },
+    {
+      "runnerId": "caleb-fisher",
+      "runnerName": "Caleb Fisher",
+      "time": "50:43",
+      "placement": 8851
+    }
+  ],
+  "photos": []
+}

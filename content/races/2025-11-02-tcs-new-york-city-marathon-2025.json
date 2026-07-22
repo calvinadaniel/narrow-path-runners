@@ -1,0 +1,202 @@
+{
+  "id": "2025-11-02-tcs-new-york-city-marathon-2025",
+  "name": "TCS New York City Marathon 2025",
+  "date": "2025-11-02",
+  "location": "New York City",
+  "distance": "Marathon",
+  "results": [
+    {
+      "runnerId": "karen-castellanos",
+      "runnerName": "Karen Castellanos",
+      "time": "3:33:52",
+      "placement": 9663
+    },
+    {
+      "runnerId": "david-guzman",
+      "runnerName": "David Guzman",
+      "time": "3:43:00",
+      "placement": 12756
+    },
+    {
+      "runnerId": "gerardo-arambula",
+      "runnerName": "Gerardo Arambula",
+      "time": "3:47:10",
+      "placement": 14186
+    },
+    {
+      "runnerId": "martin-vasquez",
+      "runnerName": "Martin Vasquez",
+      "time": "3:57:58",
+      "placement": 18850
+    },
+    {
+      "runnerId": "rachel-rubin",
+      "runnerName": "Rachel Rubin",
+      "time": "4:00:28",
+      "placement": 20247
+    },
+    {
+      "runnerId": "calvin-daniel",
+      "runnerName": "Calvin Daniel",
+      "time": "4:14:01",
+      "placement": 25434
+    },
+    {
+      "runnerId": "kimberly-concepcion",
+      "runnerName": "Kimberly Concepcion",
+      "time": "4:21:51",
+      "placement": 28581
+    },
+    {
+      "runnerId": "jakeline-morales",
+      "runnerName": "Jakeline Morales",
+      "time": "4:23:57",
+      "placement": 29408
+    },
+    {
+      "runnerId": "ernesto-gonzalez",
+      "runnerName": "Ernesto Gonzalez",
+      "time": "4:26:16",
+      "placement": 30379
+    },
+    {
+      "runnerId": "joshua-irias",
+      "runnerName": "Joshua Irias",
+      "time": "4:27:27",
+      "placement": 30834
+    },
+    {
+      "runnerId": "jennifer-li",
+      "runnerName": "Jennifer Li",
+      "time": "4:28:16",
+      "placement": 31194
+    },
+    {
+      "runnerId": "jennifer-jarvis",
+      "runnerName": "Jennifer Jarvis",
+      "time": "4:33:34",
+      "placement": 33170
+    },
+    {
+      "runnerId": "whitney-bynoe",
+      "runnerName": "Whitney Bynoe",
+      "time": "4:36:21",
+      "placement": 34151
+    },
+    {
+      "runnerId": "raquel-osmer",
+      "runnerName": "Raquel Osmer",
+      "time": "4:41:28",
+      "placement": 35994
+    },
+    {
+      "runnerId": "robert-budrecki",
+      "runnerName": "Robert Budrecki",
+      "time": "4:49:47",
+      "placement": 38950
+    },
+    {
+      "runnerId": "rigoberto-corcoles",
+      "runnerName": "Rigoberto Corcoles",
+      "time": "4:50:48",
+      "placement": 39296
+    },
+    {
+      "runnerId": "michelle-perez",
+      "runnerName": "Michelle Perez",
+      "time": "5:08:51",
+      "placement": 44648
+    },
+    {
+      "runnerId": "edith-pappas",
+      "runnerName": "Edith Pappas",
+      "time": "5:25:39",
+      "placement": 48349
+    },
+    {
+      "runnerId": "edwen-taveras",
+      "runnerName": "Edwen Taveras",
+      "time": "5:39:06",
+      "placement": 50814
+    },
+    {
+      "runnerId": "diana-zuniga",
+      "runnerName": "Diana Zuniga",
+      "time": "5:43:41",
+      "placement": 51567
+    },
+    {
+      "runnerId": "gabrielle-martin",
+      "runnerName": "Gabrielle Martin",
+      "time": "5:47:18",
+      "placement": 52096
+    },
+    {
+      "runnerId": "jimmy-speina",
+      "runnerName": "Jimmy Speina",
+      "time": "5:51:22",
+      "placement": 52651
+    },
+    {
+      "runnerId": "cristhiam-guzman",
+      "runnerName": "Cristhiam Guzman",
+      "time": "5:58:22",
+      "placement": 53565
+    },
+    {
+      "runnerId": "nicholas-pappas",
+      "runnerName": "Nicholas Pappas",
+      "time": "5:58:41",
+      "placement": 53611
+    },
+    {
+      "runnerId": "melissa-arambula",
+      "runnerName": "Melissa Arambula",
+      "time": "6:04:10",
+      "placement": 54195
+    },
+    {
+      "runnerId": "rebeca-ventura",
+      "runnerName": "Rebeca Ventura",
+      "time": "6:19:11",
+      "placement": 55454
+    },
+    {
+      "runnerId": "nick-nicola",
+      "runnerName": "Nick Nicola",
+      "time": "6:19:12",
+      "placement": 55456
+    },
+    {
+      "runnerId": "lauren-knowings",
+      "runnerName": "Lauren Knowings",
+      "time": "6:21:35",
+      "placement": 55657
+    },
+    {
+      "runnerId": "xenia-k-hernandez",
+      "runnerName": "Xenia K Hernandez",
+      "time": "6:30:24",
+      "placement": 56221
+    },
+    {
+      "runnerId": "leidy-castillo",
+      "runnerName": "Leidy Castillo",
+      "time": "6:51:35",
+      "placement": 57355
+    },
+    {
+      "runnerId": "justin-wigley",
+      "runnerName": "Justin Wigley",
+      "time": "7:03:36",
+      "placement": 57796
+    },
+    {
+      "runnerId": "damaris-hernandez",
+      "runnerName": "Damaris Hernandez",
+      "time": "7:39:33",
+      "placement": 58542
+    }
+  ],
+  "photos": []
+}

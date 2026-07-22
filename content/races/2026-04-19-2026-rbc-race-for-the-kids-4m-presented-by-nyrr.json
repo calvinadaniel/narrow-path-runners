@@ -1,0 +1,88 @@
+{
+  "id": "2026-04-19-2026-rbc-race-for-the-kids-4m-presented-by-nyrr",
+  "name": "2026 RBC Race for the Kids 4M Presented by NYRR",
+  "date": "2026-04-19",
+  "location": "Central Park, NYC",
+  "distance": "4M",
+  "results": [
+    {
+      "runnerId": "james-new",
+      "runnerName": "James New",
+      "time": "28:20",
+      "placement": 480
+    },
+    {
+      "runnerId": "byron-castillo",
+      "runnerName": "Byron Castillo",
+      "time": "29:05",
+      "placement": 630
+    },
+    {
+      "runnerId": "jennifer-jarvis",
+      "runnerName": "Jennifer Jarvis",
+      "time": "32:30",
+      "placement": 1569
+    },
+    {
+      "runnerId": "vanessa-perry",
+      "runnerName": "Vanessa Perry",
+      "time": "32:32",
+      "placement": 1579
+    },
+    {
+      "runnerId": "brian-lee",
+      "runnerName": "Brian Lee",
+      "time": "38:15",
+      "placement": 3455
+    },
+    {
+      "runnerId": "kenia-new",
+      "runnerName": "Kenia New",
+      "time": "40:53",
+      "placement": 4161
+    },
+    {
+      "runnerId": "chad-thompson",
+      "runnerName": "Chad Thompson",
+      "time": "41:49",
+      "placement": 4358
+    },
+    {
+      "runnerId": "ernesto-gonzalez",
+      "runnerName": "Ernesto Gonzalez",
+      "time": "41:49",
+      "placement": 4365
+    },
+    {
+      "runnerId": "desiree-estevez",
+      "runnerName": "Desiree Estevez",
+      "time": "41:54",
+      "placement": 4376
+    },
+    {
+      "runnerId": "giovanna-fisher",
+      "runnerName": "Giovanna Fisher",
+      "time": "45:05",
+      "placement": 4893
+    },
+    {
+      "runnerId": "annabell-rodriguez",
+      "runnerName": "Annabell Rodriguez",
+      "time": "45:34",
+      "placement": 4944
+    },
+    {
+      "runnerId": "natasha-thompson",
+      "runnerName": "Natasha Thompson",
+      "time": "46:37",
+      "placement": 5065
+    },
+    {
+      "runnerId": "caleb-fisher",
+      "runnerName": "Caleb Fisher",
+      "time": "47:41",
+      "placement": 5160
+    }
+  ],
+  "photos": []
+}

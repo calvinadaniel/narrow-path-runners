@@ -1,0 +1,262 @@
+{
+  "id": "2026-05-16-2026-rbc-brooklyn-half",
+  "name": "2026 RBC Brooklyn Half",
+  "date": "2026-05-16",
+  "location": "Prospect Park to Coney Island",
+  "distance": "Half Marathon",
+  "results": [
+    {
+      "runnerId": "byron-castillo",
+      "runnerName": "Byron Castillo",
+      "time": "1:38:15",
+      "placement": 3875
+    },
+    {
+      "runnerId": "martin-vasquez",
+      "runnerName": "Martin Vasquez",
+      "time": "1:46:38",
+      "placement": 7145
+    },
+    {
+      "runnerId": "hyo-lim",
+      "runnerName": "Hyo Lim",
+      "time": "1:46:48",
+      "placement": 7211
+    },
+    {
+      "runnerId": "james-new",
+      "runnerName": "James New",
+      "time": "1:47:12",
+      "placement": 7363
+    },
+    {
+      "runnerId": "matteo-marsilii",
+      "runnerName": "Matteo Marsilii",
+      "time": "1:47:27",
+      "placement": 7449
+    },
+    {
+      "runnerId": "javier-escobar",
+      "runnerName": "Javier Escobar",
+      "time": "1:52:34",
+      "placement": 9702
+    },
+    {
+      "runnerId": "gina-sorensen",
+      "runnerName": "Gina Sorensen",
+      "time": "1:59:02",
+      "placement": 13100
+    },
+    {
+      "runnerId": "zac-taveras",
+      "runnerName": "Zac Taveras",
+      "time": "1:59:31",
+      "placement": 13368
+    },
+    {
+      "runnerId": "edwen-taveras",
+      "runnerName": "Edwen Taveras",
+      "time": "1:59:33",
+      "placement": 13382
+    },
+    {
+      "runnerId": "nancy-zhang",
+      "runnerName": "Nancy Zhang",
+      "time": "2:01:56",
+      "placement": 14454
+    },
+    {
+      "runnerId": "jennifer-li",
+      "runnerName": "Jennifer Li",
+      "time": "2:03:35",
+      "placement": 15133
+    },
+    {
+      "runnerId": "johanna-loor",
+      "runnerName": "Johanna Loor",
+      "time": "2:04:19",
+      "placement": 15430
+    },
+    {
+      "runnerId": "vanessa-perry",
+      "runnerName": "Vanessa Perry",
+      "time": "2:05:04",
+      "placement": 15727
+    },
+    {
+      "runnerId": "jakeline-morales",
+      "runnerName": "Jakeline Morales",
+      "time": "2:06:40",
+      "placement": 16368
+    },
+    {
+      "runnerId": "henry-rivas",
+      "runnerName": "Henry Rivas",
+      "time": "2:07:44",
+      "placement": 16844
+    },
+    {
+      "runnerId": "brian-lee",
+      "runnerName": "Brian Lee",
+      "time": "2:10:11",
+      "placement": 17755
+    },
+    {
+      "runnerId": "karen-zelaya-benavides",
+      "runnerName": "Karen Zelaya Benavides",
+      "time": "2:11:58",
+      "placement": 18483
+    },
+    {
+      "runnerId": "ahreum-kim",
+      "runnerName": "Ahreum Kim",
+      "time": "2:12:58",
+      "placement": 18863
+    },
+    {
+      "runnerId": "jesus-diaz",
+      "runnerName": "Jesus Diaz",
+      "time": "2:14:40",
+      "placement": 19548
+    },
+    {
+      "runnerId": "ernesto-gonzalez",
+      "runnerName": "Ernesto Gonzalez",
+      "time": "2:14:41",
+      "placement": 19549
+    },
+    {
+      "runnerId": "qing-ling-xiao",
+      "runnerName": "Qing ling Xiao",
+      "time": "2:15:28",
+      "placement": 19801
+    },
+    {
+      "runnerId": "elizabeth-lim",
+      "runnerName": "Elizabeth Lim",
+      "time": "2:20:52",
+      "placement": 21546
+    },
+    {
+      "runnerId": "cesar-zuniga",
+      "runnerName": "Cesar Zuniga",
+      "time": "2:21:26",
+      "placement": 21733
+    },
+    {
+      "runnerId": "gabrielle-martin",
+      "runnerName": "Gabrielle Martin",
+      "time": "2:27:59",
+      "placement": 23482
+    },
+    {
+      "runnerId": "karen-alvarez",
+      "runnerName": "Karen Alvarez",
+      "time": "2:30:04",
+      "placement": 23981
+    },
+    {
+      "runnerId": "chad-thompson",
+      "runnerName": "Chad Thompson",
+      "time": "2:36:07",
+      "placement": 25288
+    },
+    {
+      "runnerId": "arlette-perez",
+      "runnerName": "Arlette Perez",
+      "time": "2:36:29",
+      "placement": 25360
+    },
+    {
+      "runnerId": "megan-bedell",
+      "runnerName": "Megan Bedell",
+      "time": "2:37:01",
+      "placement": 25483
+    },
+    {
+      "runnerId": "hadith-narine",
+      "runnerName": "Hadith Narine",
+      "time": "2:42:14",
+      "placement": 26336
+    },
+    {
+      "runnerId": "desiree-estevez",
+      "runnerName": "Desiree Estevez",
+      "time": "2:43:01",
+      "placement": 26482
+    },
+    {
+      "runnerId": "alexis-nicolas",
+      "runnerName": "Alexis Nicolas",
+      "time": "2:44:17",
+      "placement": 26672
+    },
+    {
+      "runnerId": "sehelasa-helu",
+      "runnerName": "Sehelasa Helu",
+      "time": "2:50:06",
+      "placement": 27424
+    },
+    {
+      "runnerId": "genesse-castillo",
+      "runnerName": "Genesse Castillo",
+      "time": "2:51:15",
+      "placement": 27575
+    },
+    {
+      "runnerId": "lissy-espinal",
+      "runnerName": "Lissy Espinal",
+      "time": "2:54:11",
+      "placement": 27890
+    },
+    {
+      "runnerId": "natasha-thompson",
+      "runnerName": "Natasha Thompson",
+      "time": "2:54:15",
+      "placement": 27898
+    },
+    {
+      "runnerId": "james-medina",
+      "runnerName": "James Medina",
+      "time": "2:54:35",
+      "placement": 27946
+    },
+    {
+      "runnerId": "diana-zuniga",
+      "runnerName": "Diana Zuniga",
+      "time": "2:58:10",
+      "placement": 28329
+    },
+    {
+      "runnerId": "tony-guzman",
+      "runnerName": "Tony Guzman",
+      "time": "2:59:32",
+      "placement": 28468
+    },
+    {
+      "runnerId": "minju-koo",
+      "runnerName": "Minju Koo",
+      "time": "3:00:09",
+      "placement": 28534
+    },
+    {
+      "runnerId": "brenda-ven",
+      "runnerName": "Brenda Ven",
+      "time": "3:06:40",
+      "placement": 28980
+    },
+    {
+      "runnerId": "elba-herrera",
+      "runnerName": "Elba Herrera",
+      "time": "3:25:27",
+      "placement": 29823
+    },
+    {
+      "runnerId": "damaris-hernandez",
+      "runnerName": "Damaris Hernandez",
+      "time": "3:25:35",
+      "placement": 29827
+    }
+  ],
+  "photos": []
+}

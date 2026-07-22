@@ -1,0 +1,82 @@
+{
+  "id": "2025-10-05-2025-jersey-city-5k",
+  "name": "2025 Jersey City 5K",
+  "date": "2025-10-05",
+  "location": "Jersey City, NJ",
+  "distance": "5K",
+  "results": [
+    {
+      "runnerId": "whitney-bynoe",
+      "runnerName": "Whitney Bynoe",
+      "time": "23:30",
+      "placement": 1575
+    },
+    {
+      "runnerId": "david-guzman",
+      "runnerName": "David Guzman",
+      "time": "25:24",
+      "placement": 2439
+    },
+    {
+      "runnerId": "gilbert-cabrera",
+      "runnerName": "Gilbert Cabrera",
+      "time": "26:02",
+      "placement": 2748
+    },
+    {
+      "runnerId": "qing-ling-xiao",
+      "runnerName": "Qing ling Xiao",
+      "time": "29:48",
+      "placement": 4574
+    },
+    {
+      "runnerId": "giselle-navarrete",
+      "runnerName": "Giselle Navarrete",
+      "time": "30:46",
+      "placement": 4971
+    },
+    {
+      "runnerId": "sarai-rivera",
+      "runnerName": "Sarai Rivera",
+      "time": "30:48",
+      "placement": 4985
+    },
+    {
+      "runnerId": "rosa-maria-cabrera",
+      "runnerName": "Rosa Maria Cabrera",
+      "time": "30:55",
+      "placement": 5035
+    },
+    {
+      "runnerId": "patty-flores",
+      "runnerName": "Patty Flores",
+      "time": "31:37",
+      "placement": 5296
+    },
+    {
+      "runnerId": "joslin-lee",
+      "runnerName": "Joslin Lee",
+      "time": "31:53",
+      "placement": 5374
+    },
+    {
+      "runnerId": "gabrielle-martin",
+      "runnerName": "Gabrielle Martin",
+      "time": "32:56",
+      "placement": 5695
+    },
+    {
+      "runnerId": "yolanda-hernandez",
+      "runnerName": "Yolanda Hernandez",
+      "time": "33:17",
+      "placement": 5783
+    },
+    {
+      "runnerId": "cristhiam-guzman",
+      "runnerName": "Cristhiam Guzman",
+      "time": "34:54",
+      "placement": 6170
+    }
+  ],
+  "photos": []
+}

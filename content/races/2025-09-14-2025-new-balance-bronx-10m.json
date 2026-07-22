@@ -1,0 +1,124 @@
+{
+  "id": "2025-09-14-2025-new-balance-bronx-10m",
+  "name": "2025 New Balance Bronx 10M",
+  "date": "2025-09-14",
+  "location": "Bronx, NY",
+  "distance": "10M",
+  "results": [
+    {
+      "runnerId": "david-guzman",
+      "runnerName": "David Guzman",
+      "time": "1:14:48",
+      "placement": 1848
+    },
+    {
+      "runnerId": "whitney-bynoe",
+      "runnerName": "Whitney Bynoe",
+      "time": "1:25:50",
+      "placement": 4448
+    },
+    {
+      "runnerId": "jesus-diaz",
+      "runnerName": "Jesus Diaz",
+      "time": "1:27:50",
+      "placement": 5010
+    },
+    {
+      "runnerId": "kimberly-porras",
+      "runnerName": "Kimberly Porras",
+      "time": "1:29:58",
+      "placement": 5657
+    },
+    {
+      "runnerId": "edwen-taveras",
+      "runnerName": "Edwen Taveras",
+      "time": "1:30:01",
+      "placement": 5673
+    },
+    {
+      "runnerId": "gilbert-cabrera",
+      "runnerName": "Gilbert Cabrera",
+      "time": "1:35:50",
+      "placement": 7164
+    },
+    {
+      "runnerId": "jamin-collins",
+      "runnerName": "Jamin Collins",
+      "time": "1:36:24",
+      "placement": 7305
+    },
+    {
+      "runnerId": "qing-ling-xiao",
+      "runnerName": "Qing ling Xiao",
+      "time": "1:44:09",
+      "placement": 9040
+    },
+    {
+      "runnerId": "ahreum-kim",
+      "runnerName": "Ahreum Kim",
+      "time": "1:45:18",
+      "placement": 9272
+    },
+    {
+      "runnerId": "rosa-maria-cabrera",
+      "runnerName": "Rosa Maria Cabrera",
+      "time": "1:48:23",
+      "placement": 9855
+    },
+    {
+      "runnerId": "gabrielle-martin",
+      "runnerName": "Gabrielle Martin",
+      "time": "1:52:07",
+      "placement": 10422
+    },
+    {
+      "runnerId": "yolanda-hernandez",
+      "runnerName": "Yolanda Hernandez",
+      "time": "1:52:50",
+      "placement": 10518
+    },
+    {
+      "runnerId": "sarai-rivera",
+      "runnerName": "Sarai Rivera",
+      "time": "1:55:36",
+      "placement": 10873
+    },
+    {
+      "runnerId": "joslin-lee",
+      "runnerName": "Joslin Lee",
+      "time": "1:55:45",
+      "placement": 10888
+    },
+    {
+      "runnerId": "patty-flores",
+      "runnerName": "Patty Flores",
+      "time": "1:58:28",
+      "placement": 11202
+    },
+    {
+      "runnerId": "desiree-estevez",
+      "runnerName": "Desiree Estevez",
+      "time": "1:58:59",
+      "placement": 11252
+    },
+    {
+      "runnerId": "james-medina",
+      "runnerName": "James Medina",
+      "time": "2:01:04",
+      "placement": 11418
+    },
+    {
+      "runnerId": "cristhiam-guzman",
+      "runnerName": "Cristhiam Guzman",
+      "time": "2:05:18",
+      "placement": 11757
+    },
+    {
+      "runnerId": "sehelasa-helu",
+      "runnerName": "Sehelasa Helu",
+      "time": "2:10:46",
+      "placement": 12119
+    }
+  ],
+  "photos": []
+}

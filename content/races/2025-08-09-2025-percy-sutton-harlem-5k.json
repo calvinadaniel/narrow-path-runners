@@ -1,0 +1,22 @@
+{
+  "id": "2025-08-09-2025-percy-sutton-harlem-5k",
+  "name": "2025 Percy Sutton Harlem 5K",
+  "date": "2025-08-09",
+  "location": "Harlem, NYC",
+  "distance": "5K",
+  "results": [
+    {
+      "runnerId": "kimberly-porras",
+      "runnerName": "Kimberly Porras",
+      "time": "25:54",
+      "placement": 1881
+    },
+    {
+      "runnerId": "joslin-lee",
+      "runnerName": "Joslin Lee",
+      "time": "32:23",
+      "placement": 3787
+    }
+  ],
+  "photos": []
+}

@@ -1,0 +1,94 @@
+{
+  "id": "2026-04-26-2026-maybelline-women-s-half",
+  "name": "2026 Maybelline Women's Half",
+  "date": "2026-04-26",
+  "location": "Central Park, NYC",
+  "distance": "Half Marathon",
+  "results": [
+    {
+      "runnerId": "whitley-avlon",
+      "runnerName": "Whitley Avlon",
+      "time": "2:06:44",
+      "placement": 1898
+    },
+    {
+      "runnerId": "jennifer-li",
+      "runnerName": "Jennifer Li",
+      "time": "2:08:44",
+      "placement": 2095
+    },
+    {
+      "runnerId": "qing-ling-xiao",
+      "runnerName": "Qing ling Xiao",
+      "time": "2:11:39",
+      "placement": 2381
+    },
+    {
+      "runnerId": "michelle-perez",
+      "runnerName": "Michelle Perez",
+      "time": "2:20:18",
+      "placement": 3114
+    },
+    {
+      "runnerId": "kenia-new",
+      "runnerName": "Kenia New",
+      "time": "2:20:18",
+      "placement": 3115
+    },
+    {
+      "runnerId": "ahreum-kim",
+      "runnerName": "Ahreum Kim",
+      "time": "2:22:26",
+      "placement": 3282
+    },
+    {
+      "runnerId": "giselle-navarrete",
+      "runnerName": "Giselle Navarrete",
+      "time": "2:22:37",
+      "placement": 3299
+    },
+    {
+      "runnerId": "sheyla-banegas",
+      "runnerName": "Sheyla Banegas",
+      "time": "2:28:36",
+      "placement": 3683
+    },
+    {
+      "runnerId": "arlette-perez",
+      "runnerName": "Arlette Perez",
+      "time": "2:28:49",
+      "placement": 3693
+    },
+    {
+      "runnerId": "desiree-estevez",
+      "runnerName": "Desiree Estevez",
+      "time": "2:30:40",
+      "placement": 3776
+    },
+    {
+      "runnerId": "cristhiam-guzman",
+      "runnerName": "Cristhiam Guzman",
+      "time": "2:31:47",
+      "placement": 3819
+    },
+    {
+      "runnerId": "brittany-silvey",
+      "runnerName": "Brittany Silvey",
+      "time": "2:44:39",
+      "placement": 4364
+    },
+    {
+      "runnerId": "rebeca-ventura",
+      "runnerName": "Rebeca Ventura",
+      "time": "2:45:19",
+      "placement": 4388
+    },
+    {
+      "runnerId": "elba-herrera",
+      "runnerName": "Elba Herrera",
+      "time": "3:05:07",
+      "placement": 4863
+    }
+  ],
+  "photos": []
+}

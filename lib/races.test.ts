@@ -4,16 +4,22 @@ import { getAllRaces, getRaceById } from "./races";
 describe("getAllRaces", () => {
   it("returns races sorted by date descending", () => {
     const races = getAllRaces();
-    expect(races.length).toBeGreaterThanOrEqual(2);
-    expect(races[0].id).toBe("2026-07-04-firecracker-10k");
-    expect(races[1].id).toBe("2026-06-14-summit-trail-5k");
+    expect(races.length).toBeGreaterThanOrEqual(1);
+    for (let i = 1; i < races.length; i++) {
+      expect(races[i - 1].date >= races[i].date).toBe(true);
+    }
+  });
+
+  it("includes imported NYRR races", () => {
+    const races = getAllRaces();
+    expect(races.some((r) => /marathon|half/i.test(r.name))).toBe(true);
   });
 });
 
 describe("getRaceById", () => {
-  it("returns the matching race", () => {
-    const race = getRaceById("2026-06-14-summit-trail-5k");
-    expect(race?.name).toBe("Summit Trail 5K");
+  it("returns a matching race", () => {
+    const race = getAllRaces()[0];
+    expect(getRaceById(race.id)?.name).toBe(race.name);
   });
 
   it("returns undefined for an unknown id", () => {

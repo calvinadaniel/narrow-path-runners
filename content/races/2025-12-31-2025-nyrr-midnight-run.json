@@ -1,0 +1,82 @@
+{
+  "id": "2025-12-31-2025-nyrr-midnight-run",
+  "name": "2025 NYRR Midnight Run",
+  "date": "2025-12-31",
+  "location": "Central Park, NY",
+  "distance": "4M",
+  "results": [
+    {
+      "runnerId": "james-new",
+      "runnerName": "James New",
+      "time": "31:05",
+      "placement": 265
+    },
+    {
+      "runnerId": "ang-lica-pintado",
+      "runnerName": "Angélica Pintado",
+      "time": "39:24",
+      "placement": 1294
+    },
+    {
+      "runnerId": "sarai-rivera",
+      "runnerName": "Sarai Rivera",
+      "time": "39:24",
+      "placement": 1295
+    },
+    {
+      "runnerId": "ronald-carter",
+      "runnerName": "Ronald Carter",
+      "time": "41:15",
+      "placement": 1663
+    },
+    {
+      "runnerId": "ahreum-kim",
+      "runnerName": "Ahreum Kim",
+      "time": "41:15",
+      "placement": 1664
+    },
+    {
+      "runnerId": "kenia-new",
+      "runnerName": "Kenia New",
+      "time": "42:21",
+      "placement": 1875
+    },
+    {
+      "runnerId": "yolanda-hernandez",
+      "runnerName": "Yolanda Hernandez",
+      "time": "45:38",
+      "placement": 2482
+    },
+    {
+      "runnerId": "giselle-navarrete",
+      "runnerName": "Giselle Navarrete",
+      "time": "45:40",
+      "placement": 2488
+    },
+    {
+      "runnerId": "alexis-nicolas",
+      "runnerName": "Alexis Nicolas",
+      "time": "48:10",
+      "placement": 2844
+    },
+    {
+      "runnerId": "jordan-kittrick",
+      "runnerName": "Jordan Kittrick",
+      "time": "48:11",
+      "placement": 2847
+    },
+    {
+      "runnerId": "joslin-lee",
+      "runnerName": "Joslin Lee",
+      "time": "48:12",
+      "placement": 2850
+    },
+    {
+      "runnerId": "rachel-rubin",
+      "runnerName": "Rachel Rubin",
+      "time": "1:17:33",
+      "placement": 4254
+    }
+  ],
+  "photos": []
+}

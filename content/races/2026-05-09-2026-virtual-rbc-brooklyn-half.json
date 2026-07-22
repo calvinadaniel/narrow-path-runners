@@ -1,0 +1,64 @@
+{
+  "id": "2026-05-09-2026-virtual-rbc-brooklyn-half",
+  "name": "2026 Virtual RBC Brooklyn Half",
+  "date": "2026-05-09",
+  "location": "",
+  "distance": "Half Marathon",
+  "results": [
+    {
+      "runnerId": "james-new",
+      "runnerName": "James New",
+      "time": "1:44:58",
+      "placement": 689
+    },
+    {
+      "runnerId": "michael-burke",
+      "runnerName": "Michael Burke",
+      "time": "2:00:25",
+      "placement": 1694
+    },
+    {
+      "runnerId": "william-valk",
+      "runnerName": "William Valk",
+      "time": "2:08:20",
+      "placement": 2159
+    },
+    {
+      "runnerId": "ahreum-kim",
+      "runnerName": "Ahreum Kim",
+      "time": "2:10:43",
+      "placement": 2348
+    },
+    {
+      "runnerId": "megan-bedell",
+      "runnerName": "Megan Bedell",
+      "time": "2:34:14",
+      "placement": 3555
+    },
+    {
+      "runnerId": "sehelasa-helu",
+      "runnerName": "Sehelasa Helu",
+      "time": "2:47:27",
+      "placement": 3996
+    },
+    {
+      "runnerId": "giselle-navarrete",
+      "runnerName": "Giselle Navarrete",
+      "time": "2:52:22",
+      "placement": 4115
+    },
+    {
+      "runnerId": "james-medina",
+      "runnerName": "James Medina",
+      "time": "2:52:22",
+      "placement": 4116
+    },
+    {
+      "runnerId": "sheyla-banegas",
+      "runnerName": "Sheyla Banegas",
+      "time": "2:54:05",
+      "placement": 4159
+    }
+  ],
+  "photos": []
+}

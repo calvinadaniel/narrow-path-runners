@@ -1,0 +1,70 @@
+{
+  "id": "2025-11-01-2025-abbott-dash-to-the-finish-line-5k-and-usatf-youth-championships",
+  "name": "2025 Abbott Dash to the Finish Line 5K and USATF Youth Championships",
+  "date": "2025-11-01",
+  "location": "United Nations to Central Park, NYC",
+  "distance": "5K",
+  "results": [
+    {
+      "runnerId": "whitney-bynoe",
+      "runnerName": "Whitney Bynoe",
+      "time": "23:39",
+      "placement": 1309
+    },
+    {
+      "runnerId": "gilbert-cabrera",
+      "runnerName": "Gilbert Cabrera",
+      "time": "27:06",
+      "placement": 3016
+    },
+    {
+      "runnerId": "nancy-zhang",
+      "runnerName": "Nancy Zhang",
+      "time": "27:12",
+      "placement": 3072
+    },
+    {
+      "runnerId": "gerardo-arambula",
+      "runnerName": "Gerardo Arambula",
+      "time": "28:08",
+      "placement": 3696
+    },
+    {
+      "runnerId": "rosa-maria-cabrera",
+      "runnerName": "Rosa Maria Cabrera",
+      "time": "30:46",
+      "placement": 5609
+    },
+    {
+      "runnerId": "sarai-rivera",
+      "runnerName": "Sarai Rivera",
+      "time": "30:55",
+      "placement": 5728
+    },
+    {
+      "runnerId": "patty-flores",
+      "runnerName": "Patty Flores",
+      "time": "31:39",
+      "placement": 6205
+    },
+    {
+      "runnerId": "yolanda-hernandez",
+      "runnerName": "Yolanda Hernandez",
+      "time": "35:24",
+      "placement": 8322
+    },
+    {
+      "runnerId": "lauren-knowings",
+      "runnerName": "Lauren Knowings",
+      "time": "39:15",
+      "placement": 9372
+    },
+    {
+      "runnerId": "melissa-arambula",
+      "runnerName": "Melissa Arambula",
+      "time": "51:52",
+      "placement": 10534
+    }
+  ],
+  "photos": []
+}
