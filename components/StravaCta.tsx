@@ -20,7 +20,7 @@ export default function StravaCta({ compact = false }: { compact?: boolean }) {
       href={stravaClubUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="block max-w-lg mx-auto rounded-xl overflow-hidden border-2 border-brand-ink/10 hover:border-brand-orange transition-colors shadow-md"
+      className="block max-w-lg w-full mx-auto rounded-xl overflow-hidden border-2 border-brand-ink/10 hover:border-brand-orange transition-colors shadow-md"
     >
       <Image
         src="/strava-banner.png"

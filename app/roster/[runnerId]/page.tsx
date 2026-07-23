@@ -17,8 +17,8 @@ export default async function RunnerProfilePage({
   if (!profile) notFound();
 
   return (
-    <main className="max-w-3xl mx-auto px-6 py-10">
-      <h1 className="page-title text-3xl">{profile.name}</h1>
+    <main className="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
+      <h1 className="page-title text-2xl sm:text-3xl break-words">{profile.name}</h1>
       {profile.bio && <div className="mt-4 space-y-4"><MDXRemote source={profile.bio} /></div>}
       <h2 className="text-xl font-black text-brand-green mt-8 mb-4">Race History</h2>
       <ul className="space-y-2">

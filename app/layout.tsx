@@ -14,9 +14,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col bg-brand-cream text-brand-ink antialiased">
+      <body className="min-h-screen flex flex-col bg-brand-cream text-brand-ink antialiased overflow-x-hidden">
         <Nav />
-        <div className="flex-1">{children}</div>
+        <div className="flex-1 min-w-0 w-full">{children}</div>
         <Footer />
       </body>
     </html>

@@ -20,7 +20,7 @@ export default function HomePage() {
     <>
       <section
         id="hero"
-        className="px-6 py-16 sm:py-24 text-center max-w-3xl mx-auto"
+        className="px-4 sm:px-6 py-12 sm:py-24 text-center max-w-3xl mx-auto"
       >
         <div className="hero-content">
           <Image
@@ -31,20 +31,20 @@ export default function HomePage() {
             className="mx-auto h-auto w-[min(280px,70vw)]"
             priority
           />
-          <h1 className="page-title text-3xl sm:text-5xl mt-10 uppercase tracking-tight leading-[1.05]">
+          <h1 className="page-title text-2xl sm:text-4xl md:text-5xl mt-8 sm:mt-10 uppercase tracking-tight leading-[1.05] px-1">
             Find your run with the pack.
           </h1>
           <Link
             href="#events"
-            className="runs-btn inline-block mt-8 bg-brand-red text-white font-black text-sm px-8 py-3 tracking-wider hover:bg-brand-orange transition-colors"
+            className="runs-btn inline-block mt-6 sm:mt-8 bg-brand-red text-white font-black text-sm px-6 sm:px-8 py-3 tracking-wider hover:bg-brand-orange transition-colors"
           >
             UPCOMING RUNS
           </Link>
         </div>
       </section>
 
-      <main className="px-6 pb-16 max-w-5xl mx-auto">
-        <div className="content-grid grid gap-10 sm:grid-cols-3">
+      <main className="px-4 sm:px-6 pb-12 sm:pb-16 max-w-5xl mx-auto">
+        <div className="content-grid grid gap-8 sm:gap-10 sm:grid-cols-3">
           <div id="who-we-are" className="info-block text-left scroll-mt-24">
             <h2 className="page-title text-xl mb-3 border-b-2 border-brand-green pb-2">
               Who We Are
