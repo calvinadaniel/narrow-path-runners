@@ -3,24 +3,29 @@ import { render, screen } from "@testing-library/react";
 import Nav from "./Nav";
 
 describe("Nav", () => {
-  it("renders brand title, bracket nav links, and join CTA", () => {
+  it("renders brand logo and page links", () => {
     render(<Nav />);
     expect(
       screen.getByRole("link", { name: "Narrow Path Runners" })
     ).toHaveAttribute("href", "/");
-    expect(screen.getAllByRole("link", { name: "[Team]" })[0]).toHaveAttribute(
+    expect(screen.getByRole("img", { name: "Narrow Path Runners" })).toHaveAttribute(
+      "src",
+      expect.stringContaining("npr-logo")
+    );
+    expect(screen.getByRole("link", { name: "Team" })).toHaveAttribute(
       "href",
-      "/#team"
+      "/roster"
+    );
+    expect(screen.getByRole("link", { name: "Events" })).toHaveAttribute(
+      "href",
+      "/results"
+    );
+    expect(screen.getByRole("link", { name: "Who We Are" })).toHaveAttribute(
+      "href",
+      "/about"
     );
     expect(
-      screen.getAllByRole("link", { name: "[Events]" })[0]
-    ).toHaveAttribute("href", "/#events");
-    expect(
-      screen.getAllByRole("link", { name: "[Who We Are]" })[0]
-    ).toHaveAttribute("href", "/#who-we-are");
-    expect(screen.getByRole("link", { name: "JOIN NOW" })).toHaveAttribute(
-      "href",
-      "/#join"
-    );
+      screen.queryByRole("link", { name: "JOIN NOW" })
+    ).not.toBeInTheDocument();
   });
 });

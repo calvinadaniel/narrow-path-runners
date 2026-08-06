@@ -1,5 +1,5 @@
-/** Generate favicons + sync logos from assets/np-logo-white-bg.jpeg */
-import { copyFileSync } from "node:fs";
+/** Generate logos + favicons from assets/np-logo-white-bg.jpeg */
+import { copyFileSync, unlinkSync, existsSync } from "node:fs";
 import sharp from "sharp";
 
 const src = "assets/np-logo-white-bg.jpeg";
@@ -17,7 +17,7 @@ const isBg = (i) => {
   const r = px[i],
     g = px[i + 1],
     b = px[i + 2];
-  return r > 220 && g > 220 && b > 210 && Math.abs(r - g) < 25 && Math.abs(g - b) < 25;
+  return r > 240 && g > 240 && b > 240;
 };
 const seen = new Uint8Array(w * h);
 const q = [];
@@ -50,14 +50,22 @@ await sharp(px, { raw: { width: w, height: h, channels: 4 } })
   .trim()
   .png()
   .toFile("public/logo.png");
+copyFileSync("public/logo.png", "public/npr-logo.png");
 
-const meta = await sharp(src).metadata();
-const crop = Math.round(Math.min(meta.width, meta.height) * 0.55);
-const left = Math.round((meta.width - crop) / 2);
-const top = Math.round(meta.height * 0.12);
-const square = sharp(src).extract({ left, top, width: crop, height: crop });
-await square.clone().resize(32, 32).png().toFile("app/icon.png");
-await square.clone().resize(180, 180).png().toFile("app/apple-icon.png");
-await square.clone().resize(32, 32).png().toFile("public/favicon.ico");
+const cream = { r: 247, g: 243, b: 235 };
+const mark = await sharp("public/npr-logo.png")
+  .resize(512, 512, { fit: "contain", background: cream })
+  .flatten({ background: cream })
+  .png()
+  .toBuffer();
+
+await sharp(mark).resize(48, 48).png().toFile("app/icon.png");
+await sharp(mark).resize(48, 48).png().toFile("public/icon.png");
+await sharp(mark).resize(48, 48).png().toFile("public/favicon.ico");
+await sharp(mark).resize(180, 180).png().toFile("app/apple-icon.png");
+await sharp(mark).resize(180, 180).png().toFile("public/apple-icon.png");
+await sharp(mark).png().toFile("public/icon-512.png");
+
+if (existsSync("app/favicon.ico")) unlinkSync("app/favicon.ico");
 
 console.log("logos + favicons generated");
