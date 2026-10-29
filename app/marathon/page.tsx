@@ -1,6 +1,5 @@
 import MarathonTracker from "@/components/MarathonTracker";
 import { getMarathonRoster } from "@/lib/marathon";
-import { getAllRunnerProfiles } from "@/lib/runners";
 
 export const metadata = {
   title: "NYC Marathon Tracker — Narrow Path Runners",
@@ -10,7 +9,6 @@ export const metadata = {
 
 export default function MarathonPage() {
   const roster = getMarathonRoster();
-  const profileIds = getAllRunnerProfiles().map((p) => p.id);
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
       <h1 className="page-title text-2xl sm:text-3xl">NYC Marathon</h1>
@@ -18,7 +16,7 @@ export default function MarathonPage() {
         TCS New York City Marathon · Sunday, November 1 · updates every 30
         seconds
       </p>
-      <MarathonTracker roster={roster.runners} profileIds={profileIds} />
+      <MarathonTracker roster={roster.runners} profileIds={[]} />
     </main>
   );
 }
