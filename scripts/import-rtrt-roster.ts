@@ -9,7 +9,7 @@
 import fs from "fs";
 import path from "path";
 import type { MarathonRoster, MarathonRosterEntry } from "../lib/types";
-import { fetchProfilesPage, makeToken, RTRT_EVENT } from "../lib/rtrt";
+import { fetchProfilesPage, RTRT_EVENT } from "../lib/rtrt";
 import { runnerIdFromName } from "./import-nyrr-helpers";
 
 const TEAM_MATCH = (process.argv[2] ?? "narrow path runners").toLowerCase();
@@ -21,14 +21,13 @@ function sleep(ms: number) {
 }
 
 async function main() {
-  const token = makeToken();
   const found = new Map<string, MarathonRosterEntry>();
   const teamNames = new Set<string>();
   let start = 1;
   let total = Infinity;
 
   while (start <= total) {
-    const page = await fetchProfilesPage(start, PAGE_SIZE, token);
+    const page = await fetchProfilesPage(start, PAGE_SIZE);
     total = page.total;
     if (!page.profiles.length) break;
 

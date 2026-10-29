@@ -3,10 +3,376 @@
   "updated": "2026-10-29",
   "runners": [
     {
+      "pid": "RANY2DX8",
+      "bib": "58094",
+      "name": "Ahreum Kim",
+      "runnerId": "ahreum-kim"
+    },
+    {
+      "pid": "R2NYJH3P",
+      "bib": "63960",
+      "name": "Alexis Nicolas",
+      "runnerId": "alexis-nicolas"
+    },
+    {
+      "pid": "RF6N3GVD",
+      "bib": "68646",
+      "name": "Anthony Rosario",
+      "runnerId": "anthony-rosario"
+    },
+    {
+      "pid": "RABG8MZN",
+      "bib": "51321",
+      "name": "Bashard Brooks",
+      "runnerId": "bashard-brooks"
+    },
+    {
+      "pid": "RHEGX6AU",
+      "bib": "59023",
+      "name": "Brian Kornblum",
+      "runnerId": "brian-kornblum"
+    },
+    {
       "pid": "RVHBZATU",
       "bib": "21021",
       "name": "Calvin Daniel",
       "runnerId": "calvin-daniel"
+    },
+    {
+      "pid": "R7RKWBUM",
+      "bib": "62958",
+      "name": "Carmen Leon",
+      "runnerId": "carmen-leon"
+    },
+    {
+      "pid": "RDEUBX2A",
+      "bib": "57903",
+      "name": "Chad Thompson",
+      "runnerId": "chad-thompson"
+    },
+    {
+      "pid": "RJVGM7BX",
+      "bib": "50824",
+      "name": "Corey Bickel",
+      "runnerId": "corey-bickel"
+    },
+    {
+      "pid": "RPG6BREN",
+      "bib": "64192",
+      "name": "Cristhiam Guzman",
+      "runnerId": "cristhiam-guzman"
+    },
+    {
+      "pid": "R7L4NKRA",
+      "bib": "4892",
+      "name": "David Guzman",
+      "runnerId": "david-guzman"
+    },
+    {
+      "pid": "R7D2LWE3",
+      "bib": "68839",
+      "name": "Diana Saeteros",
+      "runnerId": "diana-saeteros"
+    },
+    {
+      "pid": "RUHMDX9C",
+      "bib": "67319",
+      "name": "Diana Zuniga",
+      "runnerId": "diana-zuniga"
+    },
+    {
+      "pid": "RG6FV7PU",
+      "bib": "62689",
+      "name": "Edith Pappas",
+      "runnerId": "edith-pappas"
+    },
+    {
+      "pid": "R839E5XG",
+      "bib": "21150",
+      "name": "Edrian Ruiz",
+      "runnerId": "edrian-ruiz"
+    },
+    {
+      "pid": "RNVWM58Z",
+      "bib": "36914",
+      "name": "Edwen Taveras",
+      "runnerId": "edwen-taveras"
+    },
+    {
+      "pid": "RJ5UMCY4",
+      "bib": "14529",
+      "name": "Elizabeth Lim",
+      "runnerId": "elizabeth-lim"
+    },
+    {
+      "pid": "R9JNZ4V8",
+      "bib": "64088",
+      "name": "Gabrielle Martin",
+      "runnerId": "gabrielle-martin"
+    },
+    {
+      "pid": "RAMS2FUW",
+      "bib": "30995",
+      "name": "Gerardo Arambula",
+      "runnerId": "gerardo-arambula"
+    },
+    {
+      "pid": "RUMZGYNC",
+      "bib": "45870",
+      "name": "Gilbert Cabrera",
+      "runnerId": "gilbert-cabrera"
+    },
+    {
+      "pid": "RX74523M",
+      "bib": "22999",
+      "name": "Gina Sorensen",
+      "runnerId": "gina-sorensen"
+    },
+    {
+      "pid": "RRLUNWAE",
+      "bib": "53485",
+      "name": "Giselle Navarrete",
+      "runnerId": "giselle-navarrete"
+    },
+    {
+      "pid": "RHKUW8FS",
+      "bib": "51898",
+      "name": "Helen Fernandez",
+      "runnerId": "helen-fernandez"
+    },
+    {
+      "pid": "RPBS3XLD",
+      "bib": "14528",
+      "name": "Hyo Lim",
+      "runnerId": "hyo-lim"
+    },
+    {
+      "pid": "R534FGLW",
+      "bib": "36343",
+      "name": "Isamara Segovia",
+      "runnerId": "isamara-segovia"
+    },
+    {
+      "pid": "RLVHZ2RM",
+      "bib": "14381",
+      "name": "Jackie McCullough",
+      "runnerId": "jackie-mccullough"
+    },
+    {
+      "pid": "R9KYN73S",
+      "bib": "64851",
+      "name": "James Medina",
+      "runnerId": "james-medina"
+    },
+    {
+      "pid": "REN9F6YP",
+      "bib": "44843",
+      "name": "Jeremy Gonzalez",
+      "runnerId": "jeremy-gonzalez"
+    },
+    {
+      "pid": "RXNAFB54",
+      "bib": "37322",
+      "name": "Jesus Diaz",
+      "runnerId": "jesus-diaz"
+    },
+    {
+      "pid": "RP39XHL2",
+      "bib": "48833",
+      "name": "Jorge Camargo",
+      "runnerId": "jorge-camargo"
+    },
+    {
+      "pid": "RXM8NYH2",
+      "bib": "66785",
+      "name": "Joslin Lee",
+      "runnerId": "joslin-lee"
+    },
+    {
+      "pid": "RJENP6F8",
+      "bib": "68716",
+      "name": "Julia Speina",
+      "runnerId": "julia-speina"
+    },
+    {
+      "pid": "R5X9G4BD",
+      "bib": "30535",
+      "name": "Julian Fernandez",
+      "runnerId": "julian-fernandez"
+    },
+    {
+      "pid": "RTKFDNX9",
+      "bib": "61693",
+      "name": "Justin Wigley",
+      "runnerId": "justin-wigley"
+    },
+    {
+      "pid": "RXAE27HG",
+      "bib": "58593",
+      "name": "Kevin Mizell",
+      "runnerId": "kevin-mizell"
+    },
+    {
+      "pid": "R6YECXTB",
+      "bib": "31577",
+      "name": "Kimberly Concepcion",
+      "runnerId": "kimberly-concepcion"
+    },
+    {
+      "pid": "RXGHV6YT",
+      "bib": "67613",
+      "name": "Lauren Knowings",
+      "runnerId": "lauren-knowings"
+    },
+    {
+      "pid": "RTV7MNCE",
+      "bib": "65531",
+      "name": "Marcus Mayfield",
+      "runnerId": "marcus-mayfield"
+    },
+    {
+      "pid": "R7TBLEFC",
+      "bib": "12736",
+      "name": "Martin Vasquez",
+      "runnerId": "martin-vasquez"
+    },
+    {
+      "pid": "RXPBDCVR",
+      "bib": "25577",
+      "name": "Mathew Soto",
+      "runnerId": "mathew-soto"
+    },
+    {
+      "pid": "R7M8FW2E",
+      "bib": "11296",
+      "name": "Matteo Marsilii",
+      "runnerId": "matteo-marsilii"
+    },
+    {
+      "pid": "RSEC8YHD",
+      "bib": "66957",
+      "name": "Megan Bedell",
+      "runnerId": "megan-bedell"
+    },
+    {
+      "pid": "RGX3A9FH",
+      "bib": "71621",
+      "name": "Melissa Arambula",
+      "runnerId": "melissa-arambula"
+    },
+    {
+      "pid": "RFT58DWL",
+      "bib": "58500",
+      "name": "Michelle Perez",
+      "runnerId": "michelle-perez"
+    },
+    {
+      "pid": "RUVA2HRK",
+      "bib": "64671",
+      "name": "Monica Vazquez",
+      "runnerId": "monica-vazquez"
+    },
+    {
+      "pid": "R4HDM5GJ",
+      "bib": "43652",
+      "name": "Nancy Zhang",
+      "runnerId": "nancy-zhang"
+    },
+    {
+      "pid": "RTAEKF2L",
+      "bib": "69886",
+      "name": "Natasha Thompson",
+      "runnerId": "natasha-thompson"
+    },
+    {
+      "pid": "RV7X35Y2",
+      "bib": "45728",
+      "name": "Nathan Leal",
+      "runnerId": "nathan-leal"
+    },
+    {
+      "pid": "RW283CA5",
+      "bib": "52655",
+      "name": "Nicholas Pappas",
+      "runnerId": "nicholas-pappas"
+    },
+    {
+      "pid": "RW3LRZ5G",
+      "bib": "65044",
+      "name": "Patty Flores",
+      "runnerId": "patty-flores"
+    },
+    {
+      "pid": "RUCX4WE5",
+      "bib": "53639",
+      "name": "Qing Ling Xiao",
+      "runnerId": "qing-ling-xiao"
+    },
+    {
+      "pid": "RX5RYU87",
+      "bib": "67282",
+      "name": "Rebeca Ventura",
+      "runnerId": "rebeca-ventura"
+    },
+    {
+      "pid": "RHBCSRE8",
+      "bib": "20881",
+      "name": "Ronald Carter",
+      "runnerId": "ronald-carter"
+    },
+    {
+      "pid": "RH6CRUB9",
+      "bib": "63981",
+      "name": "Rosa Maria Cabrera",
+      "runnerId": "rosa-maria-cabrera"
+    },
+    {
+      "pid": "R8Y4E7A9",
+      "bib": "54502",
+      "name": "Roselyn Gonzalez",
+      "runnerId": "roselyn-gonzalez"
+    },
+    {
+      "pid": "R7KAB6PY",
+      "bib": "67157",
+      "name": "Santiago Vazquez IV",
+      "runnerId": "santiago-vazquez-iv"
+    },
+    {
+      "pid": "RDCSTFXE",
+      "bib": "62969",
+      "name": "Sarai Rivera",
+      "runnerId": "sarai-rivera"
+    },
+    {
+      "pid": "RXLRSGVU",
+      "bib": "13378",
+      "name": "Sean Smith",
+      "runnerId": "sean-smith"
+    },
+    {
+      "pid": "RH3XGE4N",
+      "bib": "70182",
+      "name": "Sehelasa Helu",
+      "runnerId": "sehelasa-helu"
+    },
+    {
+      "pid": "R82LYGEP",
+      "bib": "64714",
+      "name": "Stephanie Petzold",
+      "runnerId": "stephanie-petzold"
+    },
+    {
+      "pid": "RJKZLV8N",
+      "bib": "23124",
+      "name": "Whitney Bynoe",
+      "runnerId": "whitney-bynoe"
+    },
+    {
+      "pid": "RWPECJBF",
+      "bib": "66828",
+      "name": "Yolanda Hernandez",
+      "runnerId": "yolanda-hernandez"
     }
   ]
 }

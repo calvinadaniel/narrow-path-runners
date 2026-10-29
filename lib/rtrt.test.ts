@@ -120,8 +120,8 @@ describe("parseRunnerStatus", () => {
 });
 
 describe("makeToken", () => {
-  it("is 20 hex characters and random", () => {
-    expect(makeToken()).toMatch(/^[0-9a-f]{20}$/);
+  it("is 20 uppercase hex characters and random", () => {
+    expect(makeToken()).toMatch(/^[0-9A-F]{20}$/);
     expect(makeToken()).not.toBe(makeToken());
   });
 });

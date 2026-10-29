@@ -68,14 +68,51 @@ export class RtrtError extends Error {
 }
 
 export function makeToken(): string {
-  return randomBytes(10).toString("hex");
+  // Uppercase like the tracker's Math.uuid(20,16); RTRT 403s lowercase tokens.
+  return randomBytes(10).toString("hex").toUpperCase();
+}
+
+/** Registers a token the way the tracker does at startup (GET publicconf). */
+async function registerToken(token: string): Promise<void> {
+  const qs = new URLSearchParams({
+    appid: RTRT_APP_ID,
+    token,
+    app: "0",
+    version: "8.3.0",
+    secure: "1",
+    tracker_ver: "3",
+    web: "1",
+  });
+  const res = await fetch(`${RTRT_API}/publicconf?${qs}`, {
+    headers: { Origin: "https://app.rtrt.me", Referer: "https://app.rtrt.me/" },
+    cache: "no-store",
+  });
+  if (!res.ok) throw new RtrtError(`publicconf → HTTP ${res.status}`);
+}
+
+// One registered token per process, reused until RTRT rejects it.
+let session: Promise<string> | null = null;
+
+function getSession(): Promise<string> {
+  if (!session) {
+    const token = makeToken();
+    session = registerToken(token).then(
+      () => token,
+      (err) => {
+        session = null;
+        throw err;
+      }
+    );
+  }
+  return session;
 }
 
 async function rtrtPost<T>(
   path: string,
   params: Record<string, string | number>,
-  token: string
+  retry = true
 ): Promise<RtrtResponse<T>> {
+  const token = await getSession();
   const body = new URLSearchParams({
     appid: RTRT_APP_ID,
     token,
@@ -97,6 +134,10 @@ async function rtrtPost<T>(
   });
   if (!res.ok) throw new RtrtError(`${path} → HTTP ${res.status}`);
   const data = (await res.json()) as RtrtResponse<T>;
+  if (data.error?.type === "not_authorized" && retry) {
+    session = null; // token expired or was never registered; start over once
+    return rtrtPost<T>(path, params, false);
+  }
   // "no_results" just means nothing yet (e.g. pre-race); anything else is real.
   if (data.error && data.error.type !== "no_results") {
     throw new RtrtError(`${path} → ${data.error.msg}`, data.error.type);
@@ -107,13 +148,11 @@ async function rtrtPost<T>(
 /** One page of the whole field. `start` is 1-based. */
 export async function fetchProfilesPage(
   start: number,
-  max: number,
-  token = makeToken()
+  max: number
 ): Promise<{ profiles: RtrtProfile[]; last: number; total: number }> {
   const data = await rtrtPost<RtrtProfile>(
     `/events/${RTRT_EVENT}/profiles`,
-    { start, max, total: 1 },
-    token
+    { start, max, total: 1 }
   );
   return {
     profiles: data.list ?? [],
@@ -122,11 +161,10 @@ export async function fetchProfilesPage(
   };
 }
 
-async function fetchSplitsRaw(pids: string[], token: string) {
+async function fetchSplitsRaw(pids: string[]) {
   return rtrtPost<RtrtSplit>(
     `/events/${RTRT_EVENT}/profiles/${pids.join(",")}/splits`,
-    { max: SPLITS_MAX, loc: 1, etimes: 1, units: "standard" },
-    token
+    { max: SPLITS_MAX, loc: 1, etimes: 1, units: "standard" }
   );
 }
 
@@ -134,7 +172,6 @@ async function fetchSplitsRaw(pids: string[], token: string) {
 export async function fetchRunnerStatuses(
   runners: { pid: string; bib?: string; name: string }[]
 ): Promise<MarathonRunnerStatus[]> {
-  const token = makeToken();
   const byPid = new Map(runners.map((r) => [r.pid, r]));
   const out: MarathonRunnerStatus[] = [];
 
@@ -142,10 +179,10 @@ export async function fetchRunnerStatuses(
     const chunk = runners.slice(i, i + SPLITS_CHUNK).map((r) => r.pid);
     let responses: RtrtResponse<RtrtSplit>[];
     try {
-      responses = [await fetchSplitsRaw(chunk, token)];
+      responses = [await fetchSplitsRaw(chunk)];
     } catch {
       // The comma batch is only verified for one pid; retry one at a time.
-      responses = await Promise.all(chunk.map((p) => fetchSplitsRaw([p], token)));
+      responses = await Promise.all(chunk.map((p) => fetchSplitsRaw([p])));
     }
     for (const pid of chunk) {
       const r = byPid.get(pid)!;
