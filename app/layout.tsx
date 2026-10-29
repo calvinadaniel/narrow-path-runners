@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Narrow Path Runners — EST. 2025",
@@ -25,9 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col bg-brand-cream text-brand-ink antialiased overflow-x-hidden">
-        <Nav />
         <div className="flex-1 min-w-0 w-full">{children}</div>
-        <Footer />
       </body>
     </html>
   );
