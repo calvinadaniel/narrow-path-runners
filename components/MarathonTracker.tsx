@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import type {
+  MarathonRunnerState,
   MarathonRosterEntry,
   MarathonRunnerStatus,
   MarathonSnapshot,
@@ -28,6 +29,37 @@ export function sortStatuses(
     return a.name.localeCompare(b.name);
   });
 }
+
+export type RunnerFilter = "all" | MarathonRunnerState;
+
+export function summarize(statuses: MarathonRunnerStatus[]) {
+  const counts = { all: statuses.length, running: 0, finished: 0, not_started: 0 };
+  for (const s of statuses) counts[s.state] += 1;
+  return counts;
+}
+
+export function filterStatuses(
+  statuses: MarathonRunnerStatus[],
+  filter: RunnerFilter
+): MarathonRunnerStatus[] {
+  return filter === "all" ? statuses : statuses.filter((s) => s.state === filter);
+}
+
+/** "14M" -> "Mile 14", "HALF" -> "Half", "FINISH" -> "Finish", "5K" stays. */
+export function pointLabel(point: string): string {
+  const mile = /^(\d+)M$/.exec(point);
+  if (mile) return `Mile ${mile[1]}`;
+  if (point === "HALF") return "Half";
+  if (point === "FINISH") return "Finish";
+  return point;
+}
+
+const FILTERS: { value: RunnerFilter; label: string }[] = [
+  { value: "all", label: "All" },
+  { value: "running", label: "On course" },
+  { value: "finished", label: "Finished" },
+  { value: "not_started", label: "Not started" },
+];
 
 function formatCountdown(seconds: number): string {
   const d = Math.floor(seconds / 86400);
@@ -65,6 +97,12 @@ function StatusLine({ s }: { s: MarathonRunnerStatus }) {
             ? `${s.paceAvg ? " · " : ""}Projected ${s.projectedFinish}`
             : null}
         </p>
+        {s.nextPoint && s.nextPoint !== "FINISH" ? (
+          <p className="text-brand-ink/60">
+            Next: {pointLabel(s.nextPoint)}
+            {s.nextClock ? ` around ${s.nextClock}` : ""}
+          </p>
+        ) : null}
       </div>
     );
   }
@@ -104,6 +142,7 @@ export default function MarathonTracker({
 }) {
   const [snapshot, setSnapshot] = useState<MarathonSnapshot | null>(null);
   const [failed, setFailed] = useState(false);
+  const [filter, setFilter] = useState<RunnerFilter>("all");
 
   useEffect(() => {
     if (roster.length === 0) return;
@@ -144,8 +183,10 @@ export default function MarathonTracker({
 
   const linkable = new Set(profileIds);
   const statuses = snapshot ? sortStatuses(snapshot.runners) : null;
-  const items: (MarathonRunnerStatus | MarathonRosterEntry)[] =
-    statuses ?? roster;
+  const counts = statuses ? summarize(statuses) : null;
+  const items: (MarathonRunnerStatus | MarathonRosterEntry)[] = statuses
+    ? filterStatuses(statuses, filter)
+    : roster;
 
   return (
     <div>
@@ -156,6 +197,34 @@ export default function MarathonTracker({
             ? `Updated ${new Date(snapshot.fetchedAt).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", second: "2-digit" })}${snapshot.stale || failed ? " · showing last good update" : ""}`
             : "Loading live results…"}
       </p>
+      {counts ? (
+        <>
+          <p className="font-black mb-3" data-testid="summary">
+            {counts.running} running · {counts.finished} finished ·{" "}
+            {counts.not_started} not started
+          </p>
+          <div className="flex flex-wrap gap-2 mb-4" role="group" aria-label="Filter runners">
+            {FILTERS.map(({ value, label }) => (
+              <button
+                key={value}
+                type="button"
+                onClick={() => setFilter(value)}
+                aria-pressed={filter === value}
+                className={`px-3 py-1.5 rounded-full border-2 text-sm font-black transition-colors ${
+                  filter === value
+                    ? "bg-brand-ink text-white border-brand-ink"
+                    : "border-brand-ink/20 hover:border-brand-ink/50"
+                }`}
+              >
+                {label} ({counts[value]})
+              </button>
+            ))}
+          </div>
+        </>
+      ) : null}
+      {items.length === 0 ? (
+        <p className="card-vintage p-4 text-sm">No runners in this group right now.</p>
+      ) : null}
       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {items.map((item) => {
           const entry = roster.find((r) => r.pid === item.pid);

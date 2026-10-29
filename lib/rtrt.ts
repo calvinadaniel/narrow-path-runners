@@ -33,6 +33,7 @@ export interface RtrtSplit {
   epochTime?: string;
   paceAvg?: string;
   etfp?: string;
+  etnp?: string;
   isFinish?: string;
   [key: string]: unknown;
 }
@@ -211,14 +212,22 @@ export function formatElapsed(time: string | undefined): string | undefined {
   return clean;
 }
 
+/** "14M~02:04:12~11:52 am" -> the point, its elapsed time and clock time. */
+export function parseEstimate(
+  value: string | undefined
+): { point: string; elapsed: string; clock: string } | undefined {
+  if (!value) return undefined;
+  const [point, elapsed, clock] = value.split("~");
+  if (!point || !elapsed) return undefined;
+  return { point, elapsed: formatElapsed(elapsed)!, clock: clock ?? "" };
+}
+
 /** "FINISH~04:14:01~2:02 pm" -> projected finish elapsed and clock time. */
 export function parseProjection(
   etfp: string | undefined
 ): { elapsed: string; clock: string } | undefined {
-  if (!etfp) return undefined;
-  const [, elapsed, clock] = etfp.split("~");
-  if (!elapsed) return undefined;
-  return { elapsed: formatElapsed(elapsed)!, clock: clock ?? "" };
+  const e = parseEstimate(etfp);
+  return e && { elapsed: e.elapsed, clock: e.clock };
 }
 
 function num(v: string | undefined): number | undefined {
@@ -268,6 +277,7 @@ export function parseRunnerStatus(
   }
 
   const projection = parseProjection(latest.etfp);
+  const next = parseEstimate(latest.etnp);
   return {
     ...base,
     state: "running",
@@ -279,5 +289,8 @@ export function parseRunnerStatus(
     miles: num(loc?.emiles),
     projectedFinish: projection?.elapsed,
     projectedClock: projection?.clock,
+    nextPoint: next?.point,
+    nextElapsed: next?.elapsed,
+    nextClock: next?.clock,
   };
 }

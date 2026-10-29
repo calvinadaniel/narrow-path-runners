@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import {
   formatElapsed,
+  parseEstimate,
   parseProjection,
   parseRunnerStatus,
   makeToken,
@@ -25,6 +26,7 @@ const half: RtrtSplit = {
   epochTime: "1762101872.35",
   paceAvg: "08:53 min/mile",
   etfp: "FINISH~04:14:01~2:02 pm",
+  etnp: "14M~02:04:12~11:52 am",
 };
 
 const finish: RtrtSplit = {
@@ -47,6 +49,21 @@ describe("formatElapsed", () => {
 
   it("returns undefined for missing input", () => {
     expect(formatElapsed(undefined)).toBeUndefined();
+  });
+});
+
+describe("parseEstimate", () => {
+  it("returns the point with its elapsed and clock time", () => {
+    expect(parseEstimate("14M~02:04:12~11:52 am")).toEqual({
+      point: "14M",
+      elapsed: "2:04:12",
+      clock: "11:52 am",
+    });
+  });
+
+  it("returns undefined when absent or incomplete", () => {
+    expect(parseEstimate(undefined)).toBeUndefined();
+    expect(parseEstimate("14M")).toBeUndefined();
   });
 });
 
@@ -89,6 +106,9 @@ describe("parseRunnerStatus", () => {
     expect(s.netTime).toBe("1:56:17");
     expect(s.projectedFinish).toBe("4:14:01");
     expect(s.projectedClock).toBe("2:02 pm");
+    expect(s.nextPoint).toBe("14M");
+    expect(s.nextElapsed).toBe("2:04:12");
+    expect(s.nextClock).toBe("11:52 am");
     expect(s.percentComplete).toBe(50);
     expect(s.miles).toBe(13.1);
   });

@@ -65,6 +65,10 @@ export interface MarathonRunnerStatus {
   miles?: number;
   projectedFinish?: string;
   projectedClock?: string;
+  /** Estimated next checkpoint, e.g. point "14M" at "2:04:12" / "11:52 am". */
+  nextPoint?: string;
+  nextElapsed?: string;
+  nextClock?: string;
 }
 
 export interface MarathonSnapshot {
