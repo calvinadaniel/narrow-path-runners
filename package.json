@@ -10,7 +10,8 @@
     "test": "vitest run",
     "generate-favicons": "node scripts/generate-favicons.mjs",
     "upload-photos": "tsx scripts/upload-photos.ts",
-    "import-nyrr": "tsx scripts/import-nyrr.ts"
+    "import-nyrr": "tsx scripts/import-nyrr.ts",
+    "import-rtrt-roster": "tsx scripts/import-rtrt-roster.ts"
   },
   "dependencies": {
     "@vercel/blob": "^2.6.1",

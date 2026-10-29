@@ -2,6 +2,12 @@ export const navLinks = [
   { href: "/roster", label: "Team", letter: "T", color: "red" as const },
   { href: "/results", label: "Events", letter: "E", color: "green" as const },
   {
+    href: "/marathon",
+    label: "NYC Marathon",
+    letter: "M",
+    color: "red" as const,
+  },
+  {
     href: "/about",
     label: "Who We Are",
     letter: "W",

@@ -33,6 +33,46 @@ export interface RunnerRaceEntry {
   result: RaceResult;
 }
 
+export interface MarathonRosterEntry {
+  pid: string;
+  bib?: string;
+  name: string;
+  runnerId?: string;
+}
+
+export interface MarathonRoster {
+  event: string;
+  updated: string | null;
+  runners: MarathonRosterEntry[];
+}
+
+export type MarathonRunnerState = "not_started" | "running" | "finished";
+
+export interface MarathonRunnerStatus {
+  pid: string;
+  bib?: string;
+  name: string;
+  state: MarathonRunnerState;
+  /** Epoch seconds of this runner's wave start, if known. */
+  waveStart?: number;
+  countdownSeconds?: number;
+  lastPoint?: string;
+  lastLabel?: string;
+  /** Elapsed net time at the last point (or the finish), like "1:56:17". */
+  netTime?: string;
+  paceAvg?: string;
+  percentComplete?: number;
+  miles?: number;
+  projectedFinish?: string;
+  projectedClock?: string;
+}
+
+export interface MarathonSnapshot {
+  fetchedAt: number;
+  stale?: boolean;
+  runners: MarathonRunnerStatus[];
+}
+
 export interface RunnerProfile {
   id: string;
   name: string;
