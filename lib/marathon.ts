@@ -1,9 +1,11 @@
 import fs from "fs";
 import path from "path";
+import type { Course } from "./course";
 import { fetchRunnerStatuses } from "./rtrt";
 import type { MarathonRoster, MarathonSnapshot } from "./types";
 
 const ROSTER_FILE = path.join(process.cwd(), "content", "marathon-2026.json");
+const COURSE_FILE = path.join(process.cwd(), "content", "marathon-course.json");
 
 export function getMarathonRoster(): MarathonRoster {
   const raw = fs.readFileSync(ROSTER_FILE, "utf-8");
@@ -12,6 +14,12 @@ export function getMarathonRoster(): MarathonRoster {
     ...roster,
     runners: [...roster.runners].sort((a, b) => a.name.localeCompare(b.name)),
   };
+}
+
+/** The saved course for the map, or undefined if it hasn't been imported. */
+export function getMarathonCourse(): Course | undefined {
+  if (!fs.existsSync(COURSE_FILE)) return undefined;
+  return JSON.parse(fs.readFileSync(COURSE_FILE, "utf-8")) as Course;
 }
 
 /** Fresh enough to serve without asking RTRT again. */
