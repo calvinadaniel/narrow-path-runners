@@ -17,7 +17,7 @@ Leave out any line that doesn't apply. Add the PR link once the PR has a number.
 
 ---
 
-## 2026-11-03 · Race replay for 12:30-1:00 pm and a New York map behind the route
+## 2026-11-03 · Race replay for 12:30-1:00 pm and a New York map behind the route ([#4](https://github.com/calvinadaniel/narrow-path-runners/pull/4))
 
 - **Added:** a race replay page at `/marathon/replay` that plays back Nov 1, 12:30 to 1:00 pm EST from official split times. It has play/pause, restart, 30x, 60x and 120x speeds and a time slider, and the running/finished/not-started counts and the map update as the clock moves. Between two timing mats a runner is placed at an even pace, so dots glide along the route.
 - **Added:** `npm run import-rtrt-replay` and `content/marathon-replay-2026.json` (every member's timing-mat crossings, 97 KB), plus `lib/replay.ts` for working out where a runner was at any moment.
@@ -25,7 +25,7 @@ Leave out any line that doesn't apply. Add the PR link once the PR has a number.
 - **Changed:** the map now shows the surroundings of the route, not just the route. The route is drawn as a dark line with a white edge. The "Brooklyn" and "The Bronx" landmark labels are replaced by borough names, and on wide screens the map is centered and sized to the screen height.
 - **After merging:** nothing to re-run. The replay page is not linked from `/marathon`; open `/marathon/replay`. The Central Park outline is drawn by hand from its street corners. To rebuild the base map, see the header of `scripts/build-nyc-basemap.ts` for where to download the source files.
 
-## 2026-11-03 · Require release notes in every PR
+## 2026-11-03 · Require release notes in every PR ([#4](https://github.com/calvinadaniel/narrow-path-runners/pull/4))
 
 - **Added:** this file, a "Release notes" rule in `AGENTS.md`, and a pull request template (`.github/pull_request_template.md`) with a "Release notes" section.
 - **After merging:** nothing to deploy; no application code changed.
