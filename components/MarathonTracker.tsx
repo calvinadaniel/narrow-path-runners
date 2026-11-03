@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import MarathonMap from "@/components/MarathonMap";
+import type { Basemap } from "@/lib/basemap";
 import type { Course } from "@/lib/course";
 import type {
   MarathonRunnerState,
@@ -79,7 +80,7 @@ function formatStart(epochSeconds: number): string {
   });
 }
 
-function StatusLine({ s }: { s: MarathonRunnerStatus }) {
+export function StatusLine({ s }: { s: MarathonRunnerStatus }) {
   if (s.state === "finished") {
     return (
       <p className="text-sm font-black text-brand-green">
@@ -140,12 +141,15 @@ export default function MarathonTracker({
   roster,
   profileIds,
   course,
+  basemap,
 }: {
   roster: MarathonRosterEntry[];
   /** runnerIds that have a profile page to link to. */
   profileIds: string[];
   /** Course data for the map; without it the List | Map toggle is hidden. */
   course?: Course;
+  /** Land and water behind the map's route. */
+  basemap?: Basemap;
 }) {
   const [snapshot, setSnapshot] = useState<MarathonSnapshot | null>(null);
   const [failed, setFailed] = useState(false);
@@ -257,6 +261,7 @@ export default function MarathonTracker({
       {course && view === "map" && statuses ? (
         <MarathonMap
           course={course}
+          basemap={basemap}
           statuses={filterStatuses(statuses, filter)}
           renderDetail={(s) => <StatusLine s={s} />}
         />

@@ -176,6 +176,16 @@ async function fetchSplitsRaw(pids: string[]) {
   );
 }
 
+/** Every split for these runners, in chunks so one response never hits the cap. */
+export async function fetchSplits(pids: string[]): Promise<RtrtSplit[]> {
+  const out: RtrtSplit[] = [];
+  for (let i = 0; i < pids.length; i += SPLITS_CHUNK) {
+    const res = await fetchSplitsRaw(pids.slice(i, i + SPLITS_CHUNK));
+    out.push(...(res.list ?? []));
+  }
+  return out;
+}
+
 /** Live status for a set of runners, batching pids and falling back per pid. */
 export async function fetchRunnerStatuses(
   runners: { pid: string; bib?: string; name: string }[]

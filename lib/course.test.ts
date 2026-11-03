@@ -132,6 +132,21 @@ describe("makeProjection and linePath", () => {
     expect(east.x).toBeGreaterThan(north.x);
   });
 
+  it("maps a screen point back to the same place", () => {
+    const { x, y } = proj.project(40.07, -73.95);
+    const back = proj.unproject(x, y);
+    expect(back.lat).toBeCloseTo(40.07, 6);
+    expect(back.lng).toBeCloseTo(-73.95, 6);
+  });
+
+  it("keeps a margin of surroundings around the route", () => {
+    const wide = makeProjection(course, 600, 800, 50, { lat: 0.05, lng: 0.05 });
+    const edge = wide.project(40.0, -74.0);
+    const tight = proj.project(40.0, -74.0);
+    expect(edge.y).toBeLessThan(tight.y); // the route shrank toward the middle
+    expect(wide.project(40.1, -73.9).x).toBeLessThan(proj.project(40.1, -73.9).x);
+  });
+
   it("draws one move then lines", () => {
     expect(linePath(course, proj)).toMatch(/^M[\d.]+ [\d.]+ L[\d.]+ [\d.]+ L[\d.]+ [\d.]+$/);
   });
