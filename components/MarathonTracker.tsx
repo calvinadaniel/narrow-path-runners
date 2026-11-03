@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import MarathonMap from "@/components/MarathonMap";
+import type { Course } from "@/lib/course";
 import type {
   MarathonRunnerState,
   MarathonRosterEntry,
@@ -132,17 +134,23 @@ function ProgressBar({ percent }: { percent: number }) {
   );
 }
 
+export type RunnerView = "list" | "map";
+
 export default function MarathonTracker({
   roster,
   profileIds,
+  course,
 }: {
   roster: MarathonRosterEntry[];
   /** runnerIds that have a profile page to link to. */
   profileIds: string[];
+  /** Course data for the map; without it the List | Map toggle is hidden. */
+  course?: Course;
 }) {
   const [snapshot, setSnapshot] = useState<MarathonSnapshot | null>(null);
   const [failed, setFailed] = useState(false);
   const [filter, setFilter] = useState<RunnerFilter>("all");
+  const [view, setView] = useState<RunnerView>("list");
 
   useEffect(() => {
     if (roster.length === 0) return;
@@ -203,6 +211,27 @@ export default function MarathonTracker({
             {counts.running} running · {counts.finished} finished ·{" "}
             {counts.not_started} not started
           </p>
+          {course ? (
+            <div
+              className="inline-flex rounded-full border-2 border-brand-ink p-0.5 mb-3"
+              role="group"
+              aria-label="Choose view"
+            >
+              {(["list", "map"] as const).map((v) => (
+                <button
+                  key={v}
+                  type="button"
+                  onClick={() => setView(v)}
+                  aria-pressed={view === v}
+                  className={`px-4 py-1 rounded-full text-sm font-black transition-colors ${
+                    view === v ? "bg-brand-ink text-white" : "text-brand-ink"
+                  }`}
+                >
+                  {v === "list" ? "List" : "Map"}
+                </button>
+              ))}
+            </div>
+          ) : null}
           <div className="flex flex-wrap gap-2 mb-4" role="group" aria-label="Filter runners">
             {FILTERS.map(({ value, label }) => (
               <button
@@ -225,42 +254,50 @@ export default function MarathonTracker({
       {items.length === 0 ? (
         <p className="card-vintage p-4 text-sm">No runners in this group right now.</p>
       ) : null}
-      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {items.map((item) => {
-          const entry = roster.find((r) => r.pid === item.pid);
-          const status = "state" in item ? item : null;
-          const runnerId = entry?.runnerId;
-          return (
-            <li key={item.pid} className="card-vintage p-4">
-              <div className="flex items-baseline justify-between gap-3">
-                <h2 className="font-black text-lg break-words">
-                  {runnerId && linkable.has(runnerId) ? (
-                    <Link href={`/roster/${runnerId}`} className="page-link">
-                      {item.name}
-                    </Link>
-                  ) : (
-                    item.name
-                  )}
-                </h2>
-                {item.bib ? (
-                  <span className="text-xs text-brand-ink/50 shrink-0">
-                    Bib {item.bib}
-                  </span>
-                ) : null}
-              </div>
-              {status ? (
-                <>
-                  <StatusLine s={status} />
-                  {status.state === "running" &&
-                  status.percentComplete !== undefined ? (
-                    <ProgressBar percent={status.percentComplete} />
+      {course && view === "map" && statuses ? (
+        <MarathonMap
+          course={course}
+          statuses={filterStatuses(statuses, filter)}
+          renderDetail={(s) => <StatusLine s={s} />}
+        />
+      ) : (
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {items.map((item) => {
+            const entry = roster.find((r) => r.pid === item.pid);
+            const status = "state" in item ? item : null;
+            const runnerId = entry?.runnerId;
+            return (
+              <li key={item.pid} className="card-vintage p-4">
+                <div className="flex items-baseline justify-between gap-3">
+                  <h2 className="font-black text-lg break-words">
+                    {runnerId && linkable.has(runnerId) ? (
+                      <Link href={`/roster/${runnerId}`} className="page-link">
+                        {item.name}
+                      </Link>
+                    ) : (
+                      item.name
+                    )}
+                  </h2>
+                  {item.bib ? (
+                    <span className="text-xs text-brand-ink/50 shrink-0">
+                      Bib {item.bib}
+                    </span>
                   ) : null}
-                </>
-              ) : null}
-            </li>
-          );
-        })}
-      </ul>
+                </div>
+                {status ? (
+                  <>
+                    <StatusLine s={status} />
+                    {status.state === "running" &&
+                    status.percentComplete !== undefined ? (
+                      <ProgressBar percent={status.percentComplete} />
+                    ) : null}
+                  </>
+                ) : null}
+              </li>
+            );
+          })}
+        </ul>
+      )}
     </div>
   );
 }

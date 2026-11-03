@@ -11,7 +11,8 @@
     "generate-favicons": "node scripts/generate-favicons.mjs",
     "upload-photos": "tsx scripts/upload-photos.ts",
     "import-nyrr": "tsx scripts/import-nyrr.ts",
-    "import-rtrt-roster": "tsx scripts/import-rtrt-roster.ts"
+    "import-rtrt-roster": "tsx scripts/import-rtrt-roster.ts",
+    "import-rtrt-course": "tsx scripts/import-rtrt-course.ts"
   },
   "dependencies": {
     "@vercel/blob": "^2.6.1",

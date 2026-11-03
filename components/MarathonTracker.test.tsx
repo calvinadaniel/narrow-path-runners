@@ -7,6 +7,7 @@ import MarathonTracker, {
   pointLabel,
 } from "./MarathonTracker";
 import type { MarathonRunnerStatus, MarathonRosterEntry } from "@/lib/types";
+import type { Course } from "@/lib/course";
 
 const roster: MarathonRosterEntry[] = [
   { pid: "A", bib: "1", name: "Ann Alpha", runnerId: "ann-alpha" },
@@ -16,9 +17,20 @@ const roster: MarathonRosterEntry[] = [
 
 const statuses: MarathonRunnerStatus[] = [
   { pid: "A", bib: "1", name: "Ann Alpha", state: "not_started", waveStart: 1793542200, countdownSeconds: 3600 },
-  { pid: "B", bib: "2", name: "Bob Beta", state: "running", lastLabel: "Half/13.1mi", netTime: "1:56:17", paceAvg: "08:53 min/mile", projectedFinish: "4:14:01", percentComplete: 50, nextPoint: "14M", nextClock: "11:52 am" },
+  { pid: "B", bib: "2", name: "Bob Beta", state: "running", lastPoint: "HALF", lastLabel: "Half/13.1mi", netTime: "1:56:17", paceAvg: "08:53 min/mile", projectedFinish: "4:14:01", percentComplete: 50, nextPoint: "14M", nextClock: "11:52 am" },
   { pid: "C", bib: "3", name: "Cy Gamma", state: "finished", netTime: "3:59:59", percentComplete: 100 },
 ];
+
+const course: Course = {
+  event: "TEST",
+  miles: 26.2,
+  line: [
+    [40.6, -74.06, 0],
+    [40.7, -73.95, 13],
+    [40.77, -73.97, 26.2],
+  ],
+  points: [{ name: "HALF", label: "Half", miles: 13.1, lat: 40.7, lng: -73.95 }],
+};
 
 afterEach(() => vi.unstubAllGlobals());
 
@@ -103,6 +115,45 @@ describe("MarathonTracker", () => {
 
     fireEvent.click(screen.getByRole("button", { name: "All (3)" }));
     expect(screen.getByText("Ann Alpha")).toBeInTheDocument();
+  });
+
+  it("switches between the list and the map, keeping the filters", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockResolvedValue({
+        ok: true,
+        json: async () => ({ fetchedAt: Date.now(), runners: statuses }),
+      })
+    );
+    render(<MarathonTracker roster={roster} profileIds={[]} course={course} />);
+    await screen.findByText(/Half\/13.1mi/);
+    expect(screen.getByRole("button", { name: "List" })).toHaveAttribute("aria-pressed", "true");
+
+    fireEvent.click(screen.getByRole("button", { name: "Map" }));
+    expect(screen.getByRole("img", { name: /Map of the marathon course/ })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "1 runner: Bob Beta" })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "1 runner: Ann Alpha" })).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole("button", { name: "On course (1)" }));
+    expect(screen.getByRole("button", { name: "1 runner: Bob Beta" })).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: "1 runner: Ann Alpha" })).not.toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole("button", { name: "List" }));
+    expect(screen.queryByRole("img", { name: /Map of the marathon course/ })).not.toBeInTheDocument();
+    expect(screen.getByText(/Half\/13.1mi · 1:56:17/)).toBeInTheDocument();
+  });
+
+  it("hides the toggle when there is no course data", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockResolvedValue({
+        ok: true,
+        json: async () => ({ fetchedAt: Date.now(), runners: statuses }),
+      })
+    );
+    render(<MarathonTracker roster={roster} profileIds={[]} />);
+    await screen.findByText(/Half\/13.1mi/);
+    expect(screen.queryByRole("button", { name: "Map" })).not.toBeInTheDocument();
   });
 
   it("says so when live tracking is unavailable", async () => {

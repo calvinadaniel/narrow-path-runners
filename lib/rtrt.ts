@@ -4,6 +4,7 @@
  * Request and response shapes come from capturing the official tracker.
  */
 import { randomBytes } from "crypto";
+import { parseCourse, type Course } from "./course";
 import type { MarathonRunnerStatus } from "./types";
 
 export const RTRT_API = "https://api.rtrt.me";
@@ -160,6 +161,12 @@ export async function fetchProfilesPage(
     last: Number(data.info?.last ?? 0),
     total: Number(data.info?.total ?? 0),
   };
+}
+
+/** The published course: route line and timing points with coordinates. */
+export async function fetchCourse(): Promise<Course> {
+  const data = await rtrtPost<never>(`/events/${RTRT_EVENT}/map`, {});
+  return parseCourse(RTRT_EVENT, data as Parameters<typeof parseCourse>[1]);
 }
 
 async function fetchSplitsRaw(pids: string[]) {

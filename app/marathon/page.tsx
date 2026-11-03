@@ -1,6 +1,6 @@
 import MarathonHeader from "@/components/MarathonHeader";
 import MarathonTracker from "@/components/MarathonTracker";
-import { getMarathonRoster } from "@/lib/marathon";
+import { getMarathonCourse, getMarathonRoster } from "@/lib/marathon";
 
 export const metadata = {
   title: "NYC Marathon Tracker — Narrow Path Runners",
@@ -10,6 +10,7 @@ export const metadata = {
 
 export default function MarathonPage() {
   const roster = getMarathonRoster();
+  const course = getMarathonCourse();
   return (
     <>
       <MarathonHeader />
@@ -18,7 +19,7 @@ export default function MarathonPage() {
         <p className="text-sm text-brand-ink/60 mt-1 mb-6">
           Live tracking · updates every 30 seconds
         </p>
-        <MarathonTracker roster={roster.runners} profileIds={[]} />
+        <MarathonTracker roster={roster.runners} profileIds={[]} course={course} />
       </main>
     </>
   );
