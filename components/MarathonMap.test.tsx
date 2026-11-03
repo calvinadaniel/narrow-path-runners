@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import MarathonMap from "./MarathonMap";
+import type { Basemap } from "@/lib/basemap";
 import type { Course } from "@/lib/course";
 import type { MarathonRunnerStatus } from "@/lib/types";
 
@@ -31,6 +32,52 @@ const statuses: MarathonRunnerStatus[] = [
 ];
 
 const detail = (s: MarathonRunnerStatus) => <p>{s.name} detail</p>;
+
+const basemap: Basemap = {
+  window: { south: 40.5, west: -74.2, north: 40.9, east: -73.8 },
+  land: [
+    [
+      [40.7, -74.1],
+      [40.75, -74.1],
+      [40.75, -74.05],
+    ],
+  ],
+  boroughs: [
+    {
+      name: "Manhattan",
+      rings: [
+        [
+          [40.7, -74.0],
+          [40.8, -73.95],
+          [40.8, -73.97],
+        ],
+      ],
+      label: { lat: 40.75, lng: -73.98, angle: -62 },
+    },
+    {
+      name: "Bronx",
+      rings: [
+        [
+          [40.82, -73.9],
+          [40.88, -73.85],
+          [40.85, -73.9],
+        ],
+      ],
+      label: { lat: 40.85, lng: -73.88, angle: 0 },
+    },
+  ],
+  parks: [
+    {
+      name: "Central Park",
+      ring: [
+        [40.76, -73.98],
+        [40.8, -73.95],
+        [40.78, -73.96],
+      ],
+    },
+  ],
+  attribution: "Map: Example Source.",
+};
 
 describe("MarathonMap", () => {
   it("draws each runner, merging those at the same spot into a count", () => {
@@ -70,6 +117,24 @@ describe("MarathonMap", () => {
     expect(svg.getAttribute("viewBox")).not.toBe(initial);
     fireEvent.click(screen.getByRole("button", { name: "Reset map" }));
     expect(svg.getAttribute("viewBox")).toBe(initial);
+  });
+
+  it("draws New York behind the route when given a basemap", () => {
+    const { container } = render(
+      <MarathonMap course={course} basemap={basemap} statuses={statuses} renderDetail={detail} />
+    );
+    expect(screen.getByText("Manhattan")).toBeInTheDocument();
+    expect(screen.getByText("The Bronx")).toBeInTheDocument(); // not just "Bronx"
+    expect(screen.getByText("NEW JERSEY")).toBeInTheDocument();
+    expect(screen.getByText("Map: Example Source.")).toBeInTheDocument();
+    // water, neighbouring land, two boroughs and a park
+    expect(container.querySelectorAll("svg path[d]").length).toBeGreaterThanOrEqual(6);
+  });
+
+  it("stays a plain route map without a basemap", () => {
+    render(<MarathonMap course={course} statuses={statuses} renderDetail={detail} />);
+    expect(screen.queryByText("Manhattan")).not.toBeInTheDocument();
+    expect(screen.queryByText("NEW JERSEY")).not.toBeInTheDocument();
   });
 
   it("says that positions are estimates", () => {

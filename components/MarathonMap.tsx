@@ -1,7 +1,9 @@
 "use client";
 
 import { useMemo, useRef, useState, type ReactNode } from "react";
+import { ringsPath, type Basemap } from "@/lib/basemap";
 import {
+  MAP_VIEW,
   clusterDots,
   linePath,
   makeProjection,
@@ -12,19 +14,26 @@ import {
 } from "@/lib/course";
 import type { MarathonRunnerStatus } from "@/lib/types";
 
-const W = 600;
-const H = 800;
-const PAD = 56;
+const W = MAP_VIEW.width;
+const H = MAP_VIEW.height;
 const MAX_ZOOM = 8;
+
+const BOROUGH_LABELS: Record<string, string> = {
+  Bronx: "The Bronx",
+};
+
+/** Names for places that aren't boroughs; italic ones are water. */
+const PLACE_LABELS: { text: string; lat: number; lng: number; water?: boolean }[] = [
+  { text: "NEW JERSEY", lat: 40.735, lng: -74.085 },
+  { text: "Upper Bay", lat: 40.658, lng: -74.047, water: true },
+];
 
 /** Landmarks by distance along the course; `side` says which way the label sits. */
 const LANDMARKS: { miles: number; label: string; side: "l" | "r" }[] = [
-  { miles: 0.2, label: "Start · Staten Island", side: "r" },
+  { miles: 0.2, label: "Start", side: "r" },
   { miles: 1, label: "Verrazzano Bridge", side: "l" },
-  { miles: 7, label: "Brooklyn", side: "l" },
   { miles: 13.1, label: "Pulaski Bridge · Half", side: "l" },
   { miles: 15.8, label: "Queensboro Bridge", side: "l" },
-  { miles: 20.7, label: "The Bronx", side: "r" },
   { miles: 24.3, label: "Central Park", side: "l" },
 ];
 
@@ -50,14 +59,34 @@ export default function MarathonMap({
   course,
   statuses,
   renderDetail,
+  basemap,
 }: {
   course: Course;
+  /** Land and water behind the route; without it the route sits on a plain card. */
+  basemap?: Basemap;
   statuses: MarathonRunnerStatus[];
   /** Status line shown under each runner in the detail panel. */
   renderDetail: (s: MarathonRunnerStatus) => ReactNode;
 }) {
-  const proj = useMemo(() => makeProjection(course, W, H, PAD), [course]);
+  const proj = useMemo(
+    () => makeProjection(course, W, H, MAP_VIEW.pad, MAP_VIEW.margin),
+    [course]
+  );
   const path = useMemo(() => linePath(course, proj), [course, proj]);
+  const ground = useMemo(
+    () =>
+      basemap && {
+        land: ringsPath(basemap.land, proj),
+        boroughs: basemap.boroughs.map((b) => ({
+          name: b.name,
+          d: ringsPath(b.rings, proj),
+          label: { ...proj.project(b.label.lat, b.label.lng), angle: b.label.angle },
+        })),
+        parks: basemap.parks.map((p) => ({ name: p.name, d: ringsPath([p.ring], proj) })),
+        places: PLACE_LABELS.map((l) => ({ ...l, ...proj.project(l.lat, l.lng) })),
+      },
+    [basemap, proj]
+  );
 
   const [view, setView] = useState({ k: 1, cx: W / 2, cy: H / 2 });
   const [selectedPid, setSelectedPid] = useState<string | null>(null);
@@ -120,32 +149,84 @@ export default function MarathonMap({
 
   return (
     <div>
-      <div className="relative card-vintage overflow-hidden">
+      <div className="relative card-vintage overflow-hidden mx-auto max-w-[calc(80vh*0.75)]">
         <svg
           ref={svgRef}
           viewBox={`${vx} ${vy} ${vw} ${vh}`}
           role="img"
           aria-label="Map of the marathon course with runner positions"
-          className={`block w-full h-auto max-h-[75vh] ${view.k > 1 ? "touch-none cursor-grab" : ""}`}
+          className={`block w-full h-auto ${view.k > 1 ? "touch-none cursor-grab" : ""}`}
           onPointerDown={onPointerDown}
           onPointerMove={onPointerMove}
           onPointerUp={onPointerEnd}
           onPointerCancel={onPointerEnd}
           onPointerLeave={onPointerEnd}
         >
+          {ground ? (
+            <g className="pointer-events-none">
+              <rect x={0} y={0} width={W} height={H} className="fill-brand-sky/40" />
+              <path
+                d={ground.land}
+                className="fill-[#ece6d6] stroke-[#ece6d6]"
+                strokeWidth={1.5 * u}
+                strokeLinejoin="round"
+              />
+              {ground.boroughs.map((b) => (
+                <path
+                  key={b.name}
+                  d={b.d}
+                  fillRule="evenodd"
+                  className="fill-[#fbf9f3] stroke-brand-tan/70"
+                  strokeWidth={1 * u}
+                  strokeLinejoin="round"
+                />
+              ))}
+              {ground.parks.map((p) => (
+                <path key={p.name} d={p.d} className="fill-brand-green/25" />
+              ))}
+              {ground.boroughs.map((b) => (
+                <text
+                  key={b.name}
+                  x={b.label.x}
+                  y={b.label.y}
+                  textAnchor="middle"
+                  fontSize={13 * u}
+                  strokeWidth={3 * u}
+                  transform={`rotate(${b.label.angle} ${b.label.x} ${b.label.y})`}
+                  className={`fill-brand-ink/35 font-black uppercase tracking-widest ${HALO}`}
+                >
+                  {BOROUGH_LABELS[b.name] ?? b.name}
+                </text>
+              ))}
+              {ground.places.map((l) => (
+                <text
+                  key={l.text}
+                  x={l.x}
+                  y={l.y}
+                  textAnchor="middle"
+                  fontSize={(l.water ? 12 : 11) * u}
+                  strokeWidth={3 * u}
+                  className={`${l.water ? "fill-[#3f7396] italic font-bold" : "fill-brand-ink/30 font-black tracking-widest"} ${HALO}`}
+                >
+                  {l.text}
+                </text>
+              ))}
+            </g>
+          ) : null}
+
           <path
             d={path}
             fill="none"
-            className="stroke-brand-ink/25"
-            strokeWidth={7 * u}
+            className="stroke-white"
+            strokeWidth={8 * u}
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d={path}
             fill="none"
-            className="stroke-brand-tan"
-            strokeWidth={3 * u}
+            className="stroke-brand-ink/80"
+            strokeWidth={3.5 * u}
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -306,6 +387,7 @@ export default function MarathonMap({
       <p className="text-xs text-brand-ink/50 mt-1">
         Positions are estimated between timing mats, not GPS.
       </p>
+      {basemap ? <p className="text-xs text-brand-ink/40 mt-1">{basemap.attribution}</p> : null}
 
       <div className="mt-4" aria-live="polite">
         {selected ? (

@@ -94,25 +94,36 @@ export function milesFor(s: MarathonRunnerStatus, course: Course): number {
   return pointMiles(course, s.lastPoint) ?? 0;
 }
 
+/** The map's drawing box, shared by the map component and the basemap build. */
+export const MAP_VIEW = {
+  width: 600,
+  height: 800,
+  pad: 8,
+  /** Extra degrees of surroundings kept around the route. */
+  margin: { lat: 0.03, lng: 0.05 },
+} as const;
+
 export interface Projection {
   width: number;
   height: number;
   project: (lat: number, lng: number) => { x: number; y: number };
+  unproject: (x: number, y: number) => { lat: number; lng: number };
 }
 
-/** Fit the course into a width x height box, keeping its true shape. */
+/** Fit the course (plus a margin of surroundings) into a box, keeping its true shape. */
 export function makeProjection(
   course: Course,
   width: number,
   height: number,
-  pad: number
+  pad: number,
+  margin: { lat: number; lng: number } = { lat: 0, lng: 0 }
 ): Projection {
   const lats = course.line.map((v) => v[0]);
   const lngs = course.line.map((v) => v[1]);
-  const minLat = Math.min(...lats);
-  const maxLat = Math.max(...lats);
-  const minLng = Math.min(...lngs);
-  const maxLng = Math.max(...lngs);
+  const minLat = Math.min(...lats) - margin.lat;
+  const maxLat = Math.max(...lats) + margin.lat;
+  const minLng = Math.min(...lngs) - margin.lng;
+  const maxLng = Math.max(...lngs) + margin.lng;
   // Longitude degrees shrink with latitude, so scale them to match.
   const lngScale = Math.cos((((minLat + maxLat) / 2) * Math.PI) / 180);
   const spanX = (maxLng - minLng) * lngScale || 1;
@@ -126,6 +137,10 @@ export function makeProjection(
     project: (lat, lng) => ({
       x: offX + (lng - minLng) * lngScale * scale,
       y: offY + (maxLat - lat) * scale,
+    }),
+    unproject: (x, y) => ({
+      lat: maxLat - (y - offY) / scale,
+      lng: minLng + (x - offX) / (lngScale * scale),
     }),
   };
 }
