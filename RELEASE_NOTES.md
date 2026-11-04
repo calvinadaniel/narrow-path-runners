@@ -17,7 +17,7 @@ Leave out any line that doesn't apply. Add the PR link once the PR has a number.
 
 ---
 
-## 2026-11-04 · Fainter map background
+## 2026-11-04 · Fainter map background ([#8](https://github.com/calvinadaniel/narrow-path-runners/pull/8))
 
 - **Changed:** the New York map behind the page is now at 12% opacity (it was 35%), so it reads as a very light watermark behind the text and cards.
 - **After merging:** nothing to re-run.
