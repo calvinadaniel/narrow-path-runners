@@ -17,7 +17,7 @@ Leave out any line that doesn't apply. Add the PR link once the PR has a number.
 
 ---
 
-## 2026-11-04 · Faded map of New York behind the page
+## 2026-11-04 · Faded map of New York behind the page ([#7](https://github.com/calvinadaniel/narrow-path-runners/pull/7))
 
 - **Added:** a faded map of New York as the page background, with dashed latitude and longitude lines every 0.05 degrees and degree labels (for example "40.70° N", "74.00° W"). It is fixed behind the content, fills the screen, and is about two-thirds transparent so the text and cards stay easy to read. Cards stay solid white.
 - **Added:** `components/MapBackground.tsx`, plus `windowProjection` and `graticule` in `lib/basemap.ts`. It reuses the New York base map already in `content/nyc-basemap.json`, so no new data or map service is involved.
