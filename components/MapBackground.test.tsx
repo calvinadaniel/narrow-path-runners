@@ -51,7 +51,7 @@ describe("MapBackground", () => {
     const el = screen.getByTestId("map-background");
     expect(el.className).toContain("fixed");
     expect(el.className).toContain("inset-0");
-    expect(el.className).toMatch(/opacity-\d+/);
+    expect(el.className).toContain("opacity-[0.12]");
     expect(el.querySelector("svg")).toHaveAttribute("preserveAspectRatio", "xMidYMid slice");
   });
 

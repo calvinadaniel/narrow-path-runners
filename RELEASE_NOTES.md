@@ -17,6 +17,11 @@ Leave out any line that doesn't apply. Add the PR link once the PR has a number.
 
 ---
 
+## 2026-11-04 · Fainter map background ([#8](https://github.com/calvinadaniel/narrow-path-runners/pull/8))
+
+- **Changed:** the New York map behind the page is now at 12% opacity (it was 35%), so it reads as a very light watermark behind the text and cards.
+- **After merging:** nothing to re-run.
+
 ## 2026-11-04 · Faded map of New York behind the page ([#7](https://github.com/calvinadaniel/narrow-path-runners/pull/7))
 
 - **Added:** a faded map of New York as the page background, with dashed latitude and longitude lines every 0.05 degrees and degree labels (for example "40.70° N", "74.00° W"). It is fixed behind the content, fills the screen, and is about two-thirds transparent so the text and cards stay easy to read. Cards stay solid white.

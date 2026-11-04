@@ -25,7 +25,7 @@ export default function MapBackground({ basemap }: { basemap: Basemap }) {
     <div
       aria-hidden="true"
       data-testid="map-background"
-      className="fixed inset-0 z-0 pointer-events-none opacity-35"
+      className="fixed inset-0 z-0 pointer-events-none opacity-[0.12]"
     >
       <svg
         viewBox={`0 0 ${w} ${h}`}
