@@ -32,3 +32,35 @@ export function ringsPath(rings: Ring[], proj: Projection): string {
     )
     .join(" ");
 }
+
+/** A projection that fits a lat/lng window exactly into a box `width` wide. */
+export function windowProjection(w: Window, width: number): Projection {
+  // Longitude degrees shrink with latitude, so scale them to match.
+  const lngScale = Math.cos((((w.south + w.north) / 2) * Math.PI) / 180);
+  const scale = width / ((w.east - w.west) * lngScale);
+  const height = (w.north - w.south) * scale;
+  return {
+    width,
+    height,
+    project: (lat, lng) => ({
+      x: (lng - w.west) * lngScale * scale,
+      y: (w.north - lat) * scale,
+    }),
+    unproject: (x, y) => ({
+      lat: w.north - y / scale,
+      lng: w.west + x / (lngScale * scale),
+    }),
+  };
+}
+
+/** The latitude and longitude lines to draw: every `step` degrees inside the window. */
+export function graticule(w: Window, step: number): { lats: number[]; lngs: number[] } {
+  const inside = (lo: number, hi: number) => {
+    const out: number[] = [];
+    for (let i = Math.ceil(lo / step); i * step <= hi; i++) {
+      out.push(Math.round(i * step * 1e6) / 1e6); // no 40.650000000000006
+    }
+    return out;
+  };
+  return { lats: inside(w.south, w.north), lngs: inside(w.west, w.east) };
+}

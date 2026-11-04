@@ -17,6 +17,13 @@ Leave out any line that doesn't apply. Add the PR link once the PR has a number.
 
 ---
 
+## 2026-11-04 · Faded map of New York behind the page ([#7](https://github.com/calvinadaniel/narrow-path-runners/pull/7))
+
+- **Added:** a faded map of New York as the page background, with dashed latitude and longitude lines every 0.05 degrees and degree labels (for example "40.70° N", "74.00° W"). It is fixed behind the content, fills the screen, and is about two-thirds transparent so the text and cards stay easy to read. Cards stay solid white.
+- **Added:** `components/MapBackground.tsx`, plus `windowProjection` and `graticule` in `lib/basemap.ts`. It reuses the New York base map already in `content/nyc-basemap.json`, so no new data or map service is involved.
+- **Changed:** the root layout (`app/layout.tsx`) draws the background, so it appears on every page, and the page content now sits above it. A few lines of CSS in `app/globals.css` choose which labels show, because a wide screen crops the top and bottom of the map and a tall one crops the sides.
+- **After merging:** nothing to re-run. A wide screen shows the middle band of the map (roughly Brooklyn to midtown) rather than the whole city.
+
 ## 2026-11-04 · Race cards with each runner's other 2026 NYRR races ([#6](https://github.com/calvinadaniel/narrow-path-runners/pull/6))
 
 - **Added:** each runner's card on `/marathon` (list view) now has an "Other 2026 NYRR races (N)" section that opens to show every other 2026 NYRR race they finished, newest first, with the date, race name, distance and finish time. Runners with none show "No other 2026 NYRR races on record". The marathon itself is left out, since the card already shows it.
