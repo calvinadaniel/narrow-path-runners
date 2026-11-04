@@ -17,7 +17,7 @@ Leave out any line that doesn't apply. Add the PR link once the PR has a number.
 
 ---
 
-## 2026-11-03 · Link to the race replay from the marathon page
+## 2026-11-04 · Link to the race replay from the marathon page ([#5](https://github.com/calvinadaniel/narrow-path-runners/pull/5))
 
 - **Added:** a "Watch the 12:30 to 1:00 pm race replay" link under the subtitle on `/marathon`.
 - **Added:** a "Back to the tracker" link at the top of `/marathon/replay`, so the replay page is not a dead end now that the site has no navigation.
