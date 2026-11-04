@@ -8,6 +8,7 @@ import MarathonTracker, {
 } from "./MarathonTracker";
 import type { MarathonRunnerStatus, MarathonRosterEntry } from "@/lib/types";
 import type { Course } from "@/lib/course";
+import type { RaceEntry } from "@/lib/raceHistory";
 
 const roster: MarathonRosterEntry[] = [
   { pid: "A", bib: "1", name: "Ann Alpha", runnerId: "ann-alpha" },
@@ -141,6 +142,43 @@ describe("MarathonTracker", () => {
     fireEvent.click(screen.getByRole("button", { name: "List" }));
     expect(screen.queryByRole("img", { name: /Map of the marathon course/ })).not.toBeInTheDocument();
     expect(screen.getByText(/Half\/13.1mi · 1:56:17/)).toBeInTheDocument();
+  });
+
+  it("shows each runner's other 2026 races on their card", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockResolvedValue({
+        ok: true,
+        json: async () => ({ fetchedAt: Date.now(), runners: statuses }),
+      })
+    );
+    const raceHistory: Record<string, RaceEntry[]> = {
+      "ann-alpha": [
+        { raceId: "a", name: "NYRR Al Gordon 5K", date: "2026-02-28", distance: "5K", time: "30:09" },
+        { raceId: "b", name: "United Airlines NYC Half", date: "2026-03-15", distance: "Half Marathon", time: "1:55:10" },
+      ],
+      "bob-beta": [],
+    };
+    render(<MarathonTracker roster={roster} profileIds={[]} raceHistory={raceHistory} />);
+    await screen.findByText(/Half\/13.1mi/);
+
+    expect(screen.getByText("Other 2026 NYRR races (2)")).toBeInTheDocument();
+    expect(screen.getByText("NYRR Al Gordon 5K")).toBeInTheDocument();
+    expect(screen.getByText("30:09")).toBeInTheDocument();
+    expect(screen.getAllByText("No other 2026 NYRR races on record")).toHaveLength(2); // Bob, and Cy who isn't listed
+  });
+
+  it("shows no race section without race history", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockResolvedValue({
+        ok: true,
+        json: async () => ({ fetchedAt: Date.now(), runners: statuses }),
+      })
+    );
+    render(<MarathonTracker roster={roster} profileIds={[]} />);
+    await screen.findByText(/Half\/13.1mi/);
+    expect(screen.queryByText(/NYRR races/)).not.toBeInTheDocument();
   });
 
   it("hides the toggle when there is no course data", async () => {

@@ -2,6 +2,7 @@ import Link from "next/link";
 import MarathonHeader from "@/components/MarathonHeader";
 import MarathonTracker from "@/components/MarathonTracker";
 import { getMarathonCourse, getMarathonRoster, getNycBasemap } from "@/lib/marathon";
+import { getRaceHistory } from "@/lib/raceHistory";
 
 export const metadata = {
   title: "NYC Marathon Tracker — Narrow Path Runners",
@@ -13,6 +14,9 @@ export default function MarathonPage() {
   const roster = getMarathonRoster();
   const course = getMarathonCourse();
   const basemap = getNycBasemap();
+  const raceHistory = getRaceHistory(
+    roster.runners.flatMap((r) => (r.runnerId ? [r.runnerId] : []))
+  );
   return (
     <>
       <MarathonHeader />
@@ -26,7 +30,13 @@ export default function MarathonPage() {
             Watch the 12:30 to 1:00 pm race replay →
           </Link>
         </p>
-        <MarathonTracker roster={roster.runners} profileIds={[]} course={course} basemap={basemap} />
+        <MarathonTracker
+          roster={roster.runners}
+          profileIds={[]}
+          course={course}
+          basemap={basemap}
+          raceHistory={raceHistory}
+        />
       </main>
     </>
   );

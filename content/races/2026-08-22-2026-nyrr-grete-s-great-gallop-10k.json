@@ -1,0 +1,130 @@
+{
+  "id": "2026-08-22-2026-nyrr-grete-s-great-gallop-10k",
+  "name": "2026 NYRR Grete's Great Gallop 10K",
+  "date": "2026-08-22",
+  "location": "Central Park, NYC",
+  "distance": "10K",
+  "results": [
+    {
+      "runnerId": "byron-castillo",
+      "runnerName": "Byron Castillo",
+      "time": "45:19",
+      "placement": 659
+    },
+    {
+      "runnerId": "daniel-guardado",
+      "runnerName": "Daniel Guardado",
+      "time": "47:03",
+      "placement": 934
+    },
+    {
+      "runnerId": "edwen-taveras",
+      "runnerName": "Edwen Taveras",
+      "time": "51:55",
+      "placement": 2044
+    },
+    {
+      "runnerId": "edgar-hernandez",
+      "runnerName": "Edgar Hernandez",
+      "time": "52:16",
+      "placement": 2131
+    },
+    {
+      "runnerId": "whitney-bynoe",
+      "runnerName": "Whitney Bynoe",
+      "time": "53:11",
+      "placement": 2381
+    },
+    {
+      "runnerId": "caleb-carter",
+      "runnerName": "Caleb Carter",
+      "time": "53:59",
+      "placement": 2608
+    },
+    {
+      "runnerId": "nancy-zhang",
+      "runnerName": "Nancy Zhang",
+      "time": "54:47",
+      "placement": 2836
+    },
+    {
+      "runnerId": "henry-rivas",
+      "runnerName": "Henry Rivas",
+      "time": "58:43",
+      "placement": 4026
+    },
+    {
+      "runnerId": "jamin-collins",
+      "runnerName": "Jamin Collins",
+      "time": "1:04:43",
+      "placement": 5610
+    },
+    {
+      "runnerId": "karen-alvarez",
+      "runnerName": "Karen Alvarez",
+      "time": "1:07:35",
+      "placement": 6211
+    },
+    {
+      "runnerId": "lauren-knowings",
+      "runnerName": "Lauren Knowings",
+      "time": "1:09:59",
+      "placement": 6624
+    },
+    {
+      "runnerId": "elba-herrera",
+      "runnerName": "Elba Herrera",
+      "time": "1:11:23",
+      "placement": 6864
+    },
+    {
+      "runnerId": "sorrel-trick",
+      "runnerName": "Sorrel Trick",
+      "time": "1:11:58",
+      "placement": 6927
+    },
+    {
+      "runnerId": "natasha-thompson",
+      "runnerName": "Natasha Thompson",
+      "time": "1:12:58",
+      "placement": 7062
+    },
+    {
+      "runnerId": "bashard-brooks",
+      "runnerName": "Bashard Brooks",
+      "time": "1:18:12",
+      "placement": 7610
+    },
+    {
+      "runnerId": "berkley-feyka",
+      "runnerName": "Berkley Feyka",
+      "time": "1:27:07",
+      "placement": 8103
+    },
+    {
+      "runnerId": "giovanna-fisher",
+      "runnerName": "Giovanna Fisher",
+      "time": "1:27:46",
+      "placement": 8123
+    },
+    {
+      "runnerId": "caleb-fisher",
+      "runnerName": "Caleb Fisher",
+      "time": "1:27:46",
+      "placement": 8124
+    },
+    {
+      "runnerId": "angelina-arce",
+      "runnerName": "Angelina Arce",
+      "time": "1:49:06",
+      "placement": 8481
+    },
+    {
+      "runnerId": "jackie-mccullough",
+      "runnerName": "Jackie Mccullough",
+      "time": "1:56:39",
+      "placement": 8514
+    }
+  ],
+  "photos": []
+}

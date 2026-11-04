@@ -1,0 +1,64 @@
+{
+  "id": "2026-09-20-2026-tcs-new-york-city-marathon-training-series-18m",
+  "name": "2026 TCS New York City Marathon Training Series 18M",
+  "date": "2026-09-20",
+  "location": "Central Park, NYC NY25042DNB",
+  "distance": "18M",
+  "results": [
+    {
+      "runnerId": "whitney-bynoe",
+      "runnerName": "Whitney Bynoe",
+      "time": "2:57:23",
+      "placement": 1520
+    },
+    {
+      "runnerId": "gerardo-arambula",
+      "runnerName": "Gerardo Arambula",
+      "time": "2:58:20",
+      "placement": 1568
+    },
+    {
+      "runnerId": "giselle-navarrete",
+      "runnerName": "Giselle Navarrete",
+      "time": "3:23:05",
+      "placement": 2507
+    },
+    {
+      "runnerId": "carmen-leon",
+      "runnerName": "Carmen Leon",
+      "time": "3:29:18",
+      "placement": 2659
+    },
+    {
+      "runnerId": "megan-bedell",
+      "runnerName": "Megan Bedell",
+      "time": "3:42:41",
+      "placement": 2959
+    },
+    {
+      "runnerId": "lauren-knowings",
+      "runnerName": "Lauren Knowings",
+      "time": "3:52:59",
+      "placement": 3132
+    },
+    {
+      "runnerId": "natasha-thompson",
+      "runnerName": "Natasha Thompson",
+      "time": "3:56:41",
+      "placement": 3185
+    },
+    {
+      "runnerId": "yolanda-hernandez",
+      "runnerName": "Yolanda Hernandez",
+      "time": "4:18:09",
+      "placement": 3393
+    },
+    {
+      "runnerId": "melissa-arambula",
+      "runnerName": "Melissa Arambula",
+      "time": "4:26:55",
+      "placement": 3439
+    }
+  ],
+  "photos": []
+}

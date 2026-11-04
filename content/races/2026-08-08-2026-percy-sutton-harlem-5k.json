@@ -1,0 +1,88 @@
+{
+  "id": "2026-08-08-2026-percy-sutton-harlem-5k",
+  "name": "2026 Percy Sutton Harlem 5K",
+  "date": "2026-08-08",
+  "location": "Harlem, NYC",
+  "distance": "5K",
+  "results": [
+    {
+      "runnerId": "james-new",
+      "runnerName": "James New",
+      "time": "22:14",
+      "placement": 621
+    },
+    {
+      "runnerId": "henry-rivas",
+      "runnerName": "Henry Rivas",
+      "time": "27:02",
+      "placement": 2044
+    },
+    {
+      "runnerId": "chad-thompson",
+      "runnerName": "Chad Thompson",
+      "time": "29:05",
+      "placement": 2811
+    },
+    {
+      "runnerId": "jamin-collins",
+      "runnerName": "Jamin Collins",
+      "time": "30:56",
+      "placement": 3405
+    },
+    {
+      "runnerId": "kenia-new",
+      "runnerName": "Kenia New",
+      "time": "32:39",
+      "placement": 3885
+    },
+    {
+      "runnerId": "elba-herrera",
+      "runnerName": "Elba Herrera",
+      "time": "34:30",
+      "placement": 4233
+    },
+    {
+      "runnerId": "megan-bedell",
+      "runnerName": "Megan Bedell",
+      "time": "34:56",
+      "placement": 4303
+    },
+    {
+      "runnerId": "tony-guzman",
+      "runnerName": "Tony Guzman",
+      "time": "36:49",
+      "placement": 4578
+    },
+    {
+      "runnerId": "monica-vazquez",
+      "runnerName": "Monica Vazquez",
+      "time": "40:00",
+      "placement": 4893
+    },
+    {
+      "runnerId": "raquel-williams",
+      "runnerName": "Raquel Williams",
+      "time": "44:41",
+      "placement": 5178
+    },
+    {
+      "runnerId": "dion-johnson",
+      "runnerName": "Dion Johnson",
+      "time": "49:41",
+      "placement": 5339
+    },
+    {
+      "runnerId": "christina-johnson",
+      "runnerName": "Christina Johnson",
+      "time": "49:41",
+      "placement": 5340
+    },
+    {
+      "runnerId": "angelina-arce",
+      "runnerName": "Angelina Arce",
+      "time": "49:50",
+      "placement": 5343
+    }
+  ],
+  "photos": []
+}

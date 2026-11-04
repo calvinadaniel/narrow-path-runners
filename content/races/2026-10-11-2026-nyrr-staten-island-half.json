@@ -1,0 +1,136 @@
+{
+  "id": "2026-10-11-2026-nyrr-staten-island-half",
+  "name": "2026 NYRR Staten Island Half",
+  "date": "2026-10-11",
+  "location": "Staten Island, NYC",
+  "distance": "Half Marathon",
+  "results": [
+    {
+      "runnerId": "byron-castillo",
+      "runnerName": "Byron Castillo",
+      "time": "1:34:53",
+      "placement": 1153
+    },
+    {
+      "runnerId": "daniel-guardado",
+      "runnerName": "Daniel Guardado",
+      "time": "1:38:42",
+      "placement": 1517
+    },
+    {
+      "runnerId": "james-new",
+      "runnerName": "James New",
+      "time": "1:39:52",
+      "placement": 1697
+    },
+    {
+      "runnerId": "matteo-marsilii",
+      "runnerName": "Matteo Marsilii",
+      "time": "1:39:52",
+      "placement": 1698
+    },
+    {
+      "runnerId": "caleb-carter",
+      "runnerName": "Caleb Carter",
+      "time": "1:48:01",
+      "placement": 2693
+    },
+    {
+      "runnerId": "edwen-taveras",
+      "runnerName": "Edwen Taveras",
+      "time": "1:52:28",
+      "placement": 3424
+    },
+    {
+      "runnerId": "whitney-bynoe",
+      "runnerName": "Whitney Bynoe",
+      "time": "1:56:47",
+      "placement": 4119
+    },
+    {
+      "runnerId": "nathan-leal",
+      "runnerName": "Nathan Leal",
+      "time": "1:59:13",
+      "placement": 4555
+    },
+    {
+      "runnerId": "whitley-avlon",
+      "runnerName": "Whitley Avlon",
+      "time": "2:03:22",
+      "placement": 5190
+    },
+    {
+      "runnerId": "josue-marquez",
+      "runnerName": "Josue Marquez",
+      "time": "2:09:26",
+      "placement": 6037
+    },
+    {
+      "runnerId": "sheyla-banegas",
+      "runnerName": "Sheyla Banegas",
+      "time": "2:13:03",
+      "placement": 6515
+    },
+    {
+      "runnerId": "maria-marin",
+      "runnerName": "Maria Marin",
+      "time": "2:18:14",
+      "placement": 7231
+    },
+    {
+      "runnerId": "giselle-navarrete",
+      "runnerName": "Giselle Navarrete",
+      "time": "2:20:38",
+      "placement": 7500
+    },
+    {
+      "runnerId": "karen-alvarez",
+      "runnerName": "Karen Alvarez",
+      "time": "2:24:10",
+      "placement": 7866
+    },
+    {
+      "runnerId": "kenia-new",
+      "runnerName": "Kenia New",
+      "time": "2:27:56",
+      "placement": 8191
+    },
+    {
+      "runnerId": "elba-herrera",
+      "runnerName": "Elba Herrera",
+      "time": "2:39:19",
+      "placement": 8938
+    },
+    {
+      "runnerId": "arlette-perez",
+      "runnerName": "Arlette Perez",
+      "time": "2:44:36",
+      "placement": 9213
+    },
+    {
+      "runnerId": "joslin-lee",
+      "runnerName": "Joslin Lee",
+      "time": "2:50:48",
+      "placement": 9473
+    },
+    {
+      "runnerId": "diana-saeteros",
+      "runnerName": "Diana Saeteros",
+      "time": "2:54:29",
+      "placement": 9599
+    },
+    {
+      "runnerId": "henry-rivas",
+      "runnerName": "Henry Rivas",
+      "time": "2:55:59",
+      "placement": 9645
+    },
+    {
+      "runnerId": "bashard-brooks",
+      "runnerName": "Bashard Brooks",
+      "time": "2:56:00",
+      "placement": 9647
+    }
+  ],
+  "photos": []
+}

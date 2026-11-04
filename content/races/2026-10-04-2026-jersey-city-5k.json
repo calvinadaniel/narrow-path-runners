@@ -1,0 +1,106 @@
+{
+  "id": "2026-10-04-2026-jersey-city-5k",
+  "name": "2026 Jersey City 5K",
+  "date": "2026-10-04",
+  "location": "Jersey City, NJ",
+  "distance": "5K",
+  "results": [
+    {
+      "runnerId": "edgar-hernandez",
+      "runnerName": "Edgar Hernandez",
+      "time": "20:55",
+      "placement": 649
+    },
+    {
+      "runnerId": "karen-castellanos",
+      "runnerName": "Karen Castellanos",
+      "time": "24:54",
+      "placement": 2373
+    },
+    {
+      "runnerId": "gina-sorensen",
+      "runnerName": "Gina Sorensen",
+      "time": "26:11",
+      "placement": 3067
+    },
+    {
+      "runnerId": "ang-lica-pintado",
+      "runnerName": "Angélica Pintado",
+      "time": "26:21",
+      "placement": 3149
+    },
+    {
+      "runnerId": "whitley-avlon",
+      "runnerName": "Whitley Avlon",
+      "time": "27:54",
+      "placement": 4040
+    },
+    {
+      "runnerId": "brittany-silvey",
+      "runnerName": "Brittany Silvey",
+      "time": "31:16",
+      "placement": 5491
+    },
+    {
+      "runnerId": "monica-vazquez",
+      "runnerName": "Monica Vazquez",
+      "time": "32:52",
+      "placement": 5972
+    },
+    {
+      "runnerId": "edith-pappas",
+      "runnerName": "Edith Pappas",
+      "time": "32:53",
+      "placement": 5982
+    },
+    {
+      "runnerId": "elory-dale",
+      "runnerName": "Elory Dale",
+      "time": "34:51",
+      "placement": 6483
+    },
+    {
+      "runnerId": "gabrielle-martin",
+      "runnerName": "Gabrielle Martin",
+      "time": "37:05",
+      "placement": 6845
+    },
+    {
+      "runnerId": "tony-guzman",
+      "runnerName": "Tony Guzman",
+      "time": "37:53",
+      "placement": 6947
+    },
+    {
+      "runnerId": "berkley-feyka",
+      "runnerName": "Berkley Feyka",
+      "time": "37:58",
+      "placement": 6953
+    },
+    {
+      "runnerId": "dion-johnson",
+      "runnerName": "Dion Johnson",
+      "time": "38:23",
+      "placement": 7013
+    },
+    {
+      "runnerId": "susette-perez",
+      "runnerName": "Susette Perez",
+      "time": "42:05",
+      "placement": 7346
+    },
+    {
+      "runnerId": "angelina-arce",
+      "runnerName": "Angelina Arce",
+      "time": "49:10",
+      "placement": 7589
+    },
+    {
+      "runnerId": "jackie-mccullough",
+      "runnerName": "Jackie Mccullough",
+      "time": "51:54",
+      "placement": 7637
+    }
+  ],
+  "photos": []
+}

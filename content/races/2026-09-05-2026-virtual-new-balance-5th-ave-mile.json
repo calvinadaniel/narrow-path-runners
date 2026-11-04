@@ -1,0 +1,70 @@
+{
+  "id": "2026-09-05-2026-virtual-new-balance-5th-ave-mile",
+  "name": "2026 Virtual New Balance 5th Ave Mile",
+  "date": "2026-09-05",
+  "location": "",
+  "distance": "1M",
+  "results": [
+    {
+      "runnerId": "james-new",
+      "runnerName": "James New",
+      "time": "09:06",
+      "placement": 2117
+    },
+    {
+      "runnerId": "michael-burke",
+      "runnerName": "Michael Burke",
+      "time": "09:17",
+      "placement": 2339
+    },
+    {
+      "runnerId": "nancy-zhang",
+      "runnerName": "Nancy Zhang",
+      "time": "09:29",
+      "placement": 2549
+    },
+    {
+      "runnerId": "james-medina",
+      "runnerName": "James Medina",
+      "time": "10:41",
+      "placement": 3772
+    },
+    {
+      "runnerId": "sehelasa-helu",
+      "runnerName": "Sehelasa Helu",
+      "time": "10:54",
+      "placement": 3944
+    },
+    {
+      "runnerId": "diana-liriano",
+      "runnerName": "Diana Liriano",
+      "time": "11:11",
+      "placement": 4155
+    },
+    {
+      "runnerId": "cesar-zuniga",
+      "runnerName": "Cesar Zuniga",
+      "time": "11:14",
+      "placement": 4187
+    },
+    {
+      "runnerId": "niover-liriano",
+      "runnerName": "Niover Liriano",
+      "time": "11:40",
+      "placement": 4480
+    },
+    {
+      "runnerId": "megan-bedell",
+      "runnerName": "Megan Bedell",
+      "time": "11:49",
+      "placement": 4534
+    },
+    {
+      "runnerId": "tony-guzman",
+      "runnerName": "Tony Guzman",
+      "time": "19:53",
+      "placement": 5765
+    }
+  ],
+  "photos": []
+}
