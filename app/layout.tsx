@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import MapBackground from "@/components/MapBackground";
+import { getNycBasemap } from "@/lib/marathon";
 
 export const metadata: Metadata = {
   title: "Narrow Path Runners — EST. 2025",
@@ -20,10 +22,12 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const basemap = getNycBasemap();
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col bg-brand-cream text-brand-ink antialiased overflow-x-hidden">
-        <div className="flex-1 min-w-0 w-full">{children}</div>
+        {basemap ? <MapBackground basemap={basemap} /> : null}
+        <div className="relative z-10 flex-1 min-w-0 w-full">{children}</div>
       </body>
     </html>
   );

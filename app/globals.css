@@ -68,3 +68,19 @@ body::before {
 .card-vintage:hover {
   border-color: var(--color-brand-orange);
 }
+
+/*
+ * Map background labels: which edge of the faded map is still on screen depends on
+ * the screen's shape. Wide screens show the sides; tall ones show the top and bottom.
+ */
+.map-label-tall-only {
+  display: none;
+}
+@media (max-aspect-ratio: 3/4) {
+  .map-label-tall-only {
+    display: block;
+  }
+  .map-label-wide-only {
+    display: none;
+  }
+}
