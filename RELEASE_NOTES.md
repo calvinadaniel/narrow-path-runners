@@ -17,6 +17,13 @@ Leave out any line that doesn't apply. Add the PR link once the PR has a number.
 
 ---
 
+## 2026-11-04 · Race cards with each runner's other 2026 NYRR races ([#6](https://github.com/calvinadaniel/narrow-path-runners/pull/6))
+
+- **Added:** each runner's card on `/marathon` (list view) now has an "Other 2026 NYRR races (N)" section that opens to show every other 2026 NYRR race they finished, newest first, with the date, race name, distance and finish time. Runners with none show "No other 2026 NYRR races on record". The marathon itself is left out, since the card already shows it.
+- **Added:** `lib/raceHistory.ts` (gathers a runner's results for a year from the saved race files) and `components/RunnerRaces.tsx` (the race card section).
+- **Changed:** refreshed the saved 2026 results from NYRR with `npm run import-nyrr all 2026`. This adds 10 races from August through October 2026 (for example the Staten Island Half and the 5th Ave Mile), the 2026 TCS NYC Marathon results (61 members), and one more Team Championship 5M finisher. Finish times in existing races did not change; overall places moved by one in a few races.
+- **After merging:** nothing to re-run. To pick up races after this date, run `npm run import-nyrr all 2026` and redeploy. In 47 of the 62 members' cards the section lists races; the other 15 show no other 2026 races, which matches the results NYRR has.
+
 ## 2026-11-04 · Link to the race replay from the marathon page ([#5](https://github.com/calvinadaniel/narrow-path-runners/pull/5))
 
 - **Added:** a "Watch the 12:30 to 1:00 pm race replay" link under the subtitle on `/marathon`.

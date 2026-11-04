@@ -1,0 +1,40 @@
+{
+  "id": "2026-08-15-2026-tcs-new-york-city-marathon-training-series-12m",
+  "name": "2026 TCS New York City Marathon Training Series 12M",
+  "date": "2026-08-15",
+  "location": "Central Park",
+  "distance": "12M",
+  "results": [
+    {
+      "runnerId": "whitney-bynoe",
+      "runnerName": "Whitney Bynoe",
+      "time": "1:45:59",
+      "placement": 1154
+    },
+    {
+      "runnerId": "megan-bedell",
+      "runnerName": "Megan Bedell",
+      "time": "2:26:14",
+      "placement": 4006
+    },
+    {
+      "runnerId": "giovanna-fisher",
+      "runnerName": "Giovanna Fisher",
+      "time": "3:07:02",
+      "placement": 4778
+    },
+    {
+      "runnerId": "caleb-fisher",
+      "runnerName": "Caleb Fisher",
+      "time": "3:07:03",
+      "placement": 4779
+    },
+    {
+      "runnerId": "jackie-mccullough",
+      "runnerName": "Jackie Mccullough",
+      "time": "4:00:06",
+      "placement": 4866
+    }
+  ],
+  "photos": []
+}

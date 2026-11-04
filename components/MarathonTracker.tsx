@@ -3,8 +3,10 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import MarathonMap from "@/components/MarathonMap";
+import RunnerRaces from "@/components/RunnerRaces";
 import type { Basemap } from "@/lib/basemap";
 import type { Course } from "@/lib/course";
+import type { RaceEntry } from "@/lib/raceHistory";
 import type {
   MarathonRunnerState,
   MarathonRosterEntry,
@@ -142,6 +144,7 @@ export default function MarathonTracker({
   profileIds,
   course,
   basemap,
+  raceHistory,
 }: {
   roster: MarathonRosterEntry[];
   /** runnerIds that have a profile page to link to. */
@@ -150,6 +153,8 @@ export default function MarathonTracker({
   course?: Course;
   /** Land and water behind the map's route. */
   basemap?: Basemap;
+  /** Each runner's other 2026 races, by runnerId; shown on their card. */
+  raceHistory?: Record<string, RaceEntry[]>;
 }) {
   const [snapshot, setSnapshot] = useState<MarathonSnapshot | null>(null);
   const [failed, setFailed] = useState(false);
@@ -297,6 +302,9 @@ export default function MarathonTracker({
                       <ProgressBar percent={status.percentComplete} />
                     ) : null}
                   </>
+                ) : null}
+                {raceHistory && runnerId ? (
+                  <RunnerRaces races={raceHistory[runnerId] ?? []} />
                 ) : null}
               </li>
             );

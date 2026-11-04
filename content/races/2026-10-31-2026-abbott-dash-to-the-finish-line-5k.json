@@ -1,0 +1,130 @@
+{
+  "id": "2026-10-31-2026-abbott-dash-to-the-finish-line-5k",
+  "name": "2026 Abbott Dash to the Finish Line 5K",
+  "date": "2026-10-31",
+  "location": "United Nations to Central Park, NYC",
+  "distance": "5K",
+  "results": [
+    {
+      "runnerId": "edgar-hernandez",
+      "runnerName": "Edgar Hernandez",
+      "time": "21:12",
+      "placement": 521
+    },
+    {
+      "runnerId": "josue-marquez",
+      "runnerName": "Josue Marquez",
+      "time": "23:26",
+      "placement": 1120
+    },
+    {
+      "runnerId": "karen-alvarez",
+      "runnerName": "Karen Alvarez",
+      "time": "29:16",
+      "placement": 4496
+    },
+    {
+      "runnerId": "gina-sorensen",
+      "runnerName": "Gina Sorensen",
+      "time": "31:19",
+      "placement": 5998
+    },
+    {
+      "runnerId": "brian-lee",
+      "runnerName": "Brian Lee",
+      "time": "32:51",
+      "placement": 7115
+    },
+    {
+      "runnerId": "ahreum-kim",
+      "runnerName": "Ahreum Kim",
+      "time": "32:51",
+      "placement": 7122
+    },
+    {
+      "runnerId": "nancy-zhang",
+      "runnerName": "Nancy Zhang",
+      "time": "32:52",
+      "placement": 7133
+    },
+    {
+      "runnerId": "elory-dale",
+      "runnerName": "Elory Dale",
+      "time": "35:42",
+      "placement": 8668
+    },
+    {
+      "runnerId": "lissy-espinal",
+      "runnerName": "Lissy Espinal",
+      "time": "35:46",
+      "placement": 8707
+    },
+    {
+      "runnerId": "dion-johnson",
+      "runnerName": "Dion Johnson",
+      "time": "36:28",
+      "placement": 9048
+    },
+    {
+      "runnerId": "bashard-brooks",
+      "runnerName": "Bashard Brooks",
+      "time": "37:52",
+      "placement": 9555
+    },
+    {
+      "runnerId": "gabrielle-martin",
+      "runnerName": "Gabrielle Martin",
+      "time": "38:30",
+      "placement": 9724
+    },
+    {
+      "runnerId": "leticia-rodr-guez",
+      "runnerName": "Leticia Rodríguez",
+      "time": "38:41",
+      "placement": 9774
+    },
+    {
+      "runnerId": "edrian-ruiz",
+      "runnerName": "Edrian Ruiz",
+      "time": "38:42",
+      "placement": 9778
+    },
+    {
+      "runnerId": "kimberly-concepcion",
+      "runnerName": "Kimberly Concepcion",
+      "time": "38:42",
+      "placement": 9781
+    },
+    {
+      "runnerId": "edith-pappas",
+      "runnerName": "Edith Pappas",
+      "time": "38:49",
+      "placement": 9812
+    },
+    {
+      "runnerId": "monica-vazquez",
+      "runnerName": "Monica Vazquez",
+      "time": "38:50",
+      "placement": 9818
+    },
+    {
+      "runnerId": "chad-thompson",
+      "runnerName": "Chad Thompson",
+      "time": "38:51",
+      "placement": 9826
+    },
+    {
+      "runnerId": "berkley-feyka",
+      "runnerName": "Berkley Feyka",
+      "time": "41:07",
+      "placement": 10350
+    },
+    {
+      "runnerId": "christina-johnson",
+      "runnerName": "Christina Johnson",
+      "time": "48:49",
+      "placement": 11230
+    }
+  ],
+  "photos": []
+}

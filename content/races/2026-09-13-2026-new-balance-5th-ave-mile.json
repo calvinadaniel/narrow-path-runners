@@ -1,0 +1,118 @@
+{
+  "id": "2026-09-13-2026-new-balance-5th-ave-mile",
+  "name": "2026 New Balance 5th Ave Mile",
+  "date": "2026-09-13",
+  "location": "80th Street to 60th Street, Fifth Avenue, NYC",
+  "distance": "1M",
+  "results": [
+    {
+      "runnerId": "edgar-hernandez",
+      "runnerName": "Edgar Hernandez",
+      "time": "05:47",
+      "placement": 1008
+    },
+    {
+      "runnerId": "byron-castillo",
+      "runnerName": "Byron Castillo",
+      "time": "05:55",
+      "placement": 1266
+    },
+    {
+      "runnerId": "daniel-guardado",
+      "runnerName": "Daniel Guardado",
+      "time": "06:02",
+      "placement": 1484
+    },
+    {
+      "runnerId": "james-new",
+      "runnerName": "James New",
+      "time": "06:07",
+      "placement": 1641
+    },
+    {
+      "runnerId": "henry-rivas",
+      "runnerName": "Henry Rivas",
+      "time": "06:49",
+      "placement": 3145
+    },
+    {
+      "runnerId": "whitley-avlon",
+      "runnerName": "Whitley Avlon",
+      "time": "07:08",
+      "placement": 3888
+    },
+    {
+      "runnerId": "genesse-castillo",
+      "runnerName": "Genesse Castillo",
+      "time": "07:35",
+      "placement": 4775
+    },
+    {
+      "runnerId": "joseph-avlon",
+      "runnerName": "Joseph Avlon",
+      "time": "07:56",
+      "placement": 5379
+    },
+    {
+      "runnerId": "karen-alvarez",
+      "runnerName": "Karen Alvarez",
+      "time": "08:02",
+      "placement": 5544
+    },
+    {
+      "runnerId": "rebeca-ventura",
+      "runnerName": "Rebeca Ventura",
+      "time": "08:28",
+      "placement": 6156
+    },
+    {
+      "runnerId": "arlette-perez",
+      "runnerName": "Arlette Perez",
+      "time": "08:31",
+      "placement": 6213
+    },
+    {
+      "runnerId": "xenia-k-hernandez",
+      "runnerName": "Xenia K Hernandez",
+      "time": "09:40",
+      "placement": 7223
+    },
+    {
+      "runnerId": "joslin-lee",
+      "runnerName": "Joslin Lee",
+      "time": "09:51",
+      "placement": 7327
+    },
+    {
+      "runnerId": "gabrielle-martin",
+      "runnerName": "Gabrielle Martin",
+      "time": "10:49",
+      "placement": 7664
+    },
+    {
+      "runnerId": "dion-johnson",
+      "runnerName": "Dion Johnson",
+      "time": "11:32",
+      "placement": 7791
+    },
+    {
+      "runnerId": "damaris-hernandez",
+      "runnerName": "Damaris Hernandez",
+      "time": "11:36",
+      "placement": 7805
+    },
+    {
+      "runnerId": "christina-johnson",
+      "runnerName": "Christina Johnson",
+      "time": "12:36",
+      "placement": 7923
+    },
+    {
+      "runnerId": "johanna-loor",
+      "runnerName": "Johanna Loor",
+      "time": "14:10",
+      "placement": 8024
+    }
+  ],
+  "photos": []
+}
