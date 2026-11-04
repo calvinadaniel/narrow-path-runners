@@ -17,7 +17,7 @@ Leave out any line that doesn't apply. Add the PR link once the PR has a number.
 
 ---
 
-## 2026-11-04 · Race cards with each runner's other 2026 NYRR races
+## 2026-11-04 · Race cards with each runner's other 2026 NYRR races ([#6](https://github.com/calvinadaniel/narrow-path-runners/pull/6))
 
 - **Added:** each runner's card on `/marathon` (list view) now has an "Other 2026 NYRR races (N)" section that opens to show every other 2026 NYRR race they finished, newest first, with the date, race name, distance and finish time. Runners with none show "No other 2026 NYRR races on record". The marathon itself is left out, since the card already shows it.
 - **Added:** `lib/raceHistory.ts` (gathers a runner's results for a year from the saved race files) and `components/RunnerRaces.tsx` (the race card section).
