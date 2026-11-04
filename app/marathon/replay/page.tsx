@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import MarathonHeader from "@/components/MarathonHeader";
 import MarathonReplay from "@/components/MarathonReplay";
@@ -24,6 +25,11 @@ export default function ReplayPage() {
     <>
       <MarathonHeader />
       <main className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
+        <p className="text-sm font-black mb-3">
+          <Link href="/marathon" className="page-link">
+            ← Back to the tracker
+          </Link>
+        </p>
         <h1 className="page-title text-2xl sm:text-3xl">Race Replay</h1>
         <p className="text-sm text-brand-ink/60 mt-1 mb-6">
           12:30 to 1:00 pm, rebuilt from official split times. Between timing mats, runners are

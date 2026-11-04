@@ -17,6 +17,12 @@ Leave out any line that doesn't apply. Add the PR link once the PR has a number.
 
 ---
 
+## 2026-11-04 · Link to the race replay from the marathon page ([#5](https://github.com/calvinadaniel/narrow-path-runners/pull/5))
+
+- **Added:** a "Watch the 12:30 to 1:00 pm race replay" link under the subtitle on `/marathon`.
+- **Added:** a "Back to the tracker" link at the top of `/marathon/replay`, so the replay page is not a dead end now that the site has no navigation.
+- **After merging:** nothing to re-run.
+
 ## 2026-11-03 · Race replay for 12:30-1:00 pm and a New York map behind the route ([#4](https://github.com/calvinadaniel/narrow-path-runners/pull/4))
 
 - **Added:** a race replay page at `/marathon/replay` that plays back Nov 1, 12:30 to 1:00 pm EST from official split times. It has play/pause, restart, 30x, 60x and 120x speeds and a time slider, and the running/finished/not-started counts and the map update as the clock moves. Between two timing mats a runner is placed at an even pace, so dots glide along the route.
