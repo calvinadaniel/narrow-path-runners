@@ -17,6 +17,15 @@ Leave out any line that doesn't apply. Add the PR link once the PR has a number.
 
 ---
 
+## 2026-11-05 · New Run Club header for the marathon tracker ([#9](https://github.com/calvinadaniel/narrow-path-runners/pull/9))
+
+- **Changed:** the header on `/marathon` and `/marathon/replay` is redesigned: a full-width black band with the club logo, a very large "NYC Marathon" headline, the date in orange, and the real course drawn as a glowing orange line. The old white header with the three-color stripe is gone.
+- **Added:** the course drawn by borough in a ribbon above the numbers (Staten Island, Brooklyn, Queens, Manhattan, the Bronx, Manhattan), sized by how much of the 26.2 miles each covers, with mile marks. Queens and the Bronx show as "QNS" and "BX" because their stretches are short.
+- **Added:** three numbers under the ribbon: Finishers (the club's official 2026 marathon finishers, from the saved NYRR results), Miles (26.2) and Boroughs (5). There is no fastest time and no runner dots.
+- **Added:** `lib/ribbon.ts` (works out the borough stretches from the course and the base map, and the course line), `getMarathonFinisherCount` in `lib/marathon.ts`, and the header's own styles in `components/MarathonHeader.module.css`.
+- **Changed:** the header uses two new fonts, Barlow Condensed and Archivo, loaded through `next/font` and used only in the header. The rest of the site keeps Arial Black. Fonts are downloaded when the site is built, so the build needs internet access (Vercel has it).
+- **After merging:** nothing to re-run. The Finishers number updates when you re-run `npm run import-nyrr all 2026`.
+
 ## 2026-11-04 · Fainter map background ([#8](https://github.com/calvinadaniel/narrow-path-runners/pull/8))
 
 - **Changed:** the New York map behind the page is now at 12% opacity (it was 35%), so it reads as a very light watermark behind the text and cards.
