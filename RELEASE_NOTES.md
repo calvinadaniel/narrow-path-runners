@@ -17,6 +17,13 @@ Leave out any line that doesn't apply. Add the PR link once the PR has a number.
 
 ---
 
+## 2026-11-05 · Add Ulises Arriaga to the tracker ([#10](https://github.com/calvinadaniel/narrow-path-runners/pull/10))
+
+- **Added:** Ulises Arriaga (bib 52946, finished in 5:14:01) now has a card on `/marathon`. He finished the marathon for the club but was missing from the tracker's list.
+- **Changed:** the member list is refreshed from RTRT (`npm run import-rtrt-roster`) and now has 61 runners, exactly the 61 official finishers. Julia Speina and Justin Wigley, who never started, are no longer listed because RTRT removed them after the race, so the "Not started" count is now 0. Jorge Camargo's bib number is updated to 48917.
+- **Changed:** the saved split times for the replay are rebuilt for the new list, so Ulises appears in the replay too (61 members instead of 60 on the course at 12:30 pm).
+- **After merging:** nothing to re-run. The header's Finishers number and the tracker's finished count now both read 61.
+
 ## 2026-11-05 · New Run Club header for the marathon tracker ([#9](https://github.com/calvinadaniel/narrow-path-runners/pull/9))
 
 - **Changed:** the header on `/marathon` and `/marathon/replay` is redesigned: a full-width black band with the club logo, a very large "NYC Marathon" headline, the date in orange, and the real course drawn as a glowing orange line. The old white header with the three-color stripe is gone.

@@ -1,6 +1,6 @@
 {
   "event": "NYRR-NY2026",
-  "updated": "2026-10-29",
+  "updated": "2026-11-05",
   "runners": [
     {
       "pid": "RANY2DX8",
@@ -178,7 +178,7 @@
     },
     {
       "pid": "RP39XHL2",
-      "bib": "48833",
+      "bib": "48917",
       "name": "Jorge Camargo",
       "runnerId": "jorge-camargo"
     },
@@ -189,22 +189,10 @@
       "runnerId": "joslin-lee"
     },
     {
-      "pid": "RJENP6F8",
-      "bib": "68716",
-      "name": "Julia Speina",
-      "runnerId": "julia-speina"
-    },
-    {
       "pid": "R5X9G4BD",
       "bib": "30535",
       "name": "Julian Fernandez",
       "runnerId": "julian-fernandez"
-    },
-    {
-      "pid": "RTKFDNX9",
-      "bib": "61693",
-      "name": "Justin Wigley",
-      "runnerId": "justin-wigley"
     },
     {
       "pid": "RXAE27HG",
@@ -361,6 +349,12 @@
       "bib": "64714",
       "name": "Stephanie Petzold",
       "runnerId": "stephanie-petzold"
+    },
+    {
+      "pid": "RW2F6RXD",
+      "bib": "52946",
+      "name": "Ulises Arriaga",
+      "runnerId": "ulises-arriaga"
     },
     {
       "pid": "RJKZLV8N",
