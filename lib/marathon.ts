@@ -2,6 +2,8 @@ import fs from "fs";
 import path from "path";
 import type { Basemap } from "./basemap";
 import type { Course } from "./course";
+import { MARATHON_DATE } from "./raceHistory";
+import { getAllRaces } from "./races";
 import type { Replay } from "./replay";
 import { fetchRunnerStatuses } from "./rtrt";
 import type { MarathonRoster, MarathonSnapshot } from "./types";
@@ -36,6 +38,14 @@ export function getNycBasemap(): Basemap | undefined {
 export function getMarathonReplay(): Replay | undefined {
   if (!fs.existsSync(REPLAY_FILE)) return undefined;
   return JSON.parse(fs.readFileSync(REPLAY_FILE, "utf-8")) as Replay;
+}
+
+/** Narrow Path finishers in the official 2026 marathon results. */
+export function getMarathonFinisherCount(): number {
+  const race = getAllRaces().find(
+    (r) => r.date === MARATHON_DATE && r.distance === "Marathon"
+  );
+  return race?.results.length ?? 0;
 }
 
 /** Fresh enough to serve without asking RTRT again. */

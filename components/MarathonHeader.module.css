@@ -1,0 +1,176 @@
+/* Layout: a full-width black band. The headline and the course line sit on top, then the course by borough, then three numbers. */
+.header {
+  --acc: #ff7a1a;
+  container-type: inline-size;
+  background: #0b0b0b;
+  color: #fff;
+  font-family: var(--font-archivo), Arial, Helvetica, sans-serif;
+}
+.inner {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 28px 28px 0;
+}
+.top {
+  position: relative;
+}
+.route {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: auto;
+  max-width: 40%;
+  filter: drop-shadow(0 0 7px rgba(255, 122, 26, 0.55));
+}
+.copy {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 22px;
+}
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 16px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #c9c3b5;
+}
+.logo {
+  height: 30px;
+  width: 30px;
+  padding: 2px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 50%;
+}
+.tri {
+  display: inline-flex;
+  gap: 3px;
+}
+.tri b {
+  display: block;
+  width: 14px;
+  height: 4px;
+}
+.tri b:nth-child(1) { background: var(--color-brand-red); }
+.tri b:nth-child(2) { background: var(--color-brand-green); }
+.tri b:nth-child(3) { background: var(--color-brand-orange); }
+.headline {
+  margin: 0;
+  font-family: var(--font-condensed), "Arial Narrow", Impact, sans-serif;
+  font-size: clamp(64px, 17cqw, 132px);
+  font-weight: 800;
+  line-height: 0.84;
+  letter-spacing: -0.005em;
+  text-transform: uppercase;
+}
+.date {
+  margin: 16px 0 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--acc);
+}
+
+/* The course by borough */
+.ribbon {
+  padding-bottom: 28px;
+}
+.track {
+  display: flex;
+  height: 28px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.seg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.dark {
+  color: #0b0b0b;
+}
+.abbr {
+  display: none;
+}
+.always {
+  display: inline;
+}
+.ticks {
+  position: relative;
+  height: 18px;
+}
+.tick {
+  position: absolute;
+  top: 5px;
+  transform: translateX(-50%);
+  font-size: 10px;
+  font-weight: 700;
+  color: #8e887b;
+}
+.tick::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -5px;
+  width: 1px;
+  height: 4px;
+  background: #8e887b;
+}
+
+/* The numbers */
+.band {
+  border-top: 1px solid #2a2a2a;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 56rem;
+  margin: 0 auto;
+}
+.stats > div {
+  padding: 14px 28px 16px;
+  border-right: 1px solid #2a2a2a;
+}
+.stats > div:last-child {
+  border-right: 0;
+}
+.stats dt {
+  margin: 0;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8e887b;
+}
+.stats dd {
+  margin: 4px 0 0;
+  font-family: var(--font-condensed), "Arial Narrow", Impact, sans-serif;
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 0.95;
+  font-variant-numeric: tabular-nums;
+}
+
+@container (max-width: 620px) {
+  .inner { padding: 20px 18px 0; }
+  .headline { font-size: 17cqw; }
+  .route { max-width: 32%; }
+  .full, .si { display: none; }
+  .abbr { display: inline; }
+  .seg { font-size: 9px; letter-spacing: 0.02em; }
+  .stats > div { padding: 12px 18px 14px; }
+  .stats dd { font-size: 34px; }
+}
