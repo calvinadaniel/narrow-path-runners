@@ -17,6 +17,10 @@ Leave out any line that doesn't apply. Add the PR link once the PR has a number.
 
 ---
 
+## 2026-11-05 · Bigger marathon header logo
+
+- **Changed:** the club logo in the `/marathon` and `/marathon/replay` header is larger (30px to 66px) and no longer sits in a white circle. A thin white outline keeps its black lettering readable on the black band. The header height is unchanged. Touches `components/MarathonHeader.tsx` and `components/MarathonHeader.module.css`.
+
 ## 2026-11-05 · Add Ulises Arriaga to the tracker ([#10](https://github.com/calvinadaniel/narrow-path-runners/pull/10))
 
 - **Added:** Ulises Arriaga (bib 52946, finished in 5:14:01) now has a card on `/marathon`. He finished the marathon for the club but was missing from the tracker's list.
