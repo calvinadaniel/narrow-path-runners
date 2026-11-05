@@ -17,7 +17,7 @@ Leave out any line that doesn't apply. Add the PR link once the PR has a number.
 
 ---
 
-## 2026-11-05 · Add Ulises Arriaga to the tracker
+## 2026-11-05 · Add Ulises Arriaga to the tracker ([#10](https://github.com/calvinadaniel/narrow-path-runners/pull/10))
 
 - **Added:** Ulises Arriaga (bib 52946, finished in 5:14:01) now has a card on `/marathon`. He finished the marathon for the club but was missing from the tracker's list.
 - **Changed:** the member list is refreshed from RTRT (`npm run import-rtrt-roster`) and now has 61 runners, exactly the 61 official finishers. Julia Speina and Justin Wigley, who never started, are no longer listed because RTRT removed them after the race, so the "Not started" count is now 0. Jorge Camargo's bib number is updated to 48917.
