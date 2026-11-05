@@ -58,6 +58,25 @@ export function buildReplay(
   };
 }
 
+/** Seconds between positions on the replay's time slider. */
+export const REPLAY_STEP = 15;
+
+/**
+ * The whole race: from the first runner over the start to the last runner at the
+ * finish. The end is rounded up to a slider step so the slider can reach it.
+ */
+export function replayWindow(replay: Replay): { from: number; to: number } {
+  let from = Infinity;
+  let to = -Infinity;
+  for (const r of replay.runners) {
+    if (r.marks.length === 0) continue;
+    from = Math.min(from, r.marks[0][0]);
+    to = Math.max(to, r.marks[r.marks.length - 1][0]);
+  }
+  if (!Number.isFinite(from)) return { from: 0, to: 0 };
+  return { from, to: from + Math.ceil((to - from) / REPLAY_STEP) * REPLAY_STEP };
+}
+
 /** 4521 seconds -> "1:15:21" */
 export function formatDuration(seconds: number): string {
   const s = Math.max(0, Math.floor(seconds));

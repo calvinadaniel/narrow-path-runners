@@ -1,9 +1,11 @@
 import { describe, it, expect } from "vitest";
 import {
+  REPLAY_STEP,
   buildMarks,
   buildReplay,
   formatClock,
   formatDuration,
+  replayWindow,
   statusAt,
   type ReplayRunner,
 } from "./replay";
@@ -146,5 +148,45 @@ describe("formatting", () => {
   it("formats New York clock time", () => {
     // 12:30 pm on Nov 1 2026, after daylight saving ended
     expect(formatClock(1793554200)).toBe("12:30:00 PM EST");
+  });
+});
+
+describe("replayWindow", () => {
+  const runner = (pid: string, marks: [number, number][]): ReplayRunner => ({
+    pid,
+    name: pid,
+    marks: marks.map(([t, m]) => [t, m, "", ""]),
+  });
+
+  it("runs from the first runner's start to the last runner's finish", () => {
+    const { from, to } = replayWindow({
+      event: "TEST",
+      runners: [
+        runner("early", [[1000, 0], [4000, 10]]),
+        runner("late", [[2000, 0], [9000, 10]]),
+      ],
+    });
+    expect(from).toBe(1000);
+    expect(to).toBeGreaterThanOrEqual(9000);
+  });
+
+  it("rounds the end up to a slider step so the slider can reach it", () => {
+    const { from, to } = replayWindow({
+      event: "TEST",
+      runners: [runner("a", [[1000, 0], [1000 + 100, 10]])], // 100 s is not a multiple of the step
+    });
+    expect((to - from) % REPLAY_STEP).toBe(0);
+    expect(to - from).toBeGreaterThanOrEqual(100);
+    expect(to - from).toBeLessThan(100 + REPLAY_STEP);
+  });
+
+  it("ignores runners with no readings, and handles an empty replay", () => {
+    const { from } = replayWindow({
+      event: "TEST",
+      runners: [runner("ghost", []), runner("a", [[500, 0], [900, 10]])],
+    });
+    expect(from).toBe(500);
+    expect(replayWindow({ event: "TEST", runners: [] })).toEqual({ from: 0, to: 0 });
+    expect(replayWindow({ event: "TEST", runners: [runner("ghost", [])] })).toEqual({ from: 0, to: 0 });
   });
 });

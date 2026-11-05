@@ -59,22 +59,29 @@ describe("MarathonReplay", () => {
     expect(screen.getByRole("button", { name: "Play" })).toBeInTheDocument();
   });
 
+  it("offers three speeds and starts at 300x, which plays ten hours in about two minutes", () => {
+    renderReplay();
+    expect(screen.getByRole("button", { name: "60×" })).toHaveAttribute("aria-pressed", "false");
+    expect(screen.getByRole("button", { name: "300×" })).toHaveAttribute("aria-pressed", "true");
+    expect(screen.getByRole("button", { name: "900×" })).toHaveAttribute("aria-pressed", "false");
+  });
+
   it("advances the clock while playing, at the chosen speed", () => {
     renderReplay();
     fireEvent.click(screen.getByRole("button", { name: "Play" }));
     act(() => {
-      vi.advanceTimersByTime(3000);
+      vi.advanceTimersByTime(2000);
     });
-    expect(screen.getByTestId("clock")).toHaveTextContent("12:33:00 PM EST"); // 3 s x 60
+    expect(screen.getByTestId("clock")).toHaveTextContent("12:40:00 PM EST"); // 2 s x 300
 
-    fireEvent.click(screen.getByRole("button", { name: "120×" }));
+    fireEvent.click(screen.getByRole("button", { name: "60×" }));
     act(() => {
       vi.advanceTimersByTime(1000);
     });
-    expect(screen.getByTestId("clock")).toHaveTextContent("12:35:00 PM EST");
+    expect(screen.getByTestId("clock")).toHaveTextContent("12:41:00 PM EST"); // 1 s x 60
   });
 
-  it("pauses and resumes", () => {
+  it("pauses", () => {
     renderReplay();
     fireEvent.click(screen.getByRole("button", { name: "Play" }));
     act(() => {
@@ -84,7 +91,7 @@ describe("MarathonReplay", () => {
     act(() => {
       vi.advanceTimersByTime(5000);
     });
-    expect(screen.getByTestId("clock")).toHaveTextContent("12:32:00 PM EST");
+    expect(screen.getByTestId("clock")).toHaveTextContent("12:40:00 PM EST");
   });
 
   it("jumps with the scrubber and updates the counts", () => {
@@ -96,12 +103,12 @@ describe("MarathonReplay", () => {
     expect(screen.getByTestId("summary")).toHaveTextContent("1 running · 1 finished · 1 not started");
   });
 
-  it("stops at 1:00 pm and offers to replay", () => {
+  it("stops at the end of the window and offers to replay", () => {
     renderReplay();
-    fireEvent.click(screen.getByRole("button", { name: "120×" }));
+    fireEvent.click(screen.getByRole("button", { name: "900×" }));
     fireEvent.click(screen.getByRole("button", { name: "Play" }));
     act(() => {
-      vi.advanceTimersByTime(40_000);
+      vi.advanceTimersByTime(10_000);
     });
     expect(screen.getByTestId("clock")).toHaveTextContent("1:00:00 PM EST");
     expect(screen.getByRole("button", { name: "Replay" })).toBeInTheDocument();
@@ -110,7 +117,7 @@ describe("MarathonReplay", () => {
     expect(screen.getByTestId("clock")).toHaveTextContent("12:30:00 PM EST");
   });
 
-  it("restarts from 12:30", () => {
+  it("restarts from the beginning", () => {
     renderReplay();
     fireEvent.change(screen.getByRole("slider", { name: "Replay time" }), {
       target: { value: String(FROM + 900) },
