@@ -24,6 +24,10 @@ Leave out any line that doesn't apply. Add the PR link once the PR has a number.
 - **Changed:** the start and end of the replay come from the saved split times (`replayWindow` in `lib/replay.ts`), so they follow the data if it is re-imported. The link on `/marathon` now reads "Watch the full race replay".
 - **After merging:** nothing to re-run.
 
+## 2026-11-05 · Bigger marathon header logo
+
+- **Changed:** the club logo in the `/marathon` and `/marathon/replay` header is larger (30px to 66px) and no longer sits in a white circle. A thin white outline keeps its black lettering readable on the black band. The header height is unchanged. Touches `components/MarathonHeader.tsx` and `components/MarathonHeader.module.css`.
+
 ## 2026-11-05 · Document how the site deploys
 
 - **Changed:** the README's generic "Deploy on Vercel" text is replaced with a "Deploying" section: how deploys work for this repo, what to do if Vercel stops building, and the manual fallback (`npx vercel --prod` from an up-to-date `master`).

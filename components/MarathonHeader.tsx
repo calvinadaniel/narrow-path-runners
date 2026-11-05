@@ -75,8 +75,8 @@ export default function MarathonHeader() {
               <Image
                 src="/npr-logo.png"
                 alt="Narrow Path Runners"
-                width={30}
-                height={30}
+                width={66}
+                height={66}
                 className={styles.logo}
                 priority
               />

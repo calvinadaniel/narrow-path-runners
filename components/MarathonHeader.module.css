@@ -40,12 +40,13 @@
   color: #c9c3b5;
 }
 .logo {
-  height: 30px;
-  width: 30px;
-  padding: 2px;
+  height: 66px;
+  width: 66px;
+  /* negative margin keeps the eyebrow row (and header) the same height as the old 30px logo */
+  margin: -18px 0;
   object-fit: contain;
-  background: #fff;
-  border-radius: 50%;
+  /* the art has black lettering, so a thin white outline stands in for the old white circle */
+  filter: drop-shadow(1px 0 0 #fff) drop-shadow(-1px 0 0 #fff) drop-shadow(0 1px 0 #fff) drop-shadow(0 -1px 0 #fff);
 }
 .tri {
   display: inline-flex;
