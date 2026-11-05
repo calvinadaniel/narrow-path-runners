@@ -17,6 +17,11 @@ Leave out any line that doesn't apply. Add the PR link once the PR has a number.
 
 ---
 
+## 2026-11-05 · Document how the site deploys
+
+- **Changed:** the README's generic "Deploy on Vercel" text is replaced with a "Deploying" section: how deploys work for this repo, what to do if Vercel stops building, and the manual fallback (`npx vercel --prod` from an up-to-date `master`).
+- **After merging:** nothing to re-run. No application code changed.
+
 ## 2026-11-05 · Add Ulises Arriaga to the tracker ([#10](https://github.com/calvinadaniel/narrow-path-runners/pull/10))
 
 - **Added:** Ulises Arriaga (bib 52946, finished in 5:14:01) now has a card on `/marathon`. He finished the marathon for the club but was missing from the tracker's list.

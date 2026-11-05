@@ -29,8 +29,17 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploying
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The site is hosted on Vercel and deploys from GitHub. Every push to a branch gets a preview deployment, and merging into `master` deploys production. A new deployment should appear in the Vercel project's Deployments tab within a few seconds of a push.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If no deployment appears, Vercel has lost its connection to the repo. Reconnect it under the project's Settings, then Git. To publish in the meantime, deploy by hand from an up-to-date `master`:
+
+```bash
+git checkout master && git pull origin master
+npx vercel --prod
+```
+
+Builds download the header fonts (`next/font/google`), so they need internet access.
+
+Every pull request also adds an entry to `RELEASE_NOTES.md`; see `AGENTS.md`.
