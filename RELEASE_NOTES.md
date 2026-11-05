@@ -17,7 +17,7 @@ Leave out any line that doesn't apply. Add the PR link once the PR has a number.
 
 ---
 
-## 2026-11-05 · Fix the logo overlap in the phone header
+## 2026-11-05 · Fix the logo overlap in the phone header ([#12](https://github.com/calvinadaniel/narrow-path-runners/pull/12))
 
 - **Fixed:** on phones (screens 620 px wide or narrower) the larger header logo overlapped the "NYC" headline by about 2 px and sat only 2 to 5 px from the top of the screen, and the orange course line ran through the three small color bars next to "NARROW PATH RUNNERS". The logo now sits in its own row (56 px, 20 px from the top, 14 px above the headline) and the course line starts below it, at least 39 px clear of the bars. The header is about 16 to 24 px taller on a phone as a result.
 - **Not changed:** desktop and tablet screens (621 px and wider) keep the 66 px logo and the spacing from the larger-logo change. Touches `components/MarathonHeader.module.css` only.
