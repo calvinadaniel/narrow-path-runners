@@ -27,7 +27,7 @@ export default function MarathonPage() {
         </p>
         <p className="text-sm font-black mt-2 mb-6">
           <Link href="/marathon/replay" className="page-link">
-            Watch the 12:30 to 1:00 pm race replay →
+            Watch the full race replay →
           </Link>
         </p>
         <MarathonTracker

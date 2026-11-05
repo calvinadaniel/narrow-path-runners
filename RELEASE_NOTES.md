@@ -17,9 +17,21 @@ Leave out any line that doesn't apply. Add the PR link once the PR has a number.
 
 ---
 
+## 2026-11-05 · Replay the whole race ([#11](https://github.com/calvinadaniel/narrow-path-runners/pull/11))
+
+- **Changed:** the replay on `/marathon/replay` now covers the whole race, from the first member crossing the start (9:12:45 am) to the last finisher (7:04:45 pm), instead of only 12:30 to 1:00 pm. It keeps the same controls: play, pause, restart, a speed choice and a time slider, with the counts and the map updating as the clock moves.
+- **Changed:** the speeds are now 60x, 300x and 900x, with 300x the default. The race is about ten hours, so 300x plays all of it in two minutes and 900x in about 40 seconds. The old 30x, 60x and 120x would have taken 5 to 20 minutes.
+- **Changed:** the start and end of the replay come from the saved split times (`replayWindow` in `lib/replay.ts`), so they follow the data if it is re-imported. The link on `/marathon` now reads "Watch the full race replay".
+- **After merging:** nothing to re-run.
+
 ## 2026-11-05 · Bigger marathon header logo
 
 - **Changed:** the club logo in the `/marathon` and `/marathon/replay` header is larger (30px to 66px) and no longer sits in a white circle. A thin white outline keeps its black lettering readable on the black band. The header height is unchanged. Touches `components/MarathonHeader.tsx` and `components/MarathonHeader.module.css`.
+
+## 2026-11-05 · Document how the site deploys ([#11](https://github.com/calvinadaniel/narrow-path-runners/pull/11))
+
+- **Changed:** the README's generic "Deploy on Vercel" text is replaced with a "Deploying" section: how deploys work for this repo, what to do if Vercel stops building, and the manual fallback (`npx vercel --prod` from an up-to-date `master`).
+- **After merging:** nothing to re-run. No application code changed.
 
 ## 2026-11-05 · Add Ulises Arriaga to the tracker ([#10](https://github.com/calvinadaniel/narrow-path-runners/pull/10))
 

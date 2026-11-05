@@ -5,12 +5,13 @@ import MarathonMap from "@/components/MarathonMap";
 import { StatusLine } from "@/components/MarathonTracker";
 import type { Basemap } from "@/lib/basemap";
 import type { Course } from "@/lib/course";
-import { formatClock, statusAt, type Replay } from "@/lib/replay";
+import { REPLAY_STEP, formatClock, statusAt, type Replay } from "@/lib/replay";
 
-const SPEEDS = [30, 60, 120] as const;
+// Sim seconds per real second. The whole race is about ten hours: 300x plays it in two minutes.
+const SPEEDS = [60, 300, 900] as const;
 const TICK_MS = 1000; // matches the map's 1s glide between positions
 
-/** Plays back the race between two clock times from the saved split times. */
+/** Plays back the race between two clock times (here the whole race) from the saved split times. */
 export default function MarathonReplay({
   course,
   replay,
@@ -27,7 +28,7 @@ export default function MarathonReplay({
 }) {
   const [t, setT] = useState(from);
   const [playing, setPlaying] = useState(false);
-  const [speed, setSpeed] = useState<(typeof SPEEDS)[number]>(60);
+  const [speed, setSpeed] = useState<(typeof SPEEDS)[number]>(300);
 
   // Playback ends by itself at the end of the window.
   const atEnd = t >= to;
@@ -113,7 +114,7 @@ export default function MarathonReplay({
             type="range"
             min={from}
             max={to}
-            step={15}
+            step={REPLAY_STEP}
             value={t}
             onChange={(e) => {
               setPlaying(false);
